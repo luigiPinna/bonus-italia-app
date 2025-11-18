@@ -4,7 +4,9 @@
     {
       "id": "bonus-nuove-nascite-2025",
       "nome": "Bonus Nuove Nascite 2025",
-      "categoria": "natalità",
+      "categoria": [
+        "natalità"
+      ],
       "status": "attivo",
       "descrizione": "Contributo una tantum per le famiglie con nuovi nati o adozioni nel 2025",
       "importo": {
@@ -20,7 +22,10 @@
       "requisiti": {
         "cittadinanza": "Italiana o UE",
         "residenza": "Italia",
-        "eta_figli": ["gravidanza", "0-1"],
+        "eta_figli": [
+          "gravidanza",
+          "0-1"
+        ],
         "altri": [
           {
             "tipo": "Nascita/adozione",
@@ -43,13 +48,17 @@
         "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
         "note": "Accesso con SPID, CIE o credenziali INPS"
       },
-      "compatibilita": ["assegno-unico-universale"],
+      "compatibilita": [
+        "assegno-unico-universale"
+      ],
       "note_aggiuntive": "Cumulabile con Assegno Unico Universale. Escludere dall'ISEE i soldi dell'Assegno Unico"
     },
     {
       "id": "assegno-unico-universale",
       "nome": "Assegno Unico Universale",
-      "categoria": "famiglia",
+      "categoria": [
+        "famiglia"
+      ],
       "status": "attivo",
       "descrizione": "Contributo mensile per il sostegno economico delle famiglie con figli a carico",
       "importo": {
@@ -85,7 +94,12 @@
       "requisiti": {
         "cittadinanza": "Italiana, UE o permesso di soggiorno",
         "residenza": "Italia",
-        "eta_figli": ["0-1", "1-3", "3-18", "18-21"],
+        "eta_figli": [
+          "0-1",
+          "1-3",
+          "3-18",
+          "18-21"
+        ],
         "altri": [
           {
             "tipo": "Età figli",
@@ -108,13 +122,18 @@
         "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
         "note": "Accesso con SPID, CIE o credenziali INPS. Domanda unica per tutti i figli"
       },
-      "compatibilita": ["bonus-nuove-nascite-2025", "bonus-asilo-nido"],
+      "compatibilita": [
+        "bonus-nuove-nascite-2025",
+        "bonus-asilo-nido"
+      ],
       "note_aggiuntive": "Erogato mensilmente, cumulabile con altri bonus. Tempo fino al 30/06/2025 per ISEE e arretrati"
     },
     {
       "id": "bonus-asilo-nido",
       "nome": "Bonus Asilo Nido",
-      "categoria": "educazione",
+      "categoria": [
+        "educazione"
+      ],
       "status": "attivo",
       "descrizione": "Contributo per le spese di asilo nido per bambini fino a 3 anni",
       "importo": {
@@ -145,7 +164,10 @@
       "requisiti": {
         "cittadinanza": "Italiana, UE o permesso di soggiorno",
         "residenza": "Italia",
-        "eta_figli": ["0-1", "1-3"],
+        "eta_figli": [
+          "0-1",
+          "1-3"
+        ],
         "altri": [
           {
             "tipo": "Età bambino",
@@ -173,13 +195,17 @@
         "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
         "note": "Accesso con SPID, CIE o credenziali INPS oppure tramite Patronato"
       },
-      "compatibilita": ["assegno-unico-universale"],
+      "compatibilita": [
+        "assegno-unico-universale"
+      ],
       "note_aggiuntive": "Rimborso delle spese sostenute per asilo nido. Erogazione in 11 rate mensili"
     },
     {
       "id": "bonus-bollette-200",
       "nome": "Bonus Bollette 200€",
-      "categoria": "utenze",
+      "categoria": [
+        "utenze"
+      ],
       "status": "attivo",
       "descrizione": "Contributo automatico di 200€ in bolletta per le famiglie con ISEE sotto i 25.000€",
       "importo": {
@@ -214,13 +240,17 @@
         ],
         "note": "Non serve domanda specifica. Sufficiente avere ISEE valido sotto 25.000€"
       },
-      "compatibilita": ["bonus-sociale-utenze"],
+      "compatibilita": [
+        "bonus-sociale-utenze"
+      ],
       "note_aggiuntive": "Automatico per chi ha ISEE sotto 25.000€. Cumulabile con bonus sociale"
     },
     {
       "id": "bonus-sociale-utenze",
       "nome": "Bonus Sociale Luce e Gas",
-      "categoria": "utenze",
+      "categoria": [
+        "utenze"
+      ],
       "status": "attivo",
       "descrizione": "Sconto automatico sulle bollette di luce e gas per famiglie in difficoltà economica",
       "importo": {
@@ -258,13 +288,17 @@
         ],
         "note": "Riconoscimento automatico per chi presenta ISEE nei limiti"
       },
-      "compatibilita": ["bonus-bollette-200"],
+      "compatibilita": [
+        "bonus-bollette-200"
+      ],
       "note_aggiuntive": "Erogazione più rapida per chi ha già bonus sociale attivo"
     },
     {
       "id": "carta-acquisti",
       "nome": "Carta Acquisti",
-      "categoria": "sostegno_alimentare",
+      "categoria": [
+        "sostegno_alimentare"
+      ],
       "status": "attivo",
       "descrizione": "Carta di pagamento elettronica ricaricata dallo Stato per acquisti di prima necessità",
       "importo": {
@@ -280,7 +314,10 @@
       "requisiti": {
         "cittadinanza": "Italiana o UE",
         "residenza": "Italia",
-        "eta_figli": ["0-1", "1-3"],
+        "eta_figli": [
+          "0-1",
+          "1-3"
+        ],
         "altri": [
           {
             "tipo": "Età richiedente",
@@ -311,7 +348,9 @@
     {
       "id": "carta-dedicata-a-te",
       "nome": "Carta Dedicata a Te",
-      "categoria": "sostegno_alimentare",
+      "categoria": [
+        "sostegno_alimentare"
+      ],
       "status": "attivo",
       "descrizione": "Carta per l'acquisto di beni alimentari di prima necessità, carburante o abbonamenti trasporti",
       "importo": {
@@ -352,7 +391,9 @@
     {
       "id": "bonus-psicologo",
       "nome": "Bonus Psicologo",
-      "categoria": "salute",
+      "categoria": [
+        "salute"
+      ],
       "status": "attivo",
       "descrizione": "Contributo economico per sedute di psicoterapia",
       "importo": {
@@ -410,7 +451,9 @@
     {
       "id": "bonus-anziani-over-80",
       "nome": "Bonus Anziani Over 80",
-      "categoria": "anziani",
+      "categoria": [
+        "anziani"
+      ],
       "status": "sperimentale",
       "descrizione": "Contributo per anziani non autosufficienti per assistenza domiciliare",
       "importo": {
@@ -424,7 +467,7 @@
       },
       "requisiti": {
         "cittadinanza": "Italiana o UE",
-        "residenza": "Italia", 
+        "residenza": "Italia",
         "eta_figli": [],
         "altri": [
           {
@@ -461,7 +504,9 @@
     {
       "id": "carta-cultura-giovani",
       "nome": "Carta Cultura Giovani",
-      "categoria": "cultura",
+      "categoria": [
+        "cultura"
+      ],
       "status": "attivo",
       "descrizione": "Carta da 500€ per acquisti culturali destinata ai diciottenni con ISEE familiare basso",
       "importo": {
@@ -499,13 +544,17 @@
         "link": "https://www.18app.italia.it/",
         "note": "Registrazione con SPID o CIE"
       },
-      "compatibilita": ["carta-merito"],
+      "compatibilita": [
+        "carta-merito"
+      ],
       "note_aggiuntive": "Sostituisce il precedente Bonus 18app. Vincoli di spesa per prodotti culturali"
     },
     {
       "id": "carta-merito",
       "nome": "Carta del Merito",
-      "categoria": "cultura",
+      "categoria": [
+        "cultura"
+      ],
       "status": "attivo",
       "descrizione": "Carta da 500€ per acquisti culturali destinata a diplomati con 100/100",
       "importo": {
@@ -546,7 +595,9 @@
         "link": "https://www.18app.italia.it/",
         "note": "Registrazione con SPID o CIE"
       },
-      "compatibilita": ["carta-cultura-giovani"],
+      "compatibilita": [
+        "carta-cultura-giovani"
+      ],
       "note_aggiuntive": "Basata solo sul merito scolastico, indipendentemente dall'ISEE"
     }
   ]

@@ -8,7 +8,7 @@ export const filterBySearch = (bonus: Bonus[], search: string): Bonus[] => {
     (b) =>
       b.nome.toLowerCase().includes(searchLower) ||
       b.descrizione.toLowerCase().includes(searchLower) ||
-      b.categoria.toLowerCase().includes(searchLower)
+      b.categoria.some((cat) => cat.toLowerCase().includes(searchLower))
   );
 };
 
@@ -19,28 +19,51 @@ export const filterByIsee = (bonus: Bonus[], iseeFasce: string[]): Bonus[] => {
     if (!b.isee.richiesto) return true;
 
     return iseeFasce.some((fascia) => {
+      // Gestione "oltre 40000" (40000+)
       if (fascia.includes('+')) {
-        const min = parseInt(fascia.replace('+', ''));
+        const minFascia = parseInt(fascia.replace('+', ''));
         const bonusMax = b.isee.max;
-        return bonusMax === undefined || bonusMax >= min;
+        const bonusMin = b.isee.min || 0;
+        
+        // Se il bonus ha un max definito e è inferiore al minimo della fascia, non è compatibile
+        // Es: bonus con max 40000 non è compatibile con fascia "oltre 40000"
+        if (bonusMax !== undefined && bonusMax < minFascia) return false;
+        
+        // Se il bonus ha un min definito e superiore al minimo della fascia, non accetta quella fascia
+        // Es: bonus con min 50000 non accetta ISEE nella fascia "oltre 40000" (perché richiede almeno 50000)
+        if (bonusMin > minFascia) return false;
+        
+        // Altrimenti è compatibile
+        return true;
       }
 
+      // Gestione fasce normali (es: "17000-25000")
       const parts = fascia.split('-');
-      const min = parseInt(parts[0]);
-      const max = parseInt(parts[1]);
+      const minFascia = parseInt(parts[0]);
+      const maxFascia = parseInt(parts[1]);
+      
       const bonusMax = b.isee.max;
       const bonusMin = b.isee.min || 0;
 
+      // Se il bonus non ha max definito, accetta tutte le fasce
       if (bonusMax === undefined) return true;
 
-      return bonusMax >= min && bonusMin <= max;
+      // Il bonus è compatibile se:
+      // - Il max del bonus è >= al minimo della fascia (accetta ISEE nella fascia)
+      // - Il min del bonus è <= al massimo della fascia (non esclude la fascia)
+      // Es: bonus con max 40000 e min 0 è compatibile con fascia "17000-25000"
+      // Es: bonus con max 25000 e min 0 è compatibile con fascia "17000-25000"
+      // Es: bonus con max 15000 e min 0 NON è compatibile con fascia "17000-25000"
+      return bonusMax >= minFascia && bonusMin <= maxFascia;
     });
   });
 };
 
 export const filterByCategorie = (bonus: Bonus[], categorie: string[]): Bonus[] => {
   if (categorie.length === 0) return bonus;
-  return bonus.filter((b) => categorie.includes(b.categoria));
+  return bonus.filter((b) => 
+    b.categoria.some((cat) => categorie.includes(cat))
+  );
 };
 
 export const filterByTipologie = (bonus: Bonus[], tipologie: string[]): Bonus[] => {

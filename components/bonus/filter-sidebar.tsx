@@ -19,7 +19,7 @@ const ISEE_FASCE = [
   { label: 'Oltre 40.000€', value: '40000+' },
 ];
 
-const CATEGORIE = ['natalità', 'famiglia', 'educazione', 'casa', 'lavoro'];
+const CATEGORIE = ['natalità', 'famiglia', 'educazione', 'casa', 'lavoro', 'utenze', 'sostegno_alimentare', 'salute', 'anziani', 'cultura'];
 
 const TIPOLOGIE = [
   { label: 'Una tantum', value: 'una_tantum' },

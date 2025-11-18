@@ -43,6 +43,11 @@ export function BonusCard({ bonus, onViewDetails }: BonusCardProps) {
       educazione: 'bg-purple-500/10 text-purple-700 dark:text-purple-400 border-purple-500/20',
       casa: 'bg-orange-500/10 text-orange-700 dark:text-orange-400 border-orange-500/20',
       lavoro: 'bg-indigo-500/10 text-indigo-700 dark:text-indigo-400 border-indigo-500/20',
+      utenze: 'bg-cyan-500/10 text-cyan-700 dark:text-cyan-400 border-cyan-500/20',
+      sostegno_alimentare: 'bg-emerald-500/10 text-emerald-700 dark:text-emerald-400 border-emerald-500/20',
+      salute: 'bg-red-500/10 text-red-700 dark:text-red-400 border-red-500/20',
+      anziani: 'bg-slate-500/10 text-slate-700 dark:text-slate-400 border-slate-500/20',
+      cultura: 'bg-violet-500/10 text-violet-700 dark:text-violet-400 border-violet-500/20',
     };
     return colors[categoria] || 'bg-gray-500/10 text-gray-700 dark:text-gray-400 border-gray-500/20';
   };
@@ -94,11 +99,14 @@ export function BonusCard({ bonus, onViewDetails }: BonusCardProps) {
                bonus.status === 'scaduto' ? '✗ Scaduto' : 
                '⏳ In arrivo'}
             </Badge>
-            <Badge 
-              className={`text-xs font-medium border capitalize ${getCategoriaColor(bonus.categoria)}`}
-            >
-              {bonus.categoria}
-            </Badge>
+            {bonus.categoria.map((cat, idx) => (
+              <Badge 
+                key={idx}
+                className={`text-xs font-medium border capitalize ${getCategoriaColor(cat)}`}
+              >
+                {cat}
+              </Badge>
+            ))}
           </div>
         </div>
       </div>

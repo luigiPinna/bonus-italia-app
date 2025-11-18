@@ -1,6 +1,6 @@
 export type BonusStatus = 'attivo' | 'scaduto' | 'in_arrivo';
 
-export type Categoria = 'natalità' | 'famiglia' | 'educazione' | 'casa' | 'lavoro';
+export type Categoria = 'natalità' | 'famiglia' | 'educazione' | 'casa' | 'lavoro' | 'utenze' | 'sostegno_alimentare' | 'salute' | 'anziani' | 'cultura';
 
 export type TipologiaErogazione = 'una_tantum' | 'mensile' | 'annuale';
 
@@ -18,7 +18,7 @@ export interface Requisito {
 export interface Bonus {
   id: string;
   nome: string;
-  categoria: Categoria;
+  categoria: Categoria[];
   status: BonusStatus;
   descrizione: string;
   importo: {
