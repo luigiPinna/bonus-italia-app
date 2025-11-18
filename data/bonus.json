@@ -5,7 +5,8 @@
       "id": "bonus-nuove-nascite-2025",
       "nome": "Bonus Nuove Nascite 2025",
       "categoria": [
-        "natalità"
+        "natalità",
+        "famiglia"
       ],
       "status": "attivo",
       "descrizione": "Contributo una tantum per le famiglie con nuovi nati o adozioni nel 2025",
@@ -132,7 +133,8 @@
       "id": "bonus-asilo-nido",
       "nome": "Bonus Asilo Nido",
       "categoria": [
-        "educazione"
+        "educazione",
+        "famiglia"
       ],
       "status": "attivo",
       "descrizione": "Contributo per le spese di asilo nido per bambini fino a 3 anni",
@@ -297,7 +299,8 @@
       "id": "carta-acquisti",
       "nome": "Carta Acquisti",
       "categoria": [
-        "sostegno_alimentare"
+        "sostegno_alimentare",
+        "famiglia"
       ],
       "status": "attivo",
       "descrizione": "Carta di pagamento elettronica ricaricata dallo Stato per acquisti di prima necessità",
@@ -349,7 +352,8 @@
       "id": "carta-dedicata-a-te",
       "nome": "Carta Dedicata a Te",
       "categoria": [
-        "sostegno_alimentare"
+        "sostegno_alimentare",
+        "famiglia"
       ],
       "status": "attivo",
       "descrizione": "Carta per l'acquisto di beni alimentari di prima necessità, carburante o abbonamenti trasporti",
@@ -452,7 +456,8 @@
       "id": "bonus-anziani-over-80",
       "nome": "Bonus Anziani Over 80",
       "categoria": [
-        "anziani"
+        "anziani",
+        "salute"
       ],
       "status": "sperimentale",
       "descrizione": "Contributo per anziani non autosufficienti per assistenza domiciliare",
@@ -505,7 +510,8 @@
       "id": "carta-cultura-giovani",
       "nome": "Carta Cultura Giovani",
       "categoria": [
-        "cultura"
+        "cultura",
+        "educazione"
       ],
       "status": "attivo",
       "descrizione": "Carta da 500€ per acquisti culturali destinata ai diciottenni con ISEE familiare basso",
@@ -553,7 +559,8 @@
       "id": "carta-merito",
       "nome": "Carta del Merito",
       "categoria": [
-        "cultura"
+        "cultura",
+        "educazione"
       ],
       "status": "attivo",
       "descrizione": "Carta da 500€ per acquisti culturali destinata a diplomati con 100/100",
