@@ -24,13 +24,13 @@
         "altri": [
           {
             "tipo": "Nascita/adozione",
-            "descrizione": "Nascita o adozione avvenuta nel 2025"
+            "descrizione": "Nascita o adozione avvenuta dal 1° gennaio 2025"
           }
         ]
       },
       "scadenza": {
         "data": "2025-12-31",
-        "note": "Domanda entro 90 giorni dalla nascita/adozione"
+        "note": "Domande dal 17 aprile 2025. Domanda entro 90 giorni dalla nascita/adozione"
       },
       "link_ufficiale": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
       "come_fare_domanda": {
@@ -44,7 +44,7 @@
         "note": "Accesso con SPID, CIE o credenziali INPS"
       },
       "compatibilita": ["assegno-unico-universale"],
-      "note_aggiuntive": "Cumulabile con Assegno Unico Universale"
+      "note_aggiuntive": "Cumulabile con Assegno Unico Universale. Escludere dall'ISEE i soldi dell'Assegno Unico"
     },
     {
       "id": "assegno-unico-universale",
@@ -57,30 +57,30 @@
         "fasce_isee": [
           {
             "min": null,
-            "max": 17000,
+            "max": 17227.33,
             "importo": 201
           },
           {
-            "min": 17000,
+            "min": 17227.33,
             "max": 25000,
             "importo": 175
           },
           {
             "min": 25000,
-            "max": 40000,
+            "max": 45939.56,
             "importo": 140
           },
           {
-            "min": 40000,
+            "min": 45939.56,
             "max": null,
             "importo": 57.5
           }
         ],
-        "note": "Importo mensile variabile in base all'ISEE e al numero di figli"
+        "note": "Importo mensile per figlio. Senza ISEE si riceve l'importo minimo di 57,50€"
       },
       "isee": {
-        "richiesto": true,
-        "note": "ISEE necessario per determinare l'importo"
+        "richiesto": false,
+        "note": "ISEE non obbligatorio ma necessario per ottenere l'importo pieno"
       },
       "requisiti": {
         "cittadinanza": "Italiana, UE o permesso di soggiorno",
@@ -94,13 +94,14 @@
         ]
       },
       "scadenza": {
-        "note": "Erogazione mensile continuativa"
+        "data": "2025-06-30",
+        "note": "ISEE entro il 30 giugno 2025 per avere arretrati. Erogazione mensile continuativa"
       },
       "link_ufficiale": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
       "come_fare_domanda": {
         "metodo": "Online tramite sito INPS",
         "documenti": [
-          "ISEE aggiornato",
+          "ISEE aggiornato (opzionale ma consigliato)",
           "Codice fiscale genitori e figli",
           "Documenti di identità"
         ],
@@ -108,7 +109,7 @@
         "note": "Accesso con SPID, CIE o credenziali INPS. Domanda unica per tutti i figli"
       },
       "compatibilita": ["bonus-nuove-nascite-2025", "bonus-asilo-nido"],
-      "note_aggiuntive": "Erogato mensilmente, cumulabile con altri bonus"
+      "note_aggiuntive": "Erogato mensilmente, cumulabile con altri bonus. Tempo fino al 30/06/2025 per ISEE e arretrati"
     },
     {
       "id": "bonus-asilo-nido",
@@ -127,7 +128,7 @@
           {
             "min": 25000,
             "max": 40000,
-            "importo": 3000
+            "importo": 2500
           },
           {
             "min": 40000,
@@ -135,11 +136,11 @@
             "importo": 1500
           }
         ],
-        "note": "Importo annuo variabile in base all'ISEE, fino a 3.600€"
+        "note": "Importo annuo massimo. Per nati dal 1° gennaio 2024: fino a 3.600€. Per nati prima: fino a 3.000€"
       },
       "isee": {
         "richiesto": true,
-        "note": "ISEE necessario per determinare l'importo"
+        "note": "ISEE minorenni necessario per determinare l'importo"
       },
       "requisiti": {
         "cittadinanza": "Italiana, UE o permesso di soggiorno",
@@ -152,28 +153,401 @@
           },
           {
             "tipo": "Frequenza",
-            "descrizione": "Frequenza di asilo nido pubblico o privato convenzionato"
+            "descrizione": "Frequenza di asilo nido pubblico o privato autorizzato"
           }
         ]
       },
       "scadenza": {
+        "data": "2025-12-31",
         "note": "Domanda entro il 31 dicembre dell'anno di riferimento"
       },
       "link_ufficiale": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
       "come_fare_domanda": {
         "metodo": "Online tramite sito INPS",
         "documenti": [
-          "ISEE aggiornato",
+          "ISEE minorenni aggiornato",
           "Certificato di frequenza asilo nido",
           "Ricevute di pagamento",
           "Codice fiscale genitori e figlio"
         ],
         "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
-        "note": "Accesso con SPID, CIE o credenziali INPS. Domanda annuale"
+        "note": "Accesso con SPID, CIE o credenziali INPS oppure tramite Patronato"
       },
       "compatibilita": ["assegno-unico-universale"],
-      "note_aggiuntive": "Rimborso delle spese sostenute per asilo nido"
+      "note_aggiuntive": "Rimborso delle spese sostenute per asilo nido. Erogazione in 11 rate mensili"
+    },
+    {
+      "id": "bonus-bollette-200",
+      "nome": "Bonus Bollette 200€",
+      "categoria": "utenze",
+      "status": "attivo",
+      "descrizione": "Contributo automatico di 200€ in bolletta per le famiglie con ISEE sotto i 25.000€",
+      "importo": {
+        "tipo": "fisso",
+        "valore": 200,
+        "note": "Contributo una tantum di 200€ applicato direttamente in bolletta"
+      },
+      "isee": {
+        "richiesto": true,
+        "max": 25000,
+        "note": "ISEE non superiore a 25.000€"
+      },
+      "requisiti": {
+        "cittadinanza": "Non specificato",
+        "residenza": "Italia",
+        "eta_figli": [],
+        "altri": [
+          {
+            "tipo": "Utenza",
+            "descrizione": "Titolarità di utenza energetica"
+          }
+        ]
+      },
+      "scadenza": {
+        "note": "Erogazione automatica previa presentazione ISEE"
+      },
+      "link_ufficiale": "",
+      "come_fare_domanda": {
+        "metodo": "Automatico",
+        "documenti": [
+          "DSU per ottenere ISEE aggiornato"
+        ],
+        "note": "Non serve domanda specifica. Sufficiente avere ISEE valido sotto 25.000€"
+      },
+      "compatibilita": ["bonus-sociale-utenze"],
+      "note_aggiuntive": "Automatico per chi ha ISEE sotto 25.000€. Cumulabile con bonus sociale"
+    },
+    {
+      "id": "bonus-sociale-utenze",
+      "nome": "Bonus Sociale Luce e Gas",
+      "categoria": "utenze",
+      "status": "attivo",
+      "descrizione": "Sconto automatico sulle bollette di luce e gas per famiglie in difficoltà economica",
+      "importo": {
+        "tipo": "variabile",
+        "note": "Sconto variabile in base ai consumi e alla composizione familiare. Può superare i 500€/anno combinato con bonus 200€"
+      },
+      "isee": {
+        "richiesto": true,
+        "max": 9530,
+        "note": "ISEE non superiore a 9.530€ (o 20.000€ per famiglie numerose con almeno 4 figli)"
+      },
+      "requisiti": {
+        "cittadinanza": "Non specificato",
+        "residenza": "Italia",
+        "eta_figli": [],
+        "altri": [
+          {
+            "tipo": "Utenza",
+            "descrizione": "Titolarità di utenza elettrica/gas"
+          },
+          {
+            "tipo": "Famiglia numerosa",
+            "descrizione": "Per famiglie con almeno 4 figli: ISEE fino a 20.000€"
+          }
+        ]
+      },
+      "scadenza": {
+        "note": "Rinnovo automatico annuale"
+      },
+      "link_ufficiale": "https://www.arera.it/",
+      "come_fare_domanda": {
+        "metodo": "Automatico",
+        "documenti": [
+          "DSU per ottenere ISEE aggiornato"
+        ],
+        "note": "Riconoscimento automatico per chi presenta ISEE nei limiti"
+      },
+      "compatibilita": ["bonus-bollette-200"],
+      "note_aggiuntive": "Erogazione più rapida per chi ha già bonus sociale attivo"
+    },
+    {
+      "id": "carta-acquisti",
+      "nome": "Carta Acquisti",
+      "categoria": "sostegno_alimentare",
+      "status": "attivo",
+      "descrizione": "Carta di pagamento elettronica ricaricata dallo Stato per acquisti di prima necessità",
+      "importo": {
+        "tipo": "fisso",
+        "valore": 80,
+        "note": "80€ ogni due mesi (40€ al mese) ricarica automatica"
+      },
+      "isee": {
+        "richiesto": true,
+        "max": 8117.17,
+        "note": "ISEE e reddito complessivo fino a 8.117,17€ (limiti diversi per over 70)"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": ["0-1", "1-3"],
+        "altri": [
+          {
+            "tipo": "Età richiedente",
+            "descrizione": "65-70 anni oppure over 70 (limiti reddituali diversi) oppure famiglie con bambini sotto 3 anni"
+          },
+          {
+            "tipo": "Patrimonio",
+            "descrizione": "Vincoli su immobili posseduti e utenze elettriche"
+          }
+        ]
+      },
+      "scadenza": {
+        "note": "Ricarica automatica bimestrale"
+      },
+      "link_ufficiale": "https://www.poste.it/",
+      "come_fare_domanda": {
+        "metodo": "Presso Poste Italiane",
+        "documenti": [
+          "ISEE aggiornato",
+          "Documento di identità",
+          "Codice fiscale"
+        ],
+        "note": "Domanda presso uffici postali"
+      },
+      "compatibilita": [],
+      "note_aggiuntive": "Utilizzabile in negozi, farmacie e parafarmacie. Sconti aggiuntivi in molti punti vendita"
+    },
+    {
+      "id": "carta-dedicata-a-te",
+      "nome": "Carta Dedicata a Te",
+      "categoria": "sostegno_alimentare",
+      "status": "attivo",
+      "descrizione": "Carta per l'acquisto di beni alimentari di prima necessità, carburante o abbonamenti trasporti",
+      "importo": {
+        "tipo": "fisso",
+        "valore": 500,
+        "note": "Contributo di 500€ per acquisti specifici"
+      },
+      "isee": {
+        "richiesto": true,
+        "max": 15000,
+        "note": "ISEE non superiore a 15.000€"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": [],
+        "altri": [
+          {
+            "tipo": "Composizione familiare",
+            "descrizione": "Priorità per famiglie con minori"
+          }
+        ]
+      },
+      "scadenza": {
+        "note": "In attesa decreto attuativo 2025"
+      },
+      "link_ufficiale": "",
+      "come_fare_domanda": {
+        "metodo": "Da definire con decreto attuativo",
+        "documenti": [
+          "ISEE aggiornato"
+        ],
+        "note": "Modalità di assegnazione da definire"
+      },
+      "compatibilita": [],
+      "note_aggiuntive": "Riconfermata per il 2025. Possibile aumento beneficiari grazie a nuove regole ISEE"
+    },
+    {
+      "id": "bonus-psicologo",
+      "nome": "Bonus Psicologo",
+      "categoria": "salute",
+      "status": "attivo",
+      "descrizione": "Contributo economico per sedute di psicoterapia",
+      "importo": {
+        "tipo": "variabile",
+        "fasce_isee": [
+          {
+            "min": null,
+            "max": 15000,
+            "importo": 1500
+          },
+          {
+            "min": 15000,
+            "max": 30000,
+            "importo": 1000
+          },
+          {
+            "min": 30000,
+            "max": null,
+            "importo": 500
+          }
+        ],
+        "note": "Fino a 50€ per seduta. Contributo erogato una sola volta per richiedente"
+      },
+      "isee": {
+        "richiesto": true,
+        "max": 50000,
+        "note": "ISEE fino a 50.000€ con importi decrescenti"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": [],
+        "altri": [
+          {
+            "tipo": "Necessità terapeutica",
+            "descrizione": "Necessità di supporto psicologico"
+          }
+        ]
+      },
+      "scadenza": {
+        "note": "Assegnazione per ordine cronologico fino a esaurimento fondi"
+      },
+      "link_ufficiale": "https://www.inps.it/",
+      "come_fare_domanda": {
+        "metodo": "Online tramite sito INPS",
+        "documenti": [
+          "ISEE aggiornato",
+          "Autocertificazione necessità"
+        ],
+        "note": "Domanda online con SPID, CIE o credenziali INPS"
+      },
+      "compatibilita": [],
+      "note_aggiuntive": "Assegnazione per valore ISEE e ordine cronologico. Una tantum per richiedente"
+    },
+    {
+      "id": "bonus-anziani-over-80",
+      "nome": "Bonus Anziani Over 80",
+      "categoria": "anziani",
+      "status": "sperimentale",
+      "descrizione": "Contributo per anziani non autosufficienti per assistenza domiciliare",
+      "importo": {
+        "tipo": "variabile",
+        "note": "Importo da definire in base alle necessità assistenziali"
+      },
+      "isee": {
+        "richiesto": true,
+        "max": 6000,
+        "note": "ISEE sociosanitario inferiore a 6.000€"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia", 
+        "eta_figli": [],
+        "altri": [
+          {
+            "tipo": "Età",
+            "descrizione": "Almeno 80 anni di età"
+          },
+          {
+            "tipo": "Condizione sanitaria",
+            "descrizione": "Titolarità indennità di accompagnamento o possesso requisiti per ottenerla"
+          },
+          {
+            "tipo": "Disabilità",
+            "descrizione": "Condizione di disabilità gravissima"
+          }
+        ]
+      },
+      "scadenza": {
+        "data": "2026-12-31",
+        "note": "Misura sperimentale dal 1° gennaio 2025 al 31 dicembre 2026"
+      },
+      "link_ufficiale": "",
+      "come_fare_domanda": {
+        "metodo": "Da definire",
+        "documenti": [
+          "ISEE sociosanitario",
+          "Certificazione sanitaria",
+          "Documentazione indennità accompagnamento"
+        ],
+        "note": "Modalità di domanda da definire con decreti attuativi"
+      },
+      "compatibilita": [],
+      "note_aggiuntive": "Misura sperimentale biennale per promuovere assistenza domiciliare"
+    },
+    {
+      "id": "carta-cultura-giovani",
+      "nome": "Carta Cultura Giovani",
+      "categoria": "cultura",
+      "status": "attivo",
+      "descrizione": "Carta da 500€ per acquisti culturali destinata ai diciottenni con ISEE familiare basso",
+      "importo": {
+        "tipo": "fisso",
+        "valore": 500,
+        "note": "Contributo di 500€ per acquisti culturali"
+      },
+      "isee": {
+        "richiesto": true,
+        "max": 35000,
+        "note": "ISEE familiare inferiore a 35.000€"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": [],
+        "altri": [
+          {
+            "tipo": "Età",
+            "descrizione": "18 anni compiuti nell'anno di riferimento"
+          }
+        ]
+      },
+      "scadenza": {
+        "data": "2025-12-31",
+        "note": "Utilizzo entro la scadenza indicata"
+      },
+      "link_ufficiale": "https://www.18app.italia.it/",
+      "come_fare_domanda": {
+        "metodo": "Online tramite piattaforma dedicata",
+        "documenti": [
+          "ISEE familiare aggiornato",
+          "SPID o CIE"
+        ],
+        "link": "https://www.18app.italia.it/",
+        "note": "Registrazione con SPID o CIE"
+      },
+      "compatibilita": ["carta-merito"],
+      "note_aggiuntive": "Sostituisce il precedente Bonus 18app. Vincoli di spesa per prodotti culturali"
+    },
+    {
+      "id": "carta-merito",
+      "nome": "Carta del Merito",
+      "categoria": "cultura",
+      "status": "attivo",
+      "descrizione": "Carta da 500€ per acquisti culturali destinata a diplomati con 100/100",
+      "importo": {
+        "tipo": "fisso",
+        "valore": 500,
+        "note": "Contributo di 500€ per acquisti culturali"
+      },
+      "isee": {
+        "richiesto": false,
+        "note": "Non richiede limiti ISEE"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": [],
+        "altri": [
+          {
+            "tipo": "Merito scolastico",
+            "descrizione": "Diploma di maturità con voto 100/100"
+          },
+          {
+            "tipo": "Età",
+            "descrizione": "Diploma conseguito nell'anno di riferimento"
+          }
+        ]
+      },
+      "scadenza": {
+        "data": "2025-12-31",
+        "note": "Utilizzo entro la scadenza indicata"
+      },
+      "link_ufficiale": "https://www.18app.italia.it/",
+      "come_fare_domanda": {
+        "metodo": "Online tramite piattaforma dedicata",
+        "documenti": [
+          "Diploma con voto 100/100",
+          "SPID o CIE"
+        ],
+        "link": "https://www.18app.italia.it/",
+        "note": "Registrazione con SPID o CIE"
+      },
+      "compatibilita": ["carta-cultura-giovani"],
+      "note_aggiuntive": "Basata solo sul merito scolastico, indipendentemente dall'ISEE"
     }
   ]
 }
-

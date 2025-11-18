@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 
 export function Navbar() {
   return (
-    <nav className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <nav className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 border-b-0">
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo e nome */}
@@ -20,11 +20,10 @@ export function Navbar() {
           {/* Icona utente */}
           <Button
             variant="ghost"
-            size="icon"
-            className="h-10 w-10 rounded-full"
+            className="!h-10 !w-10 !rounded-full !p-0 !min-w-0 flex items-center justify-center"
             aria-label="Account utente"
           >
-            <User className="h-5 w-5" />
+            <User className="h-6 w-6 flex-shrink-0" />
           </Button>
         </div>
       </div>

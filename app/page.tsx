@@ -57,43 +57,6 @@ export default function HomePage() {
       <Navbar />
 
       <div className="container mx-auto px-4 py-6">
-        {/* Stats cards */}
-        <div className="mb-6 grid grid-cols-1 gap-4 sm:grid-cols-3">
-          <div className="rounded-lg bg-card p-4 shadow-sm">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-                <Award className="h-5 w-5 text-primary" />
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Totale Bonus</p>
-                <p className="text-2xl font-bold text-foreground">{stats.total}</p>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card p-4 shadow-sm">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
-                <TrendingUp className="h-5 w-5 text-green-600 dark:text-green-400" />
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">Attivi</p>
-                <p className="text-2xl font-bold text-foreground">{stats.attivi}</p>
-              </div>
-            </div>
-          </div>
-          <div className="rounded-lg bg-card p-4 shadow-sm">
-            <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-amber-500/10">
-                <Clock className="h-5 w-5 text-amber-600 dark:text-amber-400" />
-              </div>
-              <div>
-                <p className="text-sm text-muted-foreground">In arrivo</p>
-                <p className="text-2xl font-bold text-foreground">{stats.inArrivo}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
         <div className="flex gap-6">
           <FilterSidebar
             filtri={filtri}
@@ -185,6 +148,43 @@ export default function HomePage() {
               </div>
             )}
           </main>
+        </div>
+
+        {/* Stats cards */}
+        <div className="mt-12 grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="rounded-lg bg-card p-4 shadow-sm">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
+                <Award className="h-5 w-5 text-primary" />
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">Totale Bonus</p>
+                <p className="text-2xl font-bold text-foreground">{stats.total}</p>
+              </div>
+            </div>
+          </div>
+          <div className="rounded-lg bg-card p-4 shadow-sm">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-green-500/10">
+                <TrendingUp className="h-5 w-5 text-green-600 dark:text-green-400" />
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">Attivi</p>
+                <p className="text-2xl font-bold text-foreground">{stats.attivi}</p>
+              </div>
+            </div>
+          </div>
+          <div className="rounded-lg bg-card p-4 shadow-sm">
+            <div className="flex items-center gap-3">
+              <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-amber-500/10">
+                <Clock className="h-5 w-5 text-amber-600 dark:text-amber-400" />
+              </div>
+              <div>
+                <p className="text-sm text-muted-foreground">In arrivo</p>
+                <p className="text-2xl font-bold text-foreground">{stats.inArrivo}</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
