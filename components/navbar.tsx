@@ -28,7 +28,7 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-bold text-foreground">Bonusly</span>
-              <span className="text-xs text-muted-foreground">I tuoi bonus, semplicemente</span>
+              <span className="text-xs text-muted-foreground">La guida smart ai bonus per te</span>
             </div>
           </div>
 

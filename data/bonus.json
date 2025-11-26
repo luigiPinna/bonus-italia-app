@@ -12,26 +12,26 @@
       "descrizione": "Contributo una tantum per le famiglie con nuovi nati o adozioni nel 2025",
       "importo": {
         "tipo": "fisso",
-        "valore": 1000,
-        "note": "Importo fisso di 1.000€ per ogni nuovo nato o adozione"
+        "note": "Importo fisso di 1.000€ per ogni nuovo nato o adozione",
+        "valore": 1000
       },
       "isee": {
         "richiesto": true,
-        "max": 40000,
-        "note": "ISEE non superiore a 40.000€"
+        "note": "ISEE non superiore a 40.000€",
+        "max": 40000
       },
       "requisiti": {
-        "cittadinanza": "Italiana o UE",
-        "residenza": "Italia",
-        "eta_figli": [
-          "gravidanza",
-          "0-1"
-        ],
         "altri": [
           {
             "tipo": "Nascita/adozione",
             "descrizione": "Nascita o adozione avvenuta dal 1° gennaio 2025"
           }
+        ],
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": [
+          "gravidanza",
+          "0-1"
         ]
       },
       "scadenza": {
@@ -41,13 +41,13 @@
       "link_ufficiale": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
       "come_fare_domanda": {
         "metodo": "Online tramite sito INPS",
+        "note": "Accesso con SPID, CIE o credenziali INPS",
         "documenti": [
           "Certificato di nascita o adozione",
           "ISEE aggiornato",
           "Codice fiscale genitori e figlio"
         ],
-        "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
-        "note": "Accesso con SPID, CIE o credenziali INPS"
+        "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398"
       },
       "compatibilita": [
         "assegno-unico-universale"
@@ -64,6 +64,7 @@
       "descrizione": "Contributo mensile per il sostegno economico delle famiglie con figli a carico",
       "importo": {
         "tipo": "variabile",
+        "note": "Importo mensile per figlio. Senza ISEE si riceve l'importo minimo di 57,50€",
         "fasce_isee": [
           {
             "min": null,
@@ -85,14 +86,19 @@
             "max": null,
             "importo": 57.5
           }
-        ],
-        "note": "Importo mensile per figlio. Senza ISEE si riceve l'importo minimo di 57,50€"
+        ]
       },
       "isee": {
         "richiesto": false,
         "note": "ISEE non obbligatorio ma necessario per ottenere l'importo pieno"
       },
       "requisiti": {
+        "altri": [
+          {
+            "tipo": "Età figli",
+            "descrizione": "Figli fino a 21 anni (o senza limiti se disabili)"
+          }
+        ],
         "cittadinanza": "Italiana, UE o permesso di soggiorno",
         "residenza": "Italia",
         "eta_figli": [
@@ -100,12 +106,6 @@
           "1-3",
           "3-18",
           "18-21"
-        ],
-        "altri": [
-          {
-            "tipo": "Età figli",
-            "descrizione": "Figli fino a 21 anni (o senza limiti se disabili)"
-          }
         ]
       },
       "scadenza": {
@@ -115,13 +115,13 @@
       "link_ufficiale": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
       "come_fare_domanda": {
         "metodo": "Online tramite sito INPS",
+        "note": "Accesso con SPID, CIE o credenziali INPS. Domanda unica per tutti i figli",
         "documenti": [
           "ISEE aggiornato (opzionale ma consigliato)",
           "Codice fiscale genitori e figli",
           "Documenti di identità"
         ],
-        "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
-        "note": "Accesso con SPID, CIE o credenziali INPS. Domanda unica per tutti i figli"
+        "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398"
       },
       "compatibilita": [
         "bonus-nuove-nascite-2025",
@@ -140,6 +140,7 @@
       "descrizione": "Contributo per le spese di asilo nido per bambini fino a 3 anni",
       "importo": {
         "tipo": "variabile",
+        "note": "Importo annuo massimo. Per nati dal 1° gennaio 2024: fino a 3.600€. Per nati prima: fino a 3.000€",
         "fasce_isee": [
           {
             "min": null,
@@ -156,20 +157,13 @@
             "max": null,
             "importo": 1500
           }
-        ],
-        "note": "Importo annuo massimo. Per nati dal 1° gennaio 2024: fino a 3.600€. Per nati prima: fino a 3.000€"
+        ]
       },
       "isee": {
         "richiesto": true,
         "note": "ISEE minorenni necessario per determinare l'importo"
       },
       "requisiti": {
-        "cittadinanza": "Italiana, UE o permesso di soggiorno",
-        "residenza": "Italia",
-        "eta_figli": [
-          "0-1",
-          "1-3"
-        ],
         "altri": [
           {
             "tipo": "Età bambino",
@@ -179,6 +173,12 @@
             "tipo": "Frequenza",
             "descrizione": "Frequenza di asilo nido pubblico o privato autorizzato"
           }
+        ],
+        "cittadinanza": "Italiana, UE o permesso di soggiorno",
+        "residenza": "Italia",
+        "eta_figli": [
+          "0-1",
+          "1-3"
         ]
       },
       "scadenza": {
@@ -188,14 +188,14 @@
       "link_ufficiale": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
       "come_fare_domanda": {
         "metodo": "Online tramite sito INPS",
+        "note": "Accesso con SPID, CIE o credenziali INPS oppure tramite Patronato",
         "documenti": [
           "ISEE minorenni aggiornato",
           "Certificato di frequenza asilo nido",
           "Ricevute di pagamento",
           "Codice fiscale genitori e figlio"
         ],
-        "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
-        "note": "Accesso con SPID, CIE o credenziali INPS oppure tramite Patronato"
+        "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398"
       },
       "compatibilita": [
         "assegno-unico-universale"
@@ -212,24 +212,24 @@
       "descrizione": "Contributo automatico di 200€ in bolletta per le famiglie con ISEE sotto i 25.000€",
       "importo": {
         "tipo": "fisso",
-        "valore": 200,
-        "note": "Contributo una tantum di 200€ applicato direttamente in bolletta"
+        "note": "Contributo una tantum di 200€ applicato direttamente in bolletta",
+        "valore": 200
       },
       "isee": {
         "richiesto": true,
-        "max": 25000,
-        "note": "ISEE non superiore a 25.000€"
+        "note": "ISEE non superiore a 25.000€",
+        "max": 25000
       },
       "requisiti": {
-        "cittadinanza": "Non specificato",
-        "residenza": "Italia",
-        "eta_figli": [],
         "altri": [
           {
             "tipo": "Utenza",
             "descrizione": "Titolarità di utenza energetica"
           }
-        ]
+        ],
+        "cittadinanza": "Non specificato",
+        "residenza": "Italia",
+        "eta_figli": []
       },
       "scadenza": {
         "note": "Erogazione automatica previa presentazione ISEE"
@@ -237,10 +237,10 @@
       "link_ufficiale": "",
       "come_fare_domanda": {
         "metodo": "Automatico",
+        "note": "Non serve domanda specifica. Sufficiente avere ISEE valido sotto 25.000€",
         "documenti": [
           "DSU per ottenere ISEE aggiornato"
-        ],
-        "note": "Non serve domanda specifica. Sufficiente avere ISEE valido sotto 25.000€"
+        ]
       },
       "compatibilita": [
         "bonus-sociale-utenze"
@@ -261,13 +261,10 @@
       },
       "isee": {
         "richiesto": true,
-        "max": 9530,
-        "note": "ISEE non superiore a 9.530€ (o 20.000€ per famiglie numerose con almeno 4 figli)"
+        "note": "ISEE non superiore a 9.530€ (o 20.000€ per famiglie numerose con almeno 4 figli)",
+        "max": 9530
       },
       "requisiti": {
-        "cittadinanza": "Non specificato",
-        "residenza": "Italia",
-        "eta_figli": [],
         "altri": [
           {
             "tipo": "Utenza",
@@ -277,7 +274,10 @@
             "tipo": "Famiglia numerosa",
             "descrizione": "Per famiglie con almeno 4 figli: ISEE fino a 20.000€"
           }
-        ]
+        ],
+        "cittadinanza": "Non specificato",
+        "residenza": "Italia",
+        "eta_figli": []
       },
       "scadenza": {
         "note": "Rinnovo automatico annuale"
@@ -285,10 +285,10 @@
       "link_ufficiale": "https://www.arera.it/",
       "come_fare_domanda": {
         "metodo": "Automatico",
+        "note": "Riconoscimento automatico per chi presenta ISEE nei limiti",
         "documenti": [
           "DSU per ottenere ISEE aggiornato"
-        ],
-        "note": "Riconoscimento automatico per chi presenta ISEE nei limiti"
+        ]
       },
       "compatibilita": [
         "bonus-bollette-200"
@@ -306,21 +306,15 @@
       "descrizione": "Carta di pagamento elettronica ricaricata dallo Stato per acquisti di prima necessità",
       "importo": {
         "tipo": "fisso",
-        "valore": 80,
-        "note": "80€ ogni due mesi (40€ al mese) ricarica automatica"
+        "note": "80€ ogni due mesi (40€ al mese) ricarica automatica",
+        "valore": 80
       },
       "isee": {
         "richiesto": true,
-        "max": 8117.17,
-        "note": "ISEE e reddito complessivo fino a 8.117,17€ (limiti diversi per over 70)"
+        "note": "ISEE e reddito complessivo fino a 8.117,17€ (limiti diversi per over 70)",
+        "max": 8117.17
       },
       "requisiti": {
-        "cittadinanza": "Italiana o UE",
-        "residenza": "Italia",
-        "eta_figli": [
-          "0-1",
-          "1-3"
-        ],
         "altri": [
           {
             "tipo": "Età richiedente",
@@ -330,6 +324,12 @@
             "tipo": "Patrimonio",
             "descrizione": "Vincoli su immobili posseduti e utenze elettriche"
           }
+        ],
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": [
+          "0-1",
+          "1-3"
         ]
       },
       "scadenza": {
@@ -338,12 +338,12 @@
       "link_ufficiale": "https://www.poste.it/",
       "come_fare_domanda": {
         "metodo": "Presso Poste Italiane",
+        "note": "Domanda presso uffici postali",
         "documenti": [
           "ISEE aggiornato",
           "Documento di identità",
           "Codice fiscale"
-        ],
-        "note": "Domanda presso uffici postali"
+        ]
       },
       "compatibilita": [],
       "note_aggiuntive": "Utilizzabile in negozi, farmacie e parafarmacie. Sconti aggiuntivi in molti punti vendita"
@@ -359,24 +359,24 @@
       "descrizione": "Carta per l'acquisto di beni alimentari di prima necessità, carburante o abbonamenti trasporti",
       "importo": {
         "tipo": "fisso",
-        "valore": 500,
-        "note": "Contributo di 500€ per acquisti specifici"
+        "note": "Contributo di 500€ per acquisti specifici",
+        "valore": 500
       },
       "isee": {
         "richiesto": true,
-        "max": 15000,
-        "note": "ISEE non superiore a 15.000€"
+        "note": "ISEE non superiore a 15.000€",
+        "max": 15000
       },
       "requisiti": {
-        "cittadinanza": "Italiana o UE",
-        "residenza": "Italia",
-        "eta_figli": [],
         "altri": [
           {
             "tipo": "Composizione familiare",
             "descrizione": "Priorità per famiglie con minori"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": []
       },
       "scadenza": {
         "note": "In attesa decreto attuativo 2025"
@@ -384,10 +384,10 @@
       "link_ufficiale": "",
       "come_fare_domanda": {
         "metodo": "Da definire con decreto attuativo",
+        "note": "Modalità di assegnazione da definire",
         "documenti": [
           "ISEE aggiornato"
-        ],
-        "note": "Modalità di assegnazione da definire"
+        ]
       },
       "compatibilita": [],
       "note_aggiuntive": "Riconfermata per il 2025. Possibile aumento beneficiari grazie a nuove regole ISEE"
@@ -402,6 +402,7 @@
       "descrizione": "Contributo economico per sedute di psicoterapia",
       "importo": {
         "tipo": "variabile",
+        "note": "Fino a 50€ per seduta. Contributo erogato una sola volta per richiedente",
         "fasce_isee": [
           {
             "min": null,
@@ -418,24 +419,23 @@
             "max": null,
             "importo": 500
           }
-        ],
-        "note": "Fino a 50€ per seduta. Contributo erogato una sola volta per richiedente"
+        ]
       },
       "isee": {
         "richiesto": true,
-        "max": 50000,
-        "note": "ISEE fino a 50.000€ con importi decrescenti"
+        "note": "ISEE fino a 50.000€ con importi decrescenti",
+        "max": 50000
       },
       "requisiti": {
-        "cittadinanza": "Italiana o UE",
-        "residenza": "Italia",
-        "eta_figli": [],
         "altri": [
           {
             "tipo": "Necessità terapeutica",
             "descrizione": "Necessità di supporto psicologico"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": []
       },
       "scadenza": {
         "note": "Assegnazione per ordine cronologico fino a esaurimento fondi"
@@ -443,11 +443,11 @@
       "link_ufficiale": "https://www.inps.it/",
       "come_fare_domanda": {
         "metodo": "Online tramite sito INPS",
+        "note": "Domanda online con SPID, CIE o credenziali INPS",
         "documenti": [
           "ISEE aggiornato",
           "Autocertificazione necessità"
-        ],
-        "note": "Domanda online con SPID, CIE o credenziali INPS"
+        ]
       },
       "compatibilita": [],
       "note_aggiuntive": "Assegnazione per valore ISEE e ordine cronologico. Una tantum per richiedente"
@@ -467,13 +467,10 @@
       },
       "isee": {
         "richiesto": true,
-        "max": 6000,
-        "note": "ISEE sociosanitario inferiore a 6.000€"
+        "note": "ISEE sociosanitario inferiore a 6.000€",
+        "max": 6000
       },
       "requisiti": {
-        "cittadinanza": "Italiana o UE",
-        "residenza": "Italia",
-        "eta_figli": [],
         "altri": [
           {
             "tipo": "Età",
@@ -487,7 +484,10 @@
             "tipo": "Disabilità",
             "descrizione": "Condizione di disabilità gravissima"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": []
       },
       "scadenza": {
         "data": "2026-12-31",
@@ -496,12 +496,12 @@
       "link_ufficiale": "",
       "come_fare_domanda": {
         "metodo": "Da definire",
+        "note": "Modalità di domanda da definire con decreti attuativi",
         "documenti": [
           "ISEE sociosanitario",
           "Certificazione sanitaria",
           "Documentazione indennità accompagnamento"
-        ],
-        "note": "Modalità di domanda da definire con decreti attuativi"
+        ]
       },
       "compatibilita": [],
       "note_aggiuntive": "Misura sperimentale biennale per promuovere assistenza domiciliare"
@@ -517,24 +517,24 @@
       "descrizione": "Carta da 500€ per acquisti culturali destinata ai diciottenni con ISEE familiare basso",
       "importo": {
         "tipo": "fisso",
-        "valore": 500,
-        "note": "Contributo di 500€ per acquisti culturali"
+        "note": "Contributo di 500€ per acquisti culturali",
+        "valore": 500
       },
       "isee": {
         "richiesto": true,
-        "max": 35000,
-        "note": "ISEE familiare inferiore a 35.000€"
+        "note": "ISEE familiare inferiore a 35.000€",
+        "max": 35000
       },
       "requisiti": {
-        "cittadinanza": "Italiana o UE",
-        "residenza": "Italia",
-        "eta_figli": [],
         "altri": [
           {
             "tipo": "Età",
             "descrizione": "18 anni compiuti nell'anno di riferimento"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": []
       },
       "scadenza": {
         "data": "2025-12-31",
@@ -543,12 +543,12 @@
       "link_ufficiale": "https://www.18app.italia.it/",
       "come_fare_domanda": {
         "metodo": "Online tramite piattaforma dedicata",
+        "note": "Registrazione con SPID o CIE",
         "documenti": [
           "ISEE familiare aggiornato",
           "SPID o CIE"
         ],
-        "link": "https://www.18app.italia.it/",
-        "note": "Registrazione con SPID o CIE"
+        "link": "https://www.18app.italia.it/"
       },
       "compatibilita": [
         "carta-merito"
@@ -566,17 +566,14 @@
       "descrizione": "Carta da 500€ per acquisti culturali destinata a diplomati con 100/100",
       "importo": {
         "tipo": "fisso",
-        "valore": 500,
-        "note": "Contributo di 500€ per acquisti culturali"
+        "note": "Contributo di 500€ per acquisti culturali",
+        "valore": 500
       },
       "isee": {
         "richiesto": false,
         "note": "Non richiede limiti ISEE"
       },
       "requisiti": {
-        "cittadinanza": "Italiana o UE",
-        "residenza": "Italia",
-        "eta_figli": [],
         "altri": [
           {
             "tipo": "Merito scolastico",
@@ -586,7 +583,10 @@
             "tipo": "Età",
             "descrizione": "Diploma conseguito nell'anno di riferimento"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
+        "eta_figli": []
       },
       "scadenza": {
         "data": "2025-12-31",
@@ -595,12 +595,12 @@
       "link_ufficiale": "https://www.18app.italia.it/",
       "come_fare_domanda": {
         "metodo": "Online tramite piattaforma dedicata",
+        "note": "Registrazione con SPID o CIE",
         "documenti": [
           "Diploma con voto 100/100",
           "SPID o CIE"
         ],
-        "link": "https://www.18app.italia.it/",
-        "note": "Registrazione con SPID o CIE"
+        "link": "https://www.18app.italia.it/"
       },
       "compatibilita": [
         "carta-cultura-giovani"
@@ -618,37 +618,7 @@
       "status": "attivo",
       "descrizione": "Detrazione fiscale per interventi di ristrutturazione, manutenzione straordinaria e restauro di immobili residenziali",
       "importo": {
-        "tipo": "percentuale_variabile",
-        "fasce_applicazione": [
-          {
-            "tipo_immobile": "abitazione_principale",
-            "anno": "2025",
-            "percentuale": 50,
-            "max_spesa": 96000,
-            "detrazione_massima": 48000
-          },
-          {
-            "tipo_immobile": "altre_abitazioni",
-            "anno": "2025",
-            "percentuale": 36,
-            "max_spesa": 96000,
-            "detrazione_massima": 34560
-          },
-          {
-            "tipo_immobile": "abitazione_principale",
-            "anni": "2026-2027",
-            "percentuale": 36,
-            "max_spesa": 96000,
-            "detrazione_massima": 34560
-          },
-          {
-            "tipo_immobile": "altre_abitazioni",
-            "anni": "2026-2027",
-            "percentuale": 30,
-            "max_spesa": 96000,
-            "detrazione_massima": 28800
-          }
-        ],
+        "tipo": "variabile",
         "note": "Detrazione ripartita in 10 quote annuali di pari importo. Dal 2025 non più cessione del credito o sconto in fattura"
       },
       "isee": {
@@ -656,12 +626,6 @@
         "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
       },
       "requisiti": {
-        "cittadinanza": "Italiana, UE o permesso soggiorno",
-        "residenza": "Immobile in Italia",
-        "tipologia_immobile": [
-          "residenziale",
-          "qualsiasi_categoria_catastale"
-        ],
         "altri": [
           {
             "tipo": "Titolarità immobile",
@@ -675,7 +639,9 @@
             "tipo": "Limiti reddituali",
             "descrizione": "Per redditi > 75.000€ massimali ridotti (14.000€ se < 100.000€, 8.000€ se > 100.000€)"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Immobile in Italia"
       },
       "scadenza": {
         "data": "2027-12-31",
@@ -684,13 +650,13 @@
       "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazioni-per-le-ristrutturazioni-edilizie",
       "come_fare_domanda": {
         "metodo": "Detrazione in dichiarazione dei redditi",
+        "note": "Pagamenti con bonifico parlante obbligatorio. Comunicazione ENEA per alcuni interventi energetici",
         "documenti": [
           "Fatture e ricevute di pagamento",
           "Bonifici parlanti con causale specifica",
           "Titoli edilizi (CILA, SCIA, Permesso di costruire)",
           "Asseverazioni tecniche quando richieste"
-        ],
-        "note": "Pagamenti con bonifico parlante obbligatorio. Comunicazione ENEA per alcuni interventi energetici"
+        ]
       },
       "compatibilita": [
         "bonus-mobili",
@@ -709,43 +675,7 @@
       "status": "attivo",
       "descrizione": "Detrazione fiscale per interventi di riqualificazione energetica e miglioramento dell'efficienza energetica degli edifici",
       "importo": {
-        "tipo": "percentuale_variabile",
-        "fasce_applicazione": [
-          {
-            "tipo_immobile": "abitazione_principale",
-            "anno": "2025",
-            "percentuale": 50,
-            "interventi_massimali": {
-              "riqualificazione_globale": 100000,
-              "serramenti_pannelli_schermature": 60000,
-              "isolamento_cappotto": 60000,
-              "climatizzazione": 30000,
-              "building_automation": 15000
-            }
-          },
-          {
-            "tipo_immobile": "altre_abitazioni",
-            "anno": "2025",
-            "percentuale": 36,
-            "interventi_massimali": {
-              "riqualificazione_globale": 100000,
-              "serramenti_pannelli_schermature": 60000,
-              "isolamento_cappotto": 60000,
-              "climatizzazione": 30000,
-              "building_automation": 15000
-            }
-          },
-          {
-            "tipo_immobile": "abitazione_principale",
-            "anni": "2026-2027",
-            "percentuale": 36
-          },
-          {
-            "tipo_immobile": "altre_abitazioni",
-            "anni": "2026-2027",
-            "percentuale": 30
-          }
-        ],
+        "tipo": "variabile",
         "note": "Detrazione ripartita in 10 quote annuali. Massimali specifici per tipo di intervento"
       },
       "isee": {
@@ -753,12 +683,6 @@
         "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
       },
       "requisiti": {
-        "cittadinanza": "Italiana, UE o permesso soggiorno",
-        "residenza": "Immobile in Italia",
-        "tipologia_immobile": [
-          "residenziale",
-          "strumentale_per_imprese"
-        ],
         "altri": [
           {
             "tipo": "Miglioramento energetico",
@@ -776,7 +700,9 @@
             "tipo": "Esclusioni",
             "descrizione": "Dal 2025 escluse caldaie a condensazione alimentate a combustibili fossili"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Immobile in Italia"
       },
       "scadenza": {
         "data": "2027-12-31",
@@ -785,14 +711,14 @@
       "link_ufficiale": "https://www.enea.it/it/ecobonus",
       "come_fare_domanda": {
         "metodo": "Detrazione in dichiarazione dei redditi",
+        "note": "Necessaria asseverazione tecnica per la maggior parte degli interventi",
         "documenti": [
           "Asseverazione tecnica di conformità",
           "Attestato Prestazione Energetica (APE)",
           "Fatture e bonifici parlanti",
           "Comunicazione telematica ENEA entro 90 giorni"
         ],
-        "link": "https://www.enea.it/it/ecobonus/le-guide/fiches",
-        "note": "Necessaria asseverazione tecnica per la maggior parte degli interventi"
+        "link": "https://www.enea.it/it/ecobonus/le-guide/fiches"
       },
       "compatibilita": [
         "bonus-ristrutturazione-per-stessi-lavori",
@@ -811,33 +737,7 @@
       "status": "attivo",
       "descrizione": "Detrazione fiscale per interventi di adeguamento e miglioramento sismico degli edifici",
       "importo": {
-        "tipo": "percentuale_variabile",
-        "fasce_applicazione": [
-          {
-            "tipo_immobile": "abitazione_principale",
-            "anno": "2025",
-            "percentuale": 50,
-            "max_spesa": 96000,
-            "detrazione_massima": 48000
-          },
-          {
-            "tipo_immobile": "altre_abitazioni_e_produttivi",
-            "anno": "2025",
-            "percentuale": 36,
-            "max_spesa": 96000,
-            "detrazione_massima": 34560
-          },
-          {
-            "tipo_immobile": "abitazione_principale",
-            "anni": "2026-2027",
-            "percentuale": 36
-          },
-          {
-            "tipo_immobile": "altre_abitazioni_e_produttivi",
-            "anni": "2026-2027",
-            "percentuale": 30
-          }
-        ],
+        "tipo": "variabile",
         "note": "Detrazione ripartita in 10 quote annuali. Non più necessario il salto di classe sismica"
       },
       "isee": {
@@ -845,13 +745,6 @@
         "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
       },
       "requisiti": {
-        "cittadinanza": "Italiana, UE o permesso soggiorno",
-        "residenza": "Immobili in zone sismiche 1, 2 e 3",
-        "tipologia_immobile": [
-          "residenziale",
-          "produttivo",
-          "commerciale"
-        ],
         "altri": [
           {
             "tipo": "Zonazione sismica",
@@ -869,7 +762,9 @@
             "tipo": "Titoli edilizi",
             "descrizione": "SCIA, Permesso costruire, eventuali autorizzazioni paesaggistiche"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Immobili in zone sismiche 1, 2 e 3"
       },
       "scadenza": {
         "data": "2027-12-31",
@@ -878,14 +773,14 @@
       "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/sisma-bonus",
       "come_fare_domanda": {
         "metodo": "Detrazione in dichiarazione dei redditi",
+        "note": "Non più necessaria certificazione miglioramento classe sismica",
         "documenti": [
           "Asseverazione tecnica conformità NTC 2018",
           "Progetto strutturale",
           "Titoli edilizi",
           "Fatture e bonifici parlanti",
           "Attestazione fine lavori"
-        ],
-        "note": "Non più necessaria certificazione miglioramento classe sismica"
+        ]
       },
       "compatibilita": [
         "ecobonus-combinato-parti-comuni",
@@ -904,31 +799,7 @@
       "status": "attivo",
       "descrizione": "Detrazione fiscale per l'acquisto di immobili in zone sismiche demoliti e ricostruiti con miglioramenti antisismici",
       "importo": {
-        "tipo": "percentuale_variabile",
-        "fasce_applicazione": [
-          {
-            "tipo_acquisto": "prima_casa",
-            "anno": "2025",
-            "percentuale": 50,
-            "max_spesa": 96000
-          },
-          {
-            "tipo_acquisto": "altre_abitazioni",
-            "anno": "2025",
-            "percentuale": 36,
-            "max_spesa": 96000
-          },
-          {
-            "tipo_acquisto": "prima_casa",
-            "anni": "2026-2027",
-            "percentuale": 36
-          },
-          {
-            "tipo_acquisto": "altre_abitazioni",
-            "anni": "2026-2027",
-            "percentuale": 30
-          }
-        ],
+        "tipo": "variabile",
         "note": "Detrazione calcolata sul prezzo di acquisto dell'immobile"
       },
       "isee": {
@@ -936,11 +807,6 @@
         "note": "Non richiesta ISEE"
       },
       "requisiti": {
-        "cittadinanza": "Italiana, UE o permesso soggiorno",
-        "residenza": "Non specificato",
-        "tipologia_immobile": [
-          "residenziale_ristrutturato"
-        ],
         "altri": [
           {
             "tipo": "Zonazione sismica",
@@ -958,7 +824,9 @@
             "tipo": "Miglioramento sismico",
             "descrizione": "Deve risultare una riduzione del rischio sismico"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Non specificato"
       },
       "scadenza": {
         "data": "2027-12-31",
@@ -967,13 +835,13 @@
       "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/sisma-bonus",
       "come_fare_domanda": {
         "metodo": "Detrazione in dichiarazione dei redditi",
+        "note": "La detrazione si applica al prezzo di acquisto dichiarato nell'atto",
         "documenti": [
           "Atto di compravendita",
           "Attestazione conformità interventi antisismici",
           "Asseverazione miglioramento classe sismica",
           "Documentazione tecnica lavori"
-        ],
-        "note": "La detrazione si applica al prezzo di acquisto dichiarato nell'atto"
+        ]
       },
       "compatibilita": [],
       "note_aggiuntive": "Applicabile solo a immobili ristrutturati da imprese con vendita entro 30 mesi. Include pertinenze"
@@ -990,12 +858,6 @@
       "descrizione": "Detrazione fiscale per interventi di eliminazione delle barriere architettoniche",
       "importo": {
         "tipo": "fisso",
-        "percentuale": 75,
-        "massimali_spesa": {
-          "unifamiliari_indipendenti": 50000,
-          "plurifamiliari_2_8_unita": 40000,
-          "condominiali_oltre_8_unita": 30000
-        },
         "note": "75% delle spese sostenute, ripartito in 10 quote annuali dal 2024 (5 quote per 2022-2023)"
       },
       "isee": {
@@ -1003,13 +865,6 @@
         "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
       },
       "requisiti": {
-        "cittadinanza": "Italiana, UE o permesso soggiorno",
-        "residenza": "Immobile in Italia",
-        "tipologia_immobile": [
-          "residenziale",
-          "commerciale",
-          "produttivo"
-        ],
         "altri": [
           {
             "tipo": "Finalità interventi",
@@ -1027,7 +882,9 @@
             "tipo": "Asseverazione",
             "descrizione": "Necessaria asseverazione tecnica di conformità al DM 236/1989"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Immobile in Italia"
       },
       "scadenza": {
         "data": "2025-12-31",
@@ -1036,13 +893,13 @@
       "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazione-per-eliminazione-delle-barriere-architettoniche",
       "come_fare_domanda": {
         "metodo": "Detrazione in dichiarazione dei redditi",
+        "note": "Dal 2024 non più cessione del credito (tranne eccezioni per redditi sotto 15.000€ con disabili)",
         "documenti": [
           "Asseverazione tecnica DM 236/1989",
           "Fatture e bonifici parlanti",
           "Titoli edilizi se necessari",
           "Documentazione tecnica interventi"
-        ],
-        "note": "Dal 2024 non più cessione del credito (tranne eccezioni per redditi sotto 15.000€ con disabili)"
+        ]
       },
       "compatibilita": [
         "superbonus-come-trainato",
@@ -1062,9 +919,6 @@
       "descrizione": "Detrazione fiscale per l'acquisto di mobili e grandi elettrodomestici destinati ad immobili in ristrutturazione",
       "importo": {
         "tipo": "fisso",
-        "percentuale": 50,
-        "max_spesa": 5000,
-        "detrazione_massima": 2500,
         "note": "50% delle spese sostenute fino a 5.000€, ripartito in 10 quote annuali"
       },
       "isee": {
@@ -1072,11 +926,6 @@
         "note": "Non richiesta ISEE"
       },
       "requisiti": {
-        "cittadinanza": "Non specificato",
-        "residenza": "Non specificato",
-        "tipologia_immobile": [
-          "residenziale_in_ristrutturazione"
-        ],
         "altri": [
           {
             "tipo": "Collegamento ristrutturazione",
@@ -1098,7 +947,9 @@
             "tipo": "Comunicazione ENEA",
             "descrizione": "Alcuni elettrodomestici richiedono comunicazione ENEA (non obbligatoria per detrazione)"
           }
-        ]
+        ],
+        "cittadinanza": "Non specificato",
+        "residenza": "Non specificato"
       },
       "scadenza": {
         "data": "2025-12-31",
@@ -1107,13 +958,13 @@
       "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/bonus-mobili-ed-elettrodomestici",
       "come_fare_domanda": {
         "metodo": "Detrazione in dichiarazione dei redditi",
+        "note": "Include spese trasporto e montaggio se pagate con modalità tracciabili",
         "documenti": [
           "Fatture acquisto con specifica natura/qualità/quantità beni",
           "Ricevute pagamenti tracciabili",
           "Documentazione ristrutturazione collegata",
           "Etichette energetiche elettrodomestici"
-        ],
-        "note": "Include spese trasporto e montaggio se pagate con modalità tracciabili"
+        ]
       },
       "compatibilita": [
         "bonus-ristrutturazione",
@@ -1134,7 +985,6 @@
       "descrizione": "Detrazione fiscale per interventi già avviati di efficientamento energetico e antisismici",
       "importo": {
         "tipo": "fisso",
-        "percentuale": 65,
         "note": "Solo per interventi già autorizzati entro 15 ottobre 2024"
       },
       "isee": {
@@ -1142,12 +992,6 @@
         "note": "Non richiesta ISEE"
       },
       "requisiti": {
-        "cittadinanza": "Italiana, UE o permesso soggiorno",
-        "residenza": "Immobile in Italia",
-        "tipologia_immobile": [
-          "condominiale",
-          "zone_terremotate"
-        ],
         "altri": [
           {
             "tipo": "Interventi già avviati",
@@ -1161,7 +1005,9 @@
             "tipo": "Tipologia lavori",
             "descrizione": "Interventi trainanti: cappotto, caldaie, fotovoltaico. Interventi trainati collegati"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Immobile in Italia"
       },
       "scadenza": {
         "data": "2025-12-31",
@@ -1170,13 +1016,13 @@
       "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/superbonus-110",
       "come_fare_domanda": {
         "metodo": "Detrazione in dichiarazione dei redditi",
+        "note": "Solo per interventi già formalmente avviati",
         "documenti": [
           "CILA presentata entro 15/10/2024",
           "Delibera condominiale approvazione lavori",
           "Asseverazioni tecniche",
           "APE ante e post intervento"
-        ],
-        "note": "Solo per interventi già formalmente avviati"
+        ]
       },
       "compatibilita": [],
       "note_aggiuntive": "Misura in esaurimento. Attivo solo per zone terremotate al 110% e condomini con pratiche già avviate al 65%"
@@ -1192,73 +1038,13 @@
       "status": "attivo",
       "descrizione": "Contributi regionali per l'acquisto di libri di testo e materiali didattici per studenti delle scuole secondarie",
       "importo": {
-        "tipo": "variabile_per_regione",
-        "esempi_regionali": [
-          {
-            "regione": "Veneto",
-            "importo_max": 200,
-            "fasce_isee": [
-              {
-                "min": 0,
-                "max": 10632.94,
-                "importo": 200
-              },
-              {
-                "min": 10632.95,
-                "max": 15748.78,
-                "importo": 150
-              }
-            ]
-          },
-          {
-            "regione": "Lombardia",
-            "importo_max": 200,
-            "note": "Variabile secondo bando annuale"
-          },
-          {
-            "regione": "Emilia_Romagna",
-            "fasce_isee": [
-              {
-                "min": 0,
-                "max": 10632.94,
-                "descrizione": "Fascia 1"
-              },
-              {
-                "min": 10632.95,
-                "max": 15748.78,
-                "descrizione": "Fascia 2"
-              }
-            ]
-          },
-          {
-            "regione": "Lazio",
-            "importo_max": 200,
-            "limite_isee": 15493.71,
-            "esempio_roma": {
-              "prima_media": 200,
-              "altre_classi": 170
-            }
-          }
-        ],
+        "tipo": "variabile",
         "note": "Importi e modalità variano per regione e comune. Range tipico 80-230€"
       },
       "isee": {
-        "richiesto": true,
-        "limiti_tipici": {
-          "min": 10632.94,
-          "max": 20000,
-          "note": "Varia per regione: da 10.633€ a 20.000€"
-        }
+        "richiesto": true
       },
       "requisiti": {
-        "cittadinanza": "Italiana o UE",
-        "residenza": "Nella regione di competenza",
-        "tipologia_scuola": [
-          "scuole_secondarie_primo_grado",
-          "scuole_secondarie_secondo_grado",
-          "istituti_paritari",
-          "percorsi_IeFP"
-        ],
         "altri": [
           {
             "tipo": "Età studente",
@@ -1272,50 +1058,24 @@
             "tipo": "Beni acquistabili",
             "descrizione": "Libri di testo, contenuti digitali. Esclusi dizionari e dispositivi tech (varia per regione)"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Nella regione di competenza"
       },
       "scadenza": {
-        "periodo": "Settembre-Ottobre 2025",
-        "scadenze_principali": [
-          {
-            "regione": "Veneto",
-            "data": "2025-10-17"
-          },
-          {
-            "regione": "Emilia_Romagna",
-            "data": "2025-10-24"
-          },
-          {
-            "regione": "Lazio_Roma",
-            "data": "2025-09-12"
-          },
-          {
-            "regione": "Campania",
-            "data": "2025-09-07"
-          },
-          {
-            "regione": "Toscana",
-            "data": "2025-10-03"
-          }
-        ],
         "note": "Scadenze differenti per ogni regione. Controllare bandi locali"
       },
       "link_ufficiale": "Variabile per regione",
       "come_fare_domanda": {
         "metodo": "Online tramite portali regionali/comunali",
+        "note": "Modalità specifica per ogni regione. Alcuni richiedono domanda al Comune",
         "documenti": [
           "ISEE aggiornato",
           "Certificato frequenza scolastica",
           "Documento identità richiedente",
           "Codice fiscale studente",
           "Fatture acquisto libri (per rimborso)"
-        ],
-        "modalita_accesso": [
-          "SPID",
-          "CIE",
-          "CNS"
-        ],
-        "note": "Modalità specifica per ogni regione. Alcuni richiedono domanda al Comune"
+        ]
       },
       "compatibilita": [
         "borse-studio-regionali",
@@ -1334,46 +1094,7 @@
       "status": "attivo",
       "descrizione": "Contributi per la partecipazione a corsi di formazione professionale e aggiornamento competenze",
       "importo": {
-        "tipo": "variabile_per_tipologia",
-        "esempi_regionali": [
-          {
-            "regione": "Toscana",
-            "categoria": "Liberi professionisti",
-            "importo_max": 3000,
-            "copertura": "80% costo corso"
-          },
-          {
-            "regione": "Lombardia",
-            "categoria": "Lavoratori dipendenti",
-            "importo_max": 2000,
-            "fasce_eqf": [
-              {
-                "livello": "6-8",
-                "importo": 2000
-              },
-              {
-                "livello": "4-5",
-                "importo": 1500
-              },
-              {
-                "livello": "3",
-                "importo": 800
-              }
-            ]
-          },
-          {
-            "regione": "Valle_Aosta",
-            "categoria": "Formazione professionale",
-            "importo_max": 5000,
-            "copertura": "80% costo corso"
-          },
-          {
-            "regione": "Umbria",
-            "categoria": "Disoccupati",
-            "importo_max": 4000,
-            "note": "Programma Umbriattiva Lavoro"
-          }
-        ],
+        "tipo": "variabile",
         "note": "Copertura generalmente 80% del costo. Importi da 800€ a 5.000€"
       },
       "isee": {
@@ -1381,15 +1102,6 @@
         "note": "Generalmente non richiesto. Criteri basati su status lavorativo e residenza"
       },
       "requisiti": {
-        "cittadinanza": "Italiana o UE",
-        "residenza": "Nella regione di competenza",
-        "target_destinatari": [
-          "liberi_professionisti",
-          "lavoratori_dipendenti",
-          "disoccupati",
-          "imprenditori",
-          "soci_cooperative"
-        ],
         "altri": [
           {
             "tipo": "Età",
@@ -1407,43 +1119,24 @@
             "tipo": "Tipologia formazione",
             "descrizione": "Corsi aggiornamento, master, specializzazioni, certificazioni professionali"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Nella regione di competenza"
       },
       "scadenza": {
-        "note": "Bandi periodici con scadenze variabili",
-        "esempi_scadenze": [
-          {
-            "regione": "Toscana",
-            "data": "2025-05-16",
-            "note": "Bando annuale"
-          },
-          {
-            "regione": "Valle_Aosta",
-            "data": "2025-10-31"
-          },
-          {
-            "regione": "Lombardia",
-            "note": "Bandi continui"
-          }
-        ]
+        "note": "Bandi periodici con scadenze variabili"
       },
       "link_ufficiale": "Portali regionali FSE",
       "come_fare_domanda": {
         "metodo": "Online tramite piattaforme regionali",
+        "note": "Procedure online. Alcune regioni permettono anche domanda cartacea",
         "documenti": [
           "Documento identità",
           "Codice fiscale",
           "Certificazione professionale/iscrizione albo",
           "Preventivo corso formativo",
           "Attestazione stato lavorativo"
-        ],
-        "modalita_accesso": [
-          "SPID",
-          "CIE",
-          "CNS",
-          "Credenziali regionali"
-        ],
-        "note": "Procedure online. Alcune regioni permettono anche domanda cartacea"
+        ]
       },
       "compatibilita": [
         "borse-studio-alta-formazione",
@@ -1462,59 +1155,14 @@
       "status": "attivo",
       "descrizione": "Contributi economici per il sostegno agli studi universitari basati su reddito e merito",
       "importo": {
-        "tipo": "variabile_per_tipologia_studente",
-        "importi_2025_2026": [
-          {
-            "tipologia": "fuori_sede",
-            "importo_min": 7072,
-            "importo_max": 8133,
-            "note": "Massimo storico per studenti con maggiori difficoltà"
-          },
-          {
-            "tipologia": "pendolare",
-            "importo": 4133
-          },
-          {
-            "tipologia": "in_sede",
-            "importo": 2850
-          }
-        ],
-        "esempi_regionali": [
-          {
-            "regione": "Lombardia",
-            "budget": "82 milioni euro",
-            "beneficiari": "Aumentati del 21% rispetto 2024"
-          },
-          {
-            "regione": "Liguria",
-            "beneficiari": 4946,
-            "copertura": "100% richiedenti",
-            "budget": "18.3 milioni euro"
-          },
-          {
-            "regione": "Toscana",
-            "voucher_alta_formazione": 4000,
-            "target": "Master post-laurea"
-          }
-        ],
+        "tipo": "variabile",
         "note": "Importi aumentati per adeguamento ISTAT. Include alloggio e ristorazione"
       },
       "isee": {
         "richiesto": true,
-        "limite_generale": 26306.25,
-        "ispe_limite": 42530.5,
         "note": "ISEEU per diritto allo studio universitario. Limiti adeguati annualmente"
       },
       "requisiti": {
-        "cittadinanza": "Italiana, UE o permesso soggiorno",
-        "residenza": "Variabile per regione",
-        "tipologia_corso": [
-          "laurea_triennale",
-          "laurea_magistrale",
-          "laurea_magistrale_ciclo_unico",
-          "dottorato_ricerca",
-          "scuole_specializzazione"
-        ],
         "altri": [
           {
             "tipo": "Merito primo anno",
@@ -1532,45 +1180,21 @@
             "tipo": "Categorie speciali",
             "descrizione": "Requisiti agevolati per disabili, figli minori, atleti agonisti"
           }
-        ]
-      },
-      "scadenza": {
-        "periodo_tipico": "Luglio-Settembre",
-        "esempi_scadenze": [
-          {
-            "ente": "ARDSU Toscana",
-            "data": "2025-09-05"
-          },
-          {
-            "ente": "Università Milano",
-            "data": "2025-09-30"
-          },
-          {
-            "ente": "Università Padova",
-            "note": "Fino a settembre"
-          },
-          {
-            "ente": "Dottorati",
-            "data": "2025-11-14"
-          }
-        ]
+        ],
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Variabile per regione"
       },
       "link_ufficiale": "Enti regionali DSU e singoli Atenei",
       "come_fare_domanda": {
         "metodo": "Online tramite portali universitari/enti DSU",
+        "note": "Procedure online obbligatorie. Una domanda per tutti i benefici",
         "documenti": [
           "ISEEU aggiornato",
           "Documento identità",
           "Certificato iscrizione",
           "Documentazione merito (diplomi, certificati)",
           "Autocertificazioni varie"
-        ],
-        "modalita_accesso": [
-          "SPID",
-          "CIE",
-          "Credenziali universitarie"
-        ],
-        "note": "Procedure online obbligatorie. Una domanda per tutti i benefici"
+        ]
       },
       "compatibilita": [
         "esonero-tasse-universitarie",
@@ -1590,79 +1214,14 @@
       "status": "attivo",
       "descrizione": "Agevolazioni e sconti per abbonamenti ai trasporti pubblici destinati a studenti",
       "importo": {
-        "tipo": "variabile_per_regione",
-        "tipologie_agevolazione": [
-          {
-            "tipo": "trasporto_gratuito",
-            "regioni": [
-              "Campania",
-              "Emilia_Romagna",
-              "Piemonte"
-            ],
-            "note": "Viaggi completamente gratuiti"
-          },
-          {
-            "tipo": "sconto_50_percento",
-            "regioni": [
-              "Puglia",
-              "Liguria",
-              "Friuli_VG",
-              "Veneto"
-            ],
-            "note": "Riduzione del 50% su abbonamenti"
-          },
-          {
-            "tipo": "tariffe_agevolate",
-            "esempi": [
-              {
-                "citta": "Milano",
-                "costo": "22€/mese under 27"
-              },
-              {
-                "citta": "Bari",
-                "costo": "20€/anno studenti"
-              },
-              {
-                "citta": "Catania",
-                "costo": "20€/anno universitari"
-              },
-              {
-                "citta": "Roma",
-                "costo": "50€/anno under 19"
-              }
-            ]
-          }
-        ],
+        "tipo": "variabile",
         "note": "Varia da gratuito a sconti fino al 75%. Alcuni basati su ISEE"
       },
       "isee": {
         "richiesto": "variabile",
-        "limiti_tipici": [
-          {
-            "regione": "Campania",
-            "limite": 35000,
-            "eta": "11-26 anni"
-          },
-          {
-            "regione": "Emilia_Romagna",
-            "limite": 30000
-          },
-          {
-            "regione": "Puglia",
-            "limite": 12000,
-            "limite_famiglia_numerosa": 15000
-          }
-        ],
         "note": "Alcune regioni senza limiti ISEE, altre con soglie da 15.000€ a 35.000€"
       },
       "requisiti": {
-        "cittadinanza": "Italiana o UE",
-        "residenza": "Nella regione/comune di competenza",
-        "target_eta": [
-          "11-26_anni",
-          "under_19",
-          "studenti_universitari"
-        ],
         "altri": [
           {
             "tipo": "Iscrizione scolastica",
@@ -1680,46 +1239,23 @@
             "tipo": "Durata validità",
             "descrizione": "Anno scolastico o calendario. Alcuni limitati a periodi estivi"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Nella regione/comune di competenza"
       },
       "scadenza": {
-        "note": "Bandi annuali con scadenze variabili",
-        "esempi_scadenze": [
-          {
-            "regione": "Campania",
-            "data": "2025-12-20"
-          },
-          {
-            "regione": "Emilia_Romagna",
-            "data": "2025-12-18"
-          },
-          {
-            "regione": "Lazio",
-            "data": "2025-09-15",
-            "note": "Estate gratuita"
-          },
-          {
-            "regione": "Puglia",
-            "periodo": "Ottobre 2025 - Maggio 2026"
-          }
-        ]
+        "note": "Bandi annuali con scadenze variabili"
       },
       "link_ufficiale": "Portali regionali trasporti e mobilità",
       "come_fare_domanda": {
         "metodo": "Variabile: online, app, piattaforme dedicate",
+        "note": "Modalità molto diverse per regione. Alcune automatiche, altre su domanda",
         "documenti": [
           "ISEE aggiornato (se richiesto)",
           "Certificato frequenza scolastica",
           "Documento identità",
           "Tessera/abbonamento esistente"
-        ],
-        "modalita_accesso": [
-          "Portali regionali",
-          "App dedicate (es. Bella X Noi per Lazio)",
-          "SPID/CIE",
-          "Piattaforme trasporti"
-        ],
-        "note": "Modalità molto diverse per regione. Alcune automatiche, altre su domanda"
+        ]
       },
       "compatibilita": [
         "borse-studio",
@@ -1740,25 +1276,13 @@
       "descrizione": "Contributi per la frequenza di master universitari e corsi di alta formazione post-laurea",
       "importo": {
         "tipo": "fisso",
-        "importo_max": 4000,
-        "copertura": "Spese iscrizione master",
         "note": "Rimborso totale o parziale spese iscrizione"
       },
       "isee": {
         "richiesto": true,
-        "limite_max": 36000,
         "note": "ISEE valido per diritto allo studio universitario"
       },
       "requisiti": {
-        "cittadinanza": "Italiana o UE",
-        "residenza": "Regione erogante (es. Toscana)",
-        "titolo_studio": [
-          "laurea_triennale",
-          "laurea_specialistica",
-          "laurea_magistrale",
-          "laurea_ciclo_unico",
-          "laurea_vecchio_ordinamento"
-        ],
         "altri": [
           {
             "tipo": "Età",
@@ -1776,7 +1300,9 @@
             "tipo": "DSU obbligatoria",
             "descrizione": "Dichiarazione Sostitutiva Unica entro scadenza bando"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Regione erogante (es. Toscana)"
       },
       "scadenza": {
         "data": "2025-12-31",
@@ -1785,20 +1311,14 @@
       "link_ufficiale": "ARDSU e enti regionali DSU",
       "come_fare_domanda": {
         "metodo": "Online tramite piattaforme regionali",
+        "note": "Documentazione in formato PDF. Massimo 2 cartelle ZIP da 5MB",
         "documenti": [
           "ISEE per diritto allo studio",
           "Laurea conseguita",
           "Documentazione master scelto",
           "Documento identità",
           "DSU aggiornata"
-        ],
-        "modalita_accesso": [
-          "SPID",
-          "CIE",
-          "CNS",
-          "Tessera sanitaria abilitata"
-        ],
-        "note": "Documentazione in formato PDF. Massimo 2 cartelle ZIP da 5MB"
+        ]
       },
       "compatibilita": [
         "borse-studio-universitarie",
@@ -1817,48 +1337,14 @@
       "status": "attivo",
       "descrizione": "Esenzione totale o parziale dalle tasse universitarie basata su ISEE familiare",
       "importo": {
-        "tipo": "esenzione_percentuale",
-        "fasce": [
-          {
-            "isee_max": 22000,
-            "esenzione": "100%",
-            "descrizione": "Esonero totale tasse universitarie"
-          },
-          {
-            "isee_min": 22000,
-            "isee_max": 24000,
-            "esenzione": "80%",
-            "descrizione": "Forte riduzione tasse"
-          },
-          {
-            "isee_min": 24000,
-            "isee_max": 26000,
-            "esenzione": "50%",
-            "descrizione": "Riduzione media tasse"
-          },
-          {
-            "isee_min": 26000,
-            "isee_max": 30000,
-            "esenzione": "variabile",
-            "descrizione": "Riduzioni decrescenti"
-          }
-        ],
+        "tipo": "variabile",
         "note": "Senza ISEE si applica tassa massima. Esenzioni cumulative con altri benefici"
       },
       "isee": {
         "richiesto": true,
-        "tipo": "ISEEU",
         "note": "ISEE per diritto allo studio universitario obbligatorio per accedere alle agevolazioni"
       },
       "requisiti": {
-        "cittadinanza": "Italiana, UE o permesso soggiorno",
-        "residenza": "Non specificata",
-        "tipologia_corso": [
-          "laurea_triennale",
-          "laurea_magistrale",
-          "laurea_magistrale_ciclo_unico",
-          "corsi_post_laurea"
-        ],
         "altri": [
           {
             "tipo": "Iscrizione regolare",
@@ -1872,21 +1358,22 @@
             "tipo": "Prima laurea",
             "descrizione": "Generalmente per primo titolo del livello"
           }
-        ]
+        ],
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Non specificata"
       },
       "scadenza": {
-        "note": "Domanda contestuale a iscrizione universitaria",
-        "periodo": "Luglio-Settembre per ogni anno accademico"
+        "note": "Domanda contestuale a iscrizione universitaria"
       },
       "link_ufficiale": "Singoli atenei e MUR",
       "come_fare_domanda": {
         "metodo": "Automatico con presentazione ISEEU",
+        "note": "Applicazione automatica da parte dell'ateneo. Necessario solo presentare ISEE",
         "documenti": [
           "ISEEU valido",
           "Iscrizione universitaria",
           "DSU completa"
-        ],
-        "note": "Applicazione automatica da parte dell'ateneo. Necessario solo presentare ISEE"
+        ]
       },
       "compatibilita": [
         "borse-studio-universitarie",
