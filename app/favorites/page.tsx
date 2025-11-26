@@ -117,7 +117,7 @@ export default function FavoritesPage() {
               Nessun bonus nei preferiti
             </p>
             <p className="mt-2 text-sm text-muted-foreground mb-6">
-              Clicca sull'icona cuore sui bonus per salvarli qui
+            Clicca sull&apos;icona cuore sui bonus per salvarli qui
             </p>
             <Button onClick={() => window.location.href = '/'} variant="outline">
               Esplora i bonus
