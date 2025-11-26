@@ -130,6 +130,21 @@ interface Filtri {
 - [ ] Notifiche nuovi bonus
 - [ ] Integrazione CAF
 
+## 📋 TODO List - Funzionalità Utili (temp: no db)
+
+### Funzionalità da implementare
+- [ ] **Preferiti/Favoriti** - Salvare bonus preferiti in localStorage con icona cuore, sezione "I miei bonus"
+- [ ] **Calcolatore Eligibilità Personale** - Form per inserire ISEE, età figli, residenza e mostrare solo bonus compatibili
+- [ ] **Calcolatore Totale Potenziale** - Selezionare bonus compatibili e calcolare totale annuo/mensile con breakdown
+- [ ] **Link Condivisibili con Filtri** - Generare URL con filtri preimpostati per condividere ricerche specifiche
+- [ ] **Checklist Requisiti Interattiva** - Checklist nel modal per verificare requisiti e documenti, salvare progresso
+- [ ] **Timeline/Calendario Scadenze** - Vista calendario con scadenze bonus, filtro "In scadenza" (prossimi 30 giorni)
+- [ ] **Storico Visualizzazioni** - Salvare ultimi N bonus visualizzati, sezione "Visti di recente"
+- [ ] **Filtri Salvati** - Salvare combinazioni di filtri con nome personalizzato per accesso rapido
+- [ ] **Esportazione Lista** - Esportare bonus filtrati in PDF, CSV o JSON
+- [ ] **Notifiche Scadenze** - Notifiche browser per bonus in scadenza usando Notification API
+- [ ] **Modalità "Solo per me"** - Filtro rapido che applica automaticamente ISEE, età figli e categorie salvate
+
 ## 📝 Note sui Dati
 
 - **Fonte**: Siti ufficiali INPS, Gazzette Ufficiali
