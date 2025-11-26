@@ -1,0 +1,28 @@
+<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="630" fill="url(#grad)"/>
+  
+  <!-- Content Container -->
+  <rect x="150" y="90" width="900" height="450" rx="24" fill="rgba(255, 255, 255, 0.95)"/>
+  
+  <!-- Sparkles Icon -->
+  <text x="600" y="220" font-family="Arial, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" fill="url(#grad)">✨</text>
+  
+  <!-- Title -->
+  <text x="600" y="300" font-family="Arial, sans-serif" font-size="64" font-weight="bold" text-anchor="middle" fill="#1f2937">Bonusly</text>
+  
+  <!-- Subtitle -->
+  <text x="600" y="360" font-family="Arial, sans-serif" font-size="32" font-weight="600" text-anchor="middle" fill="#1f2937">Bonus e Incentivi per le Famiglie</text>
+  
+  <!-- Description -->
+  <text x="600" y="410" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#6b7280">Scopri tutti i bonus disponibili in Italia</text>
+  <text x="600" y="440" font-family="Arial, sans-serif" font-size="22" text-anchor="middle" fill="#6b7280">con filtri per ISEE, categorie e molto altro</text>
+</svg>
+

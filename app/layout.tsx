@@ -11,6 +11,29 @@ export const metadata: Metadata = {
   icons: {
     icon: '/icon.svg',
   },
+  openGraph: {
+    title: 'Bonus Italia - Bonus e Incentivi per le Famiglie',
+    description: 'Scopri tutti i bonus e incentivi disponibili in Italia per le famiglie. Filtra per ISEE, categorie e trova i bonus giusti per te.',
+    url: 'https://bonusly.vercel.app', // Aggiorna con il tuo URL reale quando pubblichi
+    siteName: 'Bonusly',
+    images: [
+      {
+        url: '/og-image.png',
+        width: 1200,
+        height: 630,
+        alt: 'Bonus Italia - Bonus e Incentivi per le Famiglie',
+      },
+    ],
+    locale: 'it_IT',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Bonus Italia - Bonus e Incentivi per le Famiglie',
+    description: 'Scopri tutti i bonus e incentivi disponibili in Italia per le famiglie',
+    images: ['/og-image.png'],
+  },
+  metadataBase: new URL('https://bonusly.vercel.app'), // Aggiorna con il tuo URL reale quando pubblichi
 };
 
 export default function RootLayout({

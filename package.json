@@ -12,6 +12,7 @@
     "@radix-ui/react-dialog": "^1.1.1",
     "@radix-ui/react-select": "^2.1.1",
     "@radix-ui/react-slider": "^1.1.2",
+    "@vercel/og": "^0.8.5",
     "clsx": "^2.1.1",
     "date-fns": "^3.6.0",
     "lucide-react": "^0.427.0",
@@ -28,6 +29,7 @@
     "eslint": "^8.57.0",
     "eslint-config-next": "14.2.5",
     "postcss": "^8.4.40",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.7",
     "typescript": "^5.5.4"
   }
