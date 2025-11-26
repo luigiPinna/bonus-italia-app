@@ -279,7 +279,7 @@ export function BonusModal({ bonus, open, onOpenChange }: BonusModalProps) {
 
             <div className="flex flex-col gap-3 pt-4 sm:flex-row">
               <Button
-                className="flex-1"
+                className="flex-1 !h-auto !py-1"
                 onClick={() => window.open(bonus.link_ufficiale, '_blank')}
               >
                 Vai al sito ufficiale INPS
