@@ -1,10 +1,13 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { getAllBonus } from '@/lib/data';
 import { applyAllFilters } from '@/lib/filters';
 import { Filtri, Bonus } from '@/types/bonus';
 import { BonusCard } from '@/components/bonus/bonus-card';
+import { BonusTable } from '@/components/bonus/bonus-table';
+import { BonusList } from '@/components/bonus/bonus-list';
+import { ViewSwitcher, ViewMode } from '@/components/bonus/view-switcher';
 import { SearchBar } from '@/components/bonus/search-bar';
 import { FilterSidebar } from '@/components/bonus/filter-sidebar';
 import { BonusModal } from '@/components/bonus/bonus-modal';
@@ -24,6 +27,23 @@ export default function HomePage() {
   const [selectedBonus, setSelectedBonus] = useState<Bonus | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  
+  // View mode with localStorage persistence
+  const [view, setView] = useState<ViewMode>(() => {
+    if (typeof window !== 'undefined') {
+      const saved = localStorage.getItem('bonus-view-mode');
+      if (saved && ['grid', 'table', 'list'].includes(saved)) {
+        return saved as ViewMode;
+      }
+    }
+    return 'grid';
+  });
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('bonus-view-mode', view);
+    }
+  }, [view]);
 
   const filteredBonus = useMemo(
     () => applyAllFilters(allBonus, filtri),
@@ -66,27 +86,30 @@ export default function HomePage() {
           />
 
           <main className="flex-1">
-            <div className="mb-6 flex items-center gap-4">
+            <div className="mb-6 flex flex-col gap-4 sm:flex-row sm:items-center">
               <div className="flex-1">
                 <SearchBar
                   value={filtri.search}
                   onChange={(value) => handleFilterChange({ search: value })}
                 />
               </div>
-              <Button
-                variant="outline"
-                size="sm"
-                className="lg:hidden"
-                onClick={() => setIsFilterOpen(!isFilterOpen)}
-              >
-                <Filter className="mr-2 h-4 w-4" />
-                Filtri
-                {hasActiveFilters && (
-                  <span className="ml-2 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs">
-                    {[filtri.isee, filtri.categorie, filtri.tipologie, filtri.eta_figli].flat().length + (filtri.search ? 1 : 0)}
-                  </span>
-                )}
-              </Button>
+              <div className="flex items-center gap-2">
+                <ViewSwitcher view={view} onViewChange={setView} />
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="lg:hidden"
+                  onClick={() => setIsFilterOpen(!isFilterOpen)}
+                >
+                  <Filter className="mr-2 h-4 w-4" />
+                  Filtri
+                  {hasActiveFilters && (
+                    <span className="ml-2 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs">
+                      {[filtri.isee, filtri.categorie, filtri.tipologie, filtri.eta_figli].flat().length + (filtri.search ? 1 : 0)}
+                    </span>
+                  )}
+                </Button>
+              </div>
             </div>
 
             <div className="mb-6 flex flex-col gap-2 sm:flex-row sm:items-center sm:justify-between">
@@ -137,15 +160,31 @@ export default function HomePage() {
                 </p>
               </div>
             ) : (
-              <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-                {filteredBonus.map((bonus) => (
-                  <BonusCard
-                    key={bonus.id}
-                    bonus={bonus}
+              <>
+                {view === 'grid' && (
+                  <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+                    {filteredBonus.map((bonus) => (
+                      <BonusCard
+                        key={bonus.id}
+                        bonus={bonus}
+                        onViewDetails={handleViewDetails}
+                      />
+                    ))}
+                  </div>
+                )}
+                {view === 'table' && (
+                  <BonusTable
+                    bonus={filteredBonus}
                     onViewDetails={handleViewDetails}
                   />
-                ))}
-              </div>
+                )}
+                {view === 'list' && (
+                  <BonusList
+                    bonus={filteredBonus}
+                    onViewDetails={handleViewDetails}
+                  />
+                )}
+              </>
             )}
           </main>
         </div>
