@@ -25,15 +25,16 @@ export const filterByIsee = (bonus: Bonus[], iseeFasce: string[]): Bonus[] => {
         const bonusMax = b.isee.max;
         const bonusMin = b.isee.min || 0;
         
-        // Se il bonus ha un max definito e è inferiore al minimo della fascia, non è compatibile
-        // Es: bonus con max 40000 non è compatibile con fascia "oltre 40000"
-        if (bonusMax !== undefined && bonusMax < minFascia) return false;
+        // Se il bonus ha un max definito e è <= al minimo della fascia, non è compatibile
+        // Es: bonus con max 40000 NON è compatibile con fascia "oltre 40000" (accetta solo fino a 40000)
+        // Es: bonus con max 30000 NON è compatibile con fascia "oltre 40000"
+        if (bonusMax !== undefined && bonusMax <= minFascia) return false;
         
         // Se il bonus ha un min definito e superiore al minimo della fascia, non accetta quella fascia
         // Es: bonus con min 50000 non accetta ISEE nella fascia "oltre 40000" (perché richiede almeno 50000)
         if (bonusMin > minFascia) return false;
         
-        // Altrimenti è compatibile
+        // Altrimenti è compatibile (bonus con max > 40000 o senza max definito)
         return true;
       }
 
