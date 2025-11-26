@@ -1,9 +1,12 @@
+'use client';
+
 import { Bonus } from '@/types/bonus';
 import { Dialog, DialogContent, DialogDescription, DialogTitle } from '@/components/ui/dialog';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
-import { formatCurrency, formatDate } from '@/lib/utils';
-import { ExternalLink, Euro, Calendar, Users, FileText, CheckCircle, Sparkles, Info } from 'lucide-react';
+import { formatCurrency, formatDate, cn } from '@/lib/utils';
+import { ExternalLink, Euro, Calendar, Users, FileText, CheckCircle, Sparkles, Info, Heart } from 'lucide-react';
+import { useFavorites } from '@/hooks/use-favorites';
 
 interface BonusModalProps {
   bonus: Bonus | null;
@@ -12,7 +15,15 @@ interface BonusModalProps {
 }
 
 export function BonusModal({ bonus, open, onOpenChange }: BonusModalProps) {
+  const { isFavorite, toggleFavorite, isHydrated } = useFavorites();
+  
   if (!bonus) return null;
+
+  const favorite = isHydrated && isFavorite(bonus.id);
+
+  const handleFavoriteClick = () => {
+    toggleFavorite(bonus.id);
+  };
 
   const getStatusVariant = (status: Bonus['status']) => {
     switch (status) {
@@ -94,10 +105,33 @@ export function BonusModal({ bonus, open, onOpenChange }: BonusModalProps) {
               <Sparkles className="h-6 w-6 text-primary" />
             </div>
             <div className="flex-1">
-              <DialogTitle className="text-2xl font-bold leading-tight">{bonus.nome}</DialogTitle>
-              <DialogDescription className="mt-2 text-base leading-relaxed">
-                {bonus.descrizione}
-              </DialogDescription>
+              <div className="flex items-start justify-between gap-4">
+                <div className="flex-1">
+                  <DialogTitle className="text-2xl font-bold leading-tight">{bonus.nome}</DialogTitle>
+                  <DialogDescription className="mt-2 text-base leading-relaxed">
+                    {bonus.descrizione}
+                  </DialogDescription>
+                </div>
+                <button
+                  onClick={handleFavoriteClick}
+                  className={cn(
+                    'flex h-10 w-10 items-center justify-center rounded-full transition-all flex-shrink-0',
+                    'border border-border bg-background/50 backdrop-blur-sm',
+                    'hover:scale-110 active:scale-95',
+                    favorite
+                      ? 'text-red-500 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950/20 border-red-500/50'
+                      : 'text-muted-foreground hover:text-red-500 hover:border-red-500/50'
+                  )}
+                  aria-label={favorite ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti'}
+                >
+                  <Heart
+                    className={cn(
+                      'h-5 w-5 transition-all',
+                      favorite && 'fill-current'
+                    )}
+                  />
+                </button>
+              </div>
             </div>
           </div>
 

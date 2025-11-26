@@ -133,7 +133,7 @@ interface Filtri {
 ## 📋 TODO List - Funzionalità Utili (temp: no db)
 
 ### Funzionalità da implementare
-- [ ] **Preferiti/Favoriti** - Salvare bonus preferiti in localStorage con icona cuore, sezione "I miei bonus"
+- [x] **Preferiti/Favoriti** - Salvare bonus preferiti in localStorage con icona cuore, sezione "I miei bonus"
 - [ ] **Calcolatore Eligibilità Personale** - Form per inserire ISEE, età figli, residenza e mostrare solo bonus compatibili
 - [ ] **Calcolatore Totale Potenziale** - Selezionare bonus compatibili e calcolare totale annuo/mensile con breakdown
 - [ ] **Link Condivisibili con Filtri** - Generare URL con filtri preimpostati per condividere ricerche specifiche

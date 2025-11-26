@@ -4,6 +4,8 @@ import { Bonus } from '@/types/bonus';
 import { Badge } from '@/components/ui/badge';
 import { formatCurrency } from '@/lib/utils';
 import { cn } from '@/lib/utils';
+import { Heart } from 'lucide-react';
+import { useFavorites } from '@/hooks/use-favorites';
 
 interface BonusTableProps {
   bonus: Bonus[];
@@ -11,6 +13,13 @@ interface BonusTableProps {
 }
 
 export function BonusTable({ bonus, onViewDetails }: BonusTableProps) {
+  const { isFavorite, toggleFavorite, isHydrated } = useFavorites();
+
+  const handleFavoriteClick = (e: React.MouseEvent, bonusId: string) => {
+    e.stopPropagation();
+    toggleFavorite(bonusId);
+  };
+
   const getStatusColor = (status: Bonus['status']) => {
     switch (status) {
       case 'attivo':
@@ -74,6 +83,9 @@ export function BonusTable({ bonus, onViewDetails }: BonusTableProps) {
             </th>
             <th className="px-4 py-3 text-left text-sm font-semibold text-foreground hidden xl:table-cell">
               Scadenza
+            </th>
+            <th className="px-4 py-3 text-center text-sm font-semibold text-foreground w-12">
+              <span className="sr-only">Preferiti</span>
             </th>
           </tr>
         </thead>
@@ -142,6 +154,26 @@ export function BonusTable({ bonus, onViewDetails }: BonusTableProps) {
                 <div className="text-sm text-foreground">
                   {item.scadenza?.data || '-'}
                 </div>
+              </td>
+              <td className="px-4 py-3">
+                <button
+                  onClick={(e) => handleFavoriteClick(e, item.id)}
+                  className={cn(
+                    'mx-auto flex h-7 w-7 items-center justify-center rounded-full transition-all',
+                    'hover:scale-110 active:scale-95',
+                    isHydrated && isFavorite(item.id)
+                      ? 'text-red-500 hover:text-red-600'
+                      : 'text-muted-foreground hover:text-red-500'
+                  )}
+                  aria-label={isHydrated && isFavorite(item.id) ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti'}
+                >
+                  <Heart
+                    className={cn(
+                      'h-4 w-4 transition-all',
+                      isHydrated && isFavorite(item.id) && 'fill-current'
+                    )}
+                  />
+                </button>
               </td>
             </tr>
           ))}

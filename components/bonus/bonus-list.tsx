@@ -4,8 +4,9 @@ import { Bonus } from '@/types/bonus';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { formatCurrency } from '@/lib/utils';
-import { Euro, ArrowRight } from 'lucide-react';
+import { Euro, ArrowRight, Heart } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { useFavorites } from '@/hooks/use-favorites';
 
 interface BonusListProps {
   bonus: Bonus[];
@@ -13,6 +14,13 @@ interface BonusListProps {
 }
 
 export function BonusList({ bonus, onViewDetails }: BonusListProps) {
+  const { isFavorite, toggleFavorite, isHydrated } = useFavorites();
+
+  const handleFavoriteClick = (e: React.MouseEvent, bonusId: string) => {
+    e.stopPropagation();
+    toggleFavorite(bonusId);
+  };
+
   const getStatusColor = (status: Bonus['status']) => {
     switch (status) {
       case 'attivo':
@@ -77,9 +85,29 @@ export function BonusList({ bonus, onViewDetails }: BonusListProps) {
           <div className="flex-1 min-w-0">
             <div className="flex items-start justify-between gap-4 mb-2">
               <div className="flex-1 min-w-0">
-                <h3 className="font-semibold text-foreground line-clamp-1 mb-1">
-                  {item.nome}
-                </h3>
+                <div className="flex items-center gap-2">
+                  <h3 className="font-semibold text-foreground line-clamp-1 mb-1">
+                    {item.nome}
+                  </h3>
+                  <button
+                    onClick={(e) => handleFavoriteClick(e, item.id)}
+                    className={cn(
+                      'flex h-6 w-6 items-center justify-center rounded-full transition-all flex-shrink-0',
+                      'hover:scale-110 active:scale-95',
+                      isHydrated && isFavorite(item.id)
+                        ? 'text-red-500 hover:text-red-600'
+                        : 'text-muted-foreground hover:text-red-500'
+                    )}
+                    aria-label={isHydrated && isFavorite(item.id) ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti'}
+                  >
+                    <Heart
+                      className={cn(
+                        'h-4 w-4 transition-all',
+                        isHydrated && isFavorite(item.id) && 'fill-current'
+                      )}
+                    />
+                  </button>
+                </div>
                 <p className="text-sm text-muted-foreground line-clamp-1">
                   {item.descrizione}
                 </p>

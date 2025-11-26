@@ -1,8 +1,12 @@
+'use client';
+
 import { Bonus } from '@/types/bonus';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { formatCurrency } from '@/lib/utils';
-import { Euro, Calendar, Users, ArrowRight, Sparkles } from 'lucide-react';
+import { Euro, Calendar, Users, ArrowRight, Sparkles, Heart } from 'lucide-react';
+import { useFavorites } from '@/hooks/use-favorites';
+import { cn } from '@/lib/utils';
 
 interface BonusCardProps {
   bonus: Bonus;
@@ -10,6 +14,14 @@ interface BonusCardProps {
 }
 
 export function BonusCard({ bonus, onViewDetails }: BonusCardProps) {
+  const { isFavorite, toggleFavorite, isHydrated } = useFavorites();
+  const favorite = isHydrated && isFavorite(bonus.id);
+
+  const handleFavoriteClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    toggleFavorite(bonus.id);
+  };
+
   const getStatusVariant = (status: Bonus['status']) => {
     switch (status) {
       case 'attivo':
@@ -91,6 +103,25 @@ export function BonusCard({ bonus, onViewDetails }: BonusCardProps) {
               {bonus.nome}
             </h3>
           </div>
+          <button
+            onClick={handleFavoriteClick}
+            className={cn(
+              'absolute top-4 right-4 z-10 flex h-8 w-8 items-center justify-center rounded-full transition-all',
+              'bg-background/80 backdrop-blur-sm border border-border',
+              'hover:scale-110 active:scale-95',
+              favorite
+                ? 'text-red-500 hover:text-red-600 hover:bg-red-50 dark:hover:bg-red-950/20'
+                : 'text-muted-foreground hover:text-red-500 hover:border-red-500/50'
+            )}
+            aria-label={favorite ? 'Rimuovi dai preferiti' : 'Aggiungi ai preferiti'}
+          >
+            <Heart
+              className={cn(
+                'h-4 w-4 transition-all',
+                favorite && 'fill-current'
+              )}
+            />
+          </button>
           <div className="flex flex-wrap items-center gap-2">
             <Badge 
               className={`text-xs font-medium border ${getStatusColor(bonus.status)}`}

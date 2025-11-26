@@ -1,13 +1,17 @@
 'use client';
 
-import { Sparkles, User, Moon, Sun } from 'lucide-react';
+import { Sparkles, User, Moon, Sun, Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
+import { useFavorites } from '@/hooks/use-favorites';
+import { cn } from '@/lib/utils';
 
 export function Navbar() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
+  const { favoritesCount, isHydrated } = useFavorites();
 
   useEffect(() => {
     setMounted(true);
@@ -22,7 +26,7 @@ export function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex h-16 items-center justify-between">
           {/* Logo e nome */}
-          <div className="flex items-center gap-3">
+          <Link href="/" className="flex items-center gap-3 hover:opacity-80 transition-opacity">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary/70">
               <Sparkles className="h-6 w-6 text-white" />
             </div>
@@ -30,10 +34,28 @@ export function Navbar() {
               <span className="text-lg font-bold text-foreground">Bonusly</span>
               <span className="text-xs text-muted-foreground">La guida smart ai bonus per te</span>
             </div>
-          </div>
+          </Link>
 
-          {/* Toggle dark mode e icona utente */}
+          {/* Toggle dark mode, preferiti e icona utente */}
           <div className="flex items-center gap-2">
+            <Link href="/favorites">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="!h-10 !px-3 !rounded-full relative"
+                aria-label="I miei bonus"
+              >
+                <Heart className={cn(
+                  "h-5 w-5 flex-shrink-0 transition-all",
+                  isHydrated && favoritesCount > 0 && "fill-current text-red-500"
+                )} />
+                {isHydrated && favoritesCount > 0 && (
+                  <span className="absolute -top-1 -right-1 flex h-5 w-5 items-center justify-center rounded-full bg-red-500 text-white text-xs font-bold">
+                    {favoritesCount > 9 ? '9+' : favoritesCount}
+                  </span>
+                )}
+              </Button>
+            </Link>
             <Button
               variant="ghost"
               size="sm"
