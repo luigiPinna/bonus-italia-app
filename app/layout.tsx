@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Bonus Italia - Bonus e Incentivi per le Famiglie',
     description: 'Scopri tutti i bonus e incentivi disponibili in Italia per le famiglie. Filtra per ISEE, categorie e trova i bonus giusti per te.',
-    url: 'https://bonusly.vercel.app', // Aggiorna con il tuo URL reale quando pubblichi
+    url: 'https://luigipinna.github.io/bonus-italia-app/', // temporary url
     siteName: 'Bonusly',
     images: [
       {
