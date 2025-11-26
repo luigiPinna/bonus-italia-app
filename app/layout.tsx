@@ -8,6 +8,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Bonus Italia - Bonus e Incentivi per le Famiglie',
   description: 'Scopri tutti i bonus e incentivi disponibili in Italia per le famiglie',
+  icons: {
+    icon: '/icon.svg',
+  },
 };
 
 export default function RootLayout({
