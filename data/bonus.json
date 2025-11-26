@@ -1,5 +1,5 @@
 {
-  "ultimo_aggiornamento": "2025-11-17",
+  "ultimo_aggiornamento": "2025-11-26",
   "bonus": [
     {
       "id": "bonus-nuove-nascite-2025",
@@ -606,6 +606,580 @@
         "carta-cultura-giovani"
       ],
       "note_aggiuntive": "Basata solo sul merito scolastico, indipendentemente dall'ISEE"
+    },
+    {
+      "id": "bonus-ristrutturazione-2025",
+      "nome": "Bonus Ristrutturazione",
+      "categoria": [
+        "casa",
+        "ristrutturazione",
+        "edilizio"
+      ],
+      "status": "attivo",
+      "descrizione": "Detrazione fiscale per interventi di ristrutturazione, manutenzione straordinaria e restauro di immobili residenziali",
+      "importo": {
+        "tipo": "percentuale_variabile",
+        "fasce_applicazione": [
+          {
+            "tipo_immobile": "abitazione_principale",
+            "anno": "2025",
+            "percentuale": 50,
+            "max_spesa": 96000,
+            "detrazione_massima": 48000
+          },
+          {
+            "tipo_immobile": "altre_abitazioni",
+            "anno": "2025",
+            "percentuale": 36,
+            "max_spesa": 96000,
+            "detrazione_massima": 34560
+          },
+          {
+            "tipo_immobile": "abitazione_principale",
+            "anni": "2026-2027",
+            "percentuale": 36,
+            "max_spesa": 96000,
+            "detrazione_massima": 34560
+          },
+          {
+            "tipo_immobile": "altre_abitazioni",
+            "anni": "2026-2027",
+            "percentuale": 30,
+            "max_spesa": 96000,
+            "detrazione_massima": 28800
+          }
+        ],
+        "note": "Detrazione ripartita in 10 quote annuali di pari importo. Dal 2025 non più cessione del credito o sconto in fattura"
+      },
+      "isee": {
+        "richiesto": false,
+        "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Immobile in Italia",
+        "tipologia_immobile": [
+          "residenziale",
+          "qualsiasi_categoria_catastale"
+        ],
+        "altri": [
+          {
+            "tipo": "Titolarità immobile",
+            "descrizione": "Proprietari, titolari diritti reali, inquilini, familiari conviventi"
+          },
+          {
+            "tipo": "Tipologia lavori",
+            "descrizione": "Manutenzione straordinaria, ristrutturazione, restauro e risanamento conservativo"
+          },
+          {
+            "tipo": "Limiti reddituali",
+            "descrizione": "Per redditi > 75.000€ massimali ridotti (14.000€ se < 100.000€, 8.000€ se > 100.000€)"
+          }
+        ]
+      },
+      "scadenza": {
+        "data": "2027-12-31",
+        "note": "Prorogato fino al 31 dicembre 2027 con percentuali decrescenti"
+      },
+      "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazioni-per-le-ristrutturazioni-edilizie",
+      "come_fare_domanda": {
+        "metodo": "Detrazione in dichiarazione dei redditi",
+        "documenti": [
+          "Fatture e ricevute di pagamento",
+          "Bonifici parlanti con causale specifica",
+          "Titoli edilizi (CILA, SCIA, Permesso di costruire)",
+          "Asseverazioni tecniche quando richieste"
+        ],
+        "note": "Pagamenti con bonifico parlante obbligatorio. Comunicazione ENEA per alcuni interventi energetici"
+      },
+      "compatibilita": [
+        "bonus-mobili",
+        "ecobonus-per-stessi-lavori"
+      ],
+      "note_aggiuntive": "Dal 2025 escluse caldaie a combustibili fossili. Maggiorazione per abitazione principale. Non più cessione del credito"
+    },
+    {
+      "id": "ecobonus-2025",
+      "nome": "Ecobonus",
+      "categoria": [
+        "casa",
+        "efficienza_energetica",
+        "sostenibilita"
+      ],
+      "status": "attivo",
+      "descrizione": "Detrazione fiscale per interventi di riqualificazione energetica e miglioramento dell'efficienza energetica degli edifici",
+      "importo": {
+        "tipo": "percentuale_variabile",
+        "fasce_applicazione": [
+          {
+            "tipo_immobile": "abitazione_principale",
+            "anno": "2025",
+            "percentuale": 50,
+            "interventi_massimali": {
+              "riqualificazione_globale": 100000,
+              "serramenti_pannelli_schermature": 60000,
+              "isolamento_cappotto": 60000,
+              "climatizzazione": 30000,
+              "building_automation": 15000
+            }
+          },
+          {
+            "tipo_immobile": "altre_abitazioni",
+            "anno": "2025",
+            "percentuale": 36,
+            "interventi_massimali": {
+              "riqualificazione_globale": 100000,
+              "serramenti_pannelli_schermature": 60000,
+              "isolamento_cappotto": 60000,
+              "climatizzazione": 30000,
+              "building_automation": 15000
+            }
+          },
+          {
+            "tipo_immobile": "abitazione_principale",
+            "anni": "2026-2027",
+            "percentuale": 36
+          },
+          {
+            "tipo_immobile": "altre_abitazioni",
+            "anni": "2026-2027",
+            "percentuale": 30
+          }
+        ],
+        "note": "Detrazione ripartita in 10 quote annuali. Massimali specifici per tipo di intervento"
+      },
+      "isee": {
+        "richiesto": false,
+        "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Immobile in Italia",
+        "tipologia_immobile": [
+          "residenziale",
+          "strumentale_per_imprese"
+        ],
+        "altri": [
+          {
+            "tipo": "Miglioramento energetico",
+            "descrizione": "Interventi che comportano effettivo risparmio energetico certificato"
+          },
+          {
+            "tipo": "Requisiti tecnici",
+            "descrizione": "Rispetto parametri di trasmittanza e efficienza previsti dalla normativa"
+          },
+          {
+            "tipo": "Comunicazione ENEA",
+            "descrizione": "Obbligo invio documentazione entro 90 giorni dalla fine lavori"
+          },
+          {
+            "tipo": "Esclusioni",
+            "descrizione": "Dal 2025 escluse caldaie a condensazione alimentate a combustibili fossili"
+          }
+        ]
+      },
+      "scadenza": {
+        "data": "2027-12-31",
+        "note": "Prorogato fino al 31 dicembre 2027 con percentuali decrescenti"
+      },
+      "link_ufficiale": "https://www.enea.it/it/ecobonus",
+      "come_fare_domanda": {
+        "metodo": "Detrazione in dichiarazione dei redditi",
+        "documenti": [
+          "Asseverazione tecnica di conformità",
+          "Attestato Prestazione Energetica (APE)",
+          "Fatture e bonifici parlanti",
+          "Comunicazione telematica ENEA entro 90 giorni"
+        ],
+        "link": "https://www.enea.it/it/ecobonus/le-guide/fiches",
+        "note": "Necessaria asseverazione tecnica per la maggior parte degli interventi"
+      },
+      "compatibilita": [
+        "bonus-ristrutturazione-per-stessi-lavori",
+        "sismabonus-combinato"
+      ],
+      "note_aggiuntive": "Dal 2025 aliquota unica per tipo immobile. Escluse caldaie fossili. Ammessi sistemi ibridi e pompe di calore"
+    },
+    {
+      "id": "sismabonus-2025",
+      "nome": "Sismabonus",
+      "categoria": [
+        "casa",
+        "sismica",
+        "sicurezza"
+      ],
+      "status": "attivo",
+      "descrizione": "Detrazione fiscale per interventi di adeguamento e miglioramento sismico degli edifici",
+      "importo": {
+        "tipo": "percentuale_variabile",
+        "fasce_applicazione": [
+          {
+            "tipo_immobile": "abitazione_principale",
+            "anno": "2025",
+            "percentuale": 50,
+            "max_spesa": 96000,
+            "detrazione_massima": 48000
+          },
+          {
+            "tipo_immobile": "altre_abitazioni_e_produttivi",
+            "anno": "2025",
+            "percentuale": 36,
+            "max_spesa": 96000,
+            "detrazione_massima": 34560
+          },
+          {
+            "tipo_immobile": "abitazione_principale",
+            "anni": "2026-2027",
+            "percentuale": 36
+          },
+          {
+            "tipo_immobile": "altre_abitazioni_e_produttivi",
+            "anni": "2026-2027",
+            "percentuale": 30
+          }
+        ],
+        "note": "Detrazione ripartita in 10 quote annuali. Non più necessario il salto di classe sismica"
+      },
+      "isee": {
+        "richiesto": false,
+        "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Immobili in zone sismiche 1, 2 e 3",
+        "tipologia_immobile": [
+          "residenziale",
+          "produttivo",
+          "commerciale"
+        ],
+        "altri": [
+          {
+            "tipo": "Zonazione sismica",
+            "descrizione": "Edifici in zone sismiche ad alta pericolosità (zone 1, 2, 3). Esclusa zona 4"
+          },
+          {
+            "tipo": "Tipologia interventi",
+            "descrizione": "Adeguamento, miglioramento sismico, interventi locali, demolizione-ricostruzione"
+          },
+          {
+            "tipo": "Novità 2025",
+            "descrizione": "Non più necessario dimostrare il miglioramento della classe di rischio sismico"
+          },
+          {
+            "tipo": "Titoli edilizi",
+            "descrizione": "SCIA, Permesso costruire, eventuali autorizzazioni paesaggistiche"
+          }
+        ]
+      },
+      "scadenza": {
+        "data": "2027-12-31",
+        "note": "Prorogato fino al 31 dicembre 2027"
+      },
+      "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/sisma-bonus",
+      "come_fare_domanda": {
+        "metodo": "Detrazione in dichiarazione dei redditi",
+        "documenti": [
+          "Asseverazione tecnica conformità NTC 2018",
+          "Progetto strutturale",
+          "Titoli edilizi",
+          "Fatture e bonifici parlanti",
+          "Attestazione fine lavori"
+        ],
+        "note": "Non più necessaria certificazione miglioramento classe sismica"
+      },
+      "compatibilita": [
+        "ecobonus-combinato-parti-comuni",
+        "bonus-ristrutturazione"
+      ],
+      "note_aggiuntive": "Dal 2025 semplificato: non serve salto classe sismica. Vale anche per edifici produttivi. Include spese per classificazione sismica"
+    },
+    {
+      "id": "sismabonus-acquisti",
+      "nome": "Sismabonus Acquisti",
+      "categoria": [
+        "casa",
+        "acquisto",
+        "sismica"
+      ],
+      "status": "attivo",
+      "descrizione": "Detrazione fiscale per l'acquisto di immobili in zone sismiche demoliti e ricostruiti con miglioramenti antisismici",
+      "importo": {
+        "tipo": "percentuale_variabile",
+        "fasce_applicazione": [
+          {
+            "tipo_acquisto": "prima_casa",
+            "anno": "2025",
+            "percentuale": 50,
+            "max_spesa": 96000
+          },
+          {
+            "tipo_acquisto": "altre_abitazioni",
+            "anno": "2025",
+            "percentuale": 36,
+            "max_spesa": 96000
+          },
+          {
+            "tipo_acquisto": "prima_casa",
+            "anni": "2026-2027",
+            "percentuale": 36
+          },
+          {
+            "tipo_acquisto": "altre_abitazioni",
+            "anni": "2026-2027",
+            "percentuale": 30
+          }
+        ],
+        "note": "Detrazione calcolata sul prezzo di acquisto dell'immobile"
+      },
+      "isee": {
+        "richiesto": false,
+        "note": "Non richiesta ISEE"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Non specificato",
+        "tipologia_immobile": [
+          "residenziale_ristrutturato"
+        ],
+        "altri": [
+          {
+            "tipo": "Zonazione sismica",
+            "descrizione": "Immobili in zone sismiche 1, 2 e 3"
+          },
+          {
+            "tipo": "Interventi edilizi",
+            "descrizione": "Edifici demoliti e ricostruiti dall'impresa con adeguamenti antisismici"
+          },
+          {
+            "tipo": "Tempistica vendita",
+            "descrizione": "Immobile venduto entro 30 mesi dalla conclusione dei lavori"
+          },
+          {
+            "tipo": "Miglioramento sismico",
+            "descrizione": "Deve risultare una riduzione del rischio sismico"
+          }
+        ]
+      },
+      "scadenza": {
+        "data": "2027-12-31",
+        "note": "Segue la scadenza del Sismabonus classico"
+      },
+      "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/sisma-bonus",
+      "come_fare_domanda": {
+        "metodo": "Detrazione in dichiarazione dei redditi",
+        "documenti": [
+          "Atto di compravendita",
+          "Attestazione conformità interventi antisismici",
+          "Asseverazione miglioramento classe sismica",
+          "Documentazione tecnica lavori"
+        ],
+        "note": "La detrazione si applica al prezzo di acquisto dichiarato nell'atto"
+      },
+      "compatibilita": [],
+      "note_aggiuntive": "Applicabile solo a immobili ristrutturati da imprese con vendita entro 30 mesi. Include pertinenze"
+    },
+    {
+      "id": "bonus-barriere-architettoniche",
+      "nome": "Bonus Barriere Architettoniche",
+      "categoria": [
+        "casa",
+        "accessibilita",
+        "sociale"
+      ],
+      "status": "attivo",
+      "descrizione": "Detrazione fiscale per interventi di eliminazione delle barriere architettoniche",
+      "importo": {
+        "tipo": "fisso",
+        "percentuale": 75,
+        "massimali_spesa": {
+          "unifamiliari_indipendenti": 50000,
+          "plurifamiliari_2_8_unita": 40000,
+          "condominiali_oltre_8_unita": 30000
+        },
+        "note": "75% delle spese sostenute, ripartito in 10 quote annuali dal 2024 (5 quote per 2022-2023)"
+      },
+      "isee": {
+        "richiesto": false,
+        "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Immobile in Italia",
+        "tipologia_immobile": [
+          "residenziale",
+          "commerciale",
+          "produttivo"
+        ],
+        "altri": [
+          {
+            "tipo": "Finalità interventi",
+            "descrizione": "Eliminazione barriere architettoniche secondo DM 236/1989"
+          },
+          {
+            "tipo": "Interventi ammessi dal 2024-2025",
+            "descrizione": "Solo scale, rampe, ascensori, servoscala e piattaforme elevatrici"
+          },
+          {
+            "tipo": "Interventi esclusi dal 2024",
+            "descrizione": "Infissi, pavimenti, servizi igienici, automazione impianti"
+          },
+          {
+            "tipo": "Asseverazione",
+            "descrizione": "Necessaria asseverazione tecnica di conformità al DM 236/1989"
+          }
+        ]
+      },
+      "scadenza": {
+        "data": "2025-12-31",
+        "note": "Ultimo anno per usufruire della detrazione al 75%. Dal 2026 solo bonus ristrutturazione ordinario"
+      },
+      "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazione-per-eliminazione-delle-barriere-architettoniche",
+      "come_fare_domanda": {
+        "metodo": "Detrazione in dichiarazione dei redditi",
+        "documenti": [
+          "Asseverazione tecnica DM 236/1989",
+          "Fatture e bonifici parlanti",
+          "Titoli edilizi se necessari",
+          "Documentazione tecnica interventi"
+        ],
+        "note": "Dal 2024 non più cessione del credito (tranne eccezioni per redditi sotto 15.000€ con disabili)"
+      },
+      "compatibilita": [
+        "superbonus-come-trainato",
+        "bonus-ristrutturazione-alternativo"
+      ],
+      "note_aggiuntive": "2025 ultimo anno al 75%. Interventi ristretti dal 2024. Detrazione spetta anche senza presenza disabili"
+    },
+    {
+      "id": "bonus-mobili-2025",
+      "nome": "Bonus Mobili ed Elettrodomestici",
+      "categoria": [
+        "casa",
+        "arredo",
+        "elettrodomestici"
+      ],
+      "status": "attivo",
+      "descrizione": "Detrazione fiscale per l'acquisto di mobili e grandi elettrodomestici destinati ad immobili in ristrutturazione",
+      "importo": {
+        "tipo": "fisso",
+        "percentuale": 50,
+        "max_spesa": 5000,
+        "detrazione_massima": 2500,
+        "note": "50% delle spese sostenute fino a 5.000€, ripartito in 10 quote annuali"
+      },
+      "isee": {
+        "richiesto": false,
+        "note": "Non richiesta ISEE"
+      },
+      "requisiti": {
+        "cittadinanza": "Non specificato",
+        "residenza": "Non specificato",
+        "tipologia_immobile": [
+          "residenziale_in_ristrutturazione"
+        ],
+        "altri": [
+          {
+            "tipo": "Collegamento ristrutturazione",
+            "descrizione": "Acquisto mobili per immobile oggetto di ristrutturazione iniziata dal 1° gennaio anno precedente"
+          },
+          {
+            "tipo": "Beni ammessi",
+            "descrizione": "Mobili nuovi (letti, armadi, tavoli, sedie, divani, librerie, etc.) e grandi elettrodomestici"
+          },
+          {
+            "tipo": "Classi energetiche",
+            "descrizione": "Elettrodomestici: min classe A forni, E per lavatrici/lavastoviglie, F per frigoriferi"
+          },
+          {
+            "tipo": "Modalità pagamento",
+            "descrizione": "Solo bonifico, carte credito/debito. Vietati contanti e assegni"
+          },
+          {
+            "tipo": "Comunicazione ENEA",
+            "descrizione": "Alcuni elettrodomestici richiedono comunicazione ENEA (non obbligatoria per detrazione)"
+          }
+        ]
+      },
+      "scadenza": {
+        "data": "2025-12-31",
+        "note": "Prorogato per il 2025, confermato anche per il 2026"
+      },
+      "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/bonus-mobili-ed-elettrodomestici",
+      "come_fare_domanda": {
+        "metodo": "Detrazione in dichiarazione dei redditi",
+        "documenti": [
+          "Fatture acquisto con specifica natura/qualità/quantità beni",
+          "Ricevute pagamenti tracciabili",
+          "Documentazione ristrutturazione collegata",
+          "Etichette energetiche elettrodomestici"
+        ],
+        "note": "Include spese trasporto e montaggio se pagate con modalità tracciabili"
+      },
+      "compatibilita": [
+        "bonus-ristrutturazione",
+        "ecobonus",
+        "sismabonus"
+      ],
+      "note_aggiuntive": "Limite 5.000€ per unità immobiliare. Non collegato a tipo abitazione (stessa % per prime e seconde case)"
+    },
+    {
+      "id": "superbonus-residuale-2025",
+      "nome": "Superbonus 65%",
+      "categoria": [
+        "casa",
+        "efficienza_energetica",
+        "residuale"
+      ],
+      "status": "residuale",
+      "descrizione": "Detrazione fiscale per interventi già avviati di efficientamento energetico e antisismici",
+      "importo": {
+        "tipo": "fisso",
+        "percentuale": 65,
+        "note": "Solo per interventi già autorizzati entro 15 ottobre 2024"
+      },
+      "isee": {
+        "richiesto": false,
+        "note": "Non richiesta ISEE"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Immobile in Italia",
+        "tipologia_immobile": [
+          "condominiale",
+          "zone_terremotate"
+        ],
+        "altri": [
+          {
+            "tipo": "Interventi già avviati",
+            "descrizione": "CILA presentata entro 15 ottobre 2024 e delibera condominiale approvata"
+          },
+          {
+            "tipo": "Zone terremotate",
+            "descrizione": "Edifici in comuni colpiti da sisma dal 2009, detrazione 110% fino 31/12/2025"
+          },
+          {
+            "tipo": "Tipologia lavori",
+            "descrizione": "Interventi trainanti: cappotto, caldaie, fotovoltaico. Interventi trainati collegati"
+          }
+        ]
+      },
+      "scadenza": {
+        "data": "2025-12-31",
+        "note": "Solo per lavori già autorizzati. Zone terremotate fino 31/12/2025"
+      },
+      "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/superbonus-110",
+      "come_fare_domanda": {
+        "metodo": "Detrazione in dichiarazione dei redditi",
+        "documenti": [
+          "CILA presentata entro 15/10/2024",
+          "Delibera condominiale approvazione lavori",
+          "Asseverazioni tecniche",
+          "APE ante e post intervento"
+        ],
+        "note": "Solo per interventi già formalmente avviati"
+      },
+      "compatibilita": [],
+      "note_aggiuntive": "Misura in esaurimento. Attivo solo per zone terremotate al 110% e condomini con pratiche già avviate al 65%"
     }
   ]
 }
