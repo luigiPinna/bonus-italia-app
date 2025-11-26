@@ -1180,6 +1180,720 @@
       },
       "compatibilita": [],
       "note_aggiuntive": "Misura in esaurimento. Attivo solo per zone terremotate al 110% e condomini con pratiche già avviate al 65%"
+    },
+    {
+      "id": "bonus-libri-scolastici-regionali",
+      "nome": "Bonus Libri Scolastici Regionali",
+      "categoria": [
+        "istruzione",
+        "scuola",
+        "regionale"
+      ],
+      "status": "attivo",
+      "descrizione": "Contributi regionali per l'acquisto di libri di testo e materiali didattici per studenti delle scuole secondarie",
+      "importo": {
+        "tipo": "variabile_per_regione",
+        "esempi_regionali": [
+          {
+            "regione": "Veneto",
+            "importo_max": 200,
+            "fasce_isee": [
+              {
+                "min": 0,
+                "max": 10632.94,
+                "importo": 200
+              },
+              {
+                "min": 10632.95,
+                "max": 15748.78,
+                "importo": 150
+              }
+            ]
+          },
+          {
+            "regione": "Lombardia",
+            "importo_max": 200,
+            "note": "Variabile secondo bando annuale"
+          },
+          {
+            "regione": "Emilia_Romagna",
+            "fasce_isee": [
+              {
+                "min": 0,
+                "max": 10632.94,
+                "descrizione": "Fascia 1"
+              },
+              {
+                "min": 10632.95,
+                "max": 15748.78,
+                "descrizione": "Fascia 2"
+              }
+            ]
+          },
+          {
+            "regione": "Lazio",
+            "importo_max": 200,
+            "limite_isee": 15493.71,
+            "esempio_roma": {
+              "prima_media": 200,
+              "altre_classi": 170
+            }
+          }
+        ],
+        "note": "Importi e modalità variano per regione e comune. Range tipico 80-230€"
+      },
+      "isee": {
+        "richiesto": true,
+        "limiti_tipici": {
+          "min": 10632.94,
+          "max": 20000,
+          "note": "Varia per regione: da 10.633€ a 20.000€"
+        }
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Nella regione di competenza",
+        "tipologia_scuola": [
+          "scuole_secondarie_primo_grado",
+          "scuole_secondarie_secondo_grado",
+          "istituti_paritari",
+          "percorsi_IeFP"
+        ],
+        "altri": [
+          {
+            "tipo": "Età studente",
+            "descrizione": "Generalmente nati dal 1° gennaio 2001. Per disabili nessun limite"
+          },
+          {
+            "tipo": "Iscrizione regolare",
+            "descrizione": "Iscrizione e frequenza anno scolastico 2025-2026"
+          },
+          {
+            "tipo": "Beni acquistabili",
+            "descrizione": "Libri di testo, contenuti digitali. Esclusi dizionari e dispositivi tech (varia per regione)"
+          }
+        ]
+      },
+      "scadenza": {
+        "periodo": "Settembre-Ottobre 2025",
+        "scadenze_principali": [
+          {
+            "regione": "Veneto",
+            "data": "2025-10-17"
+          },
+          {
+            "regione": "Emilia_Romagna",
+            "data": "2025-10-24"
+          },
+          {
+            "regione": "Lazio_Roma",
+            "data": "2025-09-12"
+          },
+          {
+            "regione": "Campania",
+            "data": "2025-09-07"
+          },
+          {
+            "regione": "Toscana",
+            "data": "2025-10-03"
+          }
+        ],
+        "note": "Scadenze differenti per ogni regione. Controllare bandi locali"
+      },
+      "link_ufficiale": "Variabile per regione",
+      "come_fare_domanda": {
+        "metodo": "Online tramite portali regionali/comunali",
+        "documenti": [
+          "ISEE aggiornato",
+          "Certificato frequenza scolastica",
+          "Documento identità richiedente",
+          "Codice fiscale studente",
+          "Fatture acquisto libri (per rimborso)"
+        ],
+        "modalita_accesso": [
+          "SPID",
+          "CIE",
+          "CNS"
+        ],
+        "note": "Modalità specifica per ogni regione. Alcuni richiedono domanda al Comune"
+      },
+      "compatibilita": [
+        "borse-studio-regionali",
+        "contributi-trasporto"
+      ],
+      "note_aggiuntive": "Gestione regionale/comunale. Modalità: voucher, rimborso o comodato. Controllare bandi specifici territoriali"
+    },
+    {
+      "id": "voucher-formativi-regionali",
+      "nome": "Voucher Formativi Regionali",
+      "categoria": [
+        "formazione",
+        "professionale",
+        "regionale"
+      ],
+      "status": "attivo",
+      "descrizione": "Contributi per la partecipazione a corsi di formazione professionale e aggiornamento competenze",
+      "importo": {
+        "tipo": "variabile_per_tipologia",
+        "esempi_regionali": [
+          {
+            "regione": "Toscana",
+            "categoria": "Liberi professionisti",
+            "importo_max": 3000,
+            "copertura": "80% costo corso"
+          },
+          {
+            "regione": "Lombardia",
+            "categoria": "Lavoratori dipendenti",
+            "importo_max": 2000,
+            "fasce_eqf": [
+              {
+                "livello": "6-8",
+                "importo": 2000
+              },
+              {
+                "livello": "4-5",
+                "importo": 1500
+              },
+              {
+                "livello": "3",
+                "importo": 800
+              }
+            ]
+          },
+          {
+            "regione": "Valle_Aosta",
+            "categoria": "Formazione professionale",
+            "importo_max": 5000,
+            "copertura": "80% costo corso"
+          },
+          {
+            "regione": "Umbria",
+            "categoria": "Disoccupati",
+            "importo_max": 4000,
+            "note": "Programma Umbriattiva Lavoro"
+          }
+        ],
+        "note": "Copertura generalmente 80% del costo. Importi da 800€ a 5.000€"
+      },
+      "isee": {
+        "richiesto": false,
+        "note": "Generalmente non richiesto. Criteri basati su status lavorativo e residenza"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Nella regione di competenza",
+        "target_destinatari": [
+          "liberi_professionisti",
+          "lavoratori_dipendenti",
+          "disoccupati",
+          "imprenditori",
+          "soci_cooperative"
+        ],
+        "altri": [
+          {
+            "tipo": "Età",
+            "descrizione": "Generalmente 18-65 anni, con premialità per under 40"
+          },
+          {
+            "tipo": "Status professionale",
+            "descrizione": "Iscrizione albi professionali, partita IVA, contratto lavoro o disoccupazione"
+          },
+          {
+            "tipo": "Durata corso",
+            "descrizione": "Minimo 16 ore programmata. Corsi accreditati o riconosciuti"
+          },
+          {
+            "tipo": "Tipologia formazione",
+            "descrizione": "Corsi aggiornamento, master, specializzazioni, certificazioni professionali"
+          }
+        ]
+      },
+      "scadenza": {
+        "note": "Bandi periodici con scadenze variabili",
+        "esempi_scadenze": [
+          {
+            "regione": "Toscana",
+            "data": "2025-05-16",
+            "note": "Bando annuale"
+          },
+          {
+            "regione": "Valle_Aosta",
+            "data": "2025-10-31"
+          },
+          {
+            "regione": "Lombardia",
+            "note": "Bandi continui"
+          }
+        ]
+      },
+      "link_ufficiale": "Portali regionali FSE",
+      "come_fare_domanda": {
+        "metodo": "Online tramite piattaforme regionali",
+        "documenti": [
+          "Documento identità",
+          "Codice fiscale",
+          "Certificazione professionale/iscrizione albo",
+          "Preventivo corso formativo",
+          "Attestazione stato lavorativo"
+        ],
+        "modalita_accesso": [
+          "SPID",
+          "CIE",
+          "CNS",
+          "Credenziali regionali"
+        ],
+        "note": "Procedure online. Alcune regioni permettono anche domanda cartacea"
+      },
+      "compatibilita": [
+        "borse-studio-alta-formazione",
+        "voucher-aziendali"
+      ],
+      "note_aggiuntive": "Finanziati da FSE+ 2021-2027. Premialità per giovani e settori strategici. Corsi devono essere accreditati"
+    },
+    {
+      "id": "borse-studio-universitarie-regionali",
+      "nome": "Borse di Studio Universitarie",
+      "categoria": [
+        "istruzione",
+        "universita",
+        "diritto_studio"
+      ],
+      "status": "attivo",
+      "descrizione": "Contributi economici per il sostegno agli studi universitari basati su reddito e merito",
+      "importo": {
+        "tipo": "variabile_per_tipologia_studente",
+        "importi_2025_2026": [
+          {
+            "tipologia": "fuori_sede",
+            "importo_min": 7072,
+            "importo_max": 8133,
+            "note": "Massimo storico per studenti con maggiori difficoltà"
+          },
+          {
+            "tipologia": "pendolare",
+            "importo": 4133
+          },
+          {
+            "tipologia": "in_sede",
+            "importo": 2850
+          }
+        ],
+        "esempi_regionali": [
+          {
+            "regione": "Lombardia",
+            "budget": "82 milioni euro",
+            "beneficiari": "Aumentati del 21% rispetto 2024"
+          },
+          {
+            "regione": "Liguria",
+            "beneficiari": 4946,
+            "copertura": "100% richiedenti",
+            "budget": "18.3 milioni euro"
+          },
+          {
+            "regione": "Toscana",
+            "voucher_alta_formazione": 4000,
+            "target": "Master post-laurea"
+          }
+        ],
+        "note": "Importi aumentati per adeguamento ISTAT. Include alloggio e ristorazione"
+      },
+      "isee": {
+        "richiesto": true,
+        "limite_generale": 26306.25,
+        "ispe_limite": 42530.5,
+        "note": "ISEEU per diritto allo studio universitario. Limiti adeguati annualmente"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Variabile per regione",
+        "tipologia_corso": [
+          "laurea_triennale",
+          "laurea_magistrale",
+          "laurea_magistrale_ciclo_unico",
+          "dottorato_ricerca",
+          "scuole_specializzazione"
+        ],
+        "altri": [
+          {
+            "tipo": "Merito primo anno",
+            "descrizione": "Voto diploma, prove standardizzate. 20 CFU entro scadenze"
+          },
+          {
+            "tipo": "Merito anni successivi",
+            "descrizione": "35 CFU per mantenimento (aumentato da 25). Media esami considerata"
+          },
+          {
+            "tipo": "Limiti carriera",
+            "descrizione": "Primo titolo del livello. Non aver già beneficiato borsa stesso livello"
+          },
+          {
+            "tipo": "Categorie speciali",
+            "descrizione": "Requisiti agevolati per disabili, figli minori, atleti agonisti"
+          }
+        ]
+      },
+      "scadenza": {
+        "periodo_tipico": "Luglio-Settembre",
+        "esempi_scadenze": [
+          {
+            "ente": "ARDSU Toscana",
+            "data": "2025-09-05"
+          },
+          {
+            "ente": "Università Milano",
+            "data": "2025-09-30"
+          },
+          {
+            "ente": "Università Padova",
+            "note": "Fino a settembre"
+          },
+          {
+            "ente": "Dottorati",
+            "data": "2025-11-14"
+          }
+        ]
+      },
+      "link_ufficiale": "Enti regionali DSU e singoli Atenei",
+      "come_fare_domanda": {
+        "metodo": "Online tramite portali universitari/enti DSU",
+        "documenti": [
+          "ISEEU aggiornato",
+          "Documento identità",
+          "Certificato iscrizione",
+          "Documentazione merito (diplomi, certificati)",
+          "Autocertificazioni varie"
+        ],
+        "modalita_accesso": [
+          "SPID",
+          "CIE",
+          "Credenziali universitarie"
+        ],
+        "note": "Procedure online obbligatorie. Una domanda per tutti i benefici"
+      },
+      "compatibilita": [
+        "esonero-tasse-universitarie",
+        "servizi-mensa-alloggio",
+        "voucher-alta-formazione"
+      ],
+      "note_aggiuntive": "Include anche posto alloggio e mensa gratuita. Erogazione in 1-2 rate. Controlli antifrode attivi"
+    },
+    {
+      "id": "bonus-trasporti-studenti",
+      "nome": "Bonus Trasporti Studenti",
+      "categoria": [
+        "trasporti",
+        "mobilita",
+        "studenti"
+      ],
+      "status": "attivo",
+      "descrizione": "Agevolazioni e sconti per abbonamenti ai trasporti pubblici destinati a studenti",
+      "importo": {
+        "tipo": "variabile_per_regione",
+        "tipologie_agevolazione": [
+          {
+            "tipo": "trasporto_gratuito",
+            "regioni": [
+              "Campania",
+              "Emilia_Romagna",
+              "Piemonte"
+            ],
+            "note": "Viaggi completamente gratuiti"
+          },
+          {
+            "tipo": "sconto_50_percento",
+            "regioni": [
+              "Puglia",
+              "Liguria",
+              "Friuli_VG",
+              "Veneto"
+            ],
+            "note": "Riduzione del 50% su abbonamenti"
+          },
+          {
+            "tipo": "tariffe_agevolate",
+            "esempi": [
+              {
+                "citta": "Milano",
+                "costo": "22€/mese under 27"
+              },
+              {
+                "citta": "Bari",
+                "costo": "20€/anno studenti"
+              },
+              {
+                "citta": "Catania",
+                "costo": "20€/anno universitari"
+              },
+              {
+                "citta": "Roma",
+                "costo": "50€/anno under 19"
+              }
+            ]
+          }
+        ],
+        "note": "Varia da gratuito a sconti fino al 75%. Alcuni basati su ISEE"
+      },
+      "isee": {
+        "richiesto": "variabile",
+        "limiti_tipici": [
+          {
+            "regione": "Campania",
+            "limite": 35000,
+            "eta": "11-26 anni"
+          },
+          {
+            "regione": "Emilia_Romagna",
+            "limite": 30000
+          },
+          {
+            "regione": "Puglia",
+            "limite": 12000,
+            "limite_famiglia_numerosa": 15000
+          }
+        ],
+        "note": "Alcune regioni senza limiti ISEE, altre con soglie da 15.000€ a 35.000€"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Nella regione/comune di competenza",
+        "target_eta": [
+          "11-26_anni",
+          "under_19",
+          "studenti_universitari"
+        ],
+        "altri": [
+          {
+            "tipo": "Iscrizione scolastica",
+            "descrizione": "Iscrizione e frequenza regolare anno scolastico/accademico 2025-2026"
+          },
+          {
+            "tipo": "Tipologia mezzi",
+            "descrizione": "Bus urbani/extraurbani, metro, tram, treni regionali"
+          },
+          {
+            "tipo": "Territorio validità",
+            "descrizione": "Generalmente limitato alla regione/provincia di residenza"
+          },
+          {
+            "tipo": "Durata validità",
+            "descrizione": "Anno scolastico o calendario. Alcuni limitati a periodi estivi"
+          }
+        ]
+      },
+      "scadenza": {
+        "note": "Bandi annuali con scadenze variabili",
+        "esempi_scadenze": [
+          {
+            "regione": "Campania",
+            "data": "2025-12-20"
+          },
+          {
+            "regione": "Emilia_Romagna",
+            "data": "2025-12-18"
+          },
+          {
+            "regione": "Lazio",
+            "data": "2025-09-15",
+            "note": "Estate gratuita"
+          },
+          {
+            "regione": "Puglia",
+            "periodo": "Ottobre 2025 - Maggio 2026"
+          }
+        ]
+      },
+      "link_ufficiale": "Portali regionali trasporti e mobilità",
+      "come_fare_domanda": {
+        "metodo": "Variabile: online, app, piattaforme dedicate",
+        "documenti": [
+          "ISEE aggiornato (se richiesto)",
+          "Certificato frequenza scolastica",
+          "Documento identità",
+          "Tessera/abbonamento esistente"
+        ],
+        "modalita_accesso": [
+          "Portali regionali",
+          "App dedicate (es. Bella X Noi per Lazio)",
+          "SPID/CIE",
+          "Piattaforme trasporti"
+        ],
+        "note": "Modalità molto diverse per regione. Alcune automatiche, altre su domanda"
+      },
+      "compatibilita": [
+        "borse-studio",
+        "voucher-scuola",
+        "altri-bonus-regionali"
+      ],
+      "note_aggiuntive": "Gestione locale. Cumulabile con altri benefici. Alcune iniziative stagionali (estate). Verifica portali territoriali"
+    },
+    {
+      "id": "voucher-alta-formazione",
+      "nome": "Voucher Alta Formazione",
+      "categoria": [
+        "formazione",
+        "post_laurea",
+        "master"
+      ],
+      "status": "attivo",
+      "descrizione": "Contributi per la frequenza di master universitari e corsi di alta formazione post-laurea",
+      "importo": {
+        "tipo": "fisso",
+        "importo_max": 4000,
+        "copertura": "Spese iscrizione master",
+        "note": "Rimborso totale o parziale spese iscrizione"
+      },
+      "isee": {
+        "richiesto": true,
+        "limite_max": 36000,
+        "note": "ISEE valido per diritto allo studio universitario"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Regione erogante (es. Toscana)",
+        "titolo_studio": [
+          "laurea_triennale",
+          "laurea_specialistica",
+          "laurea_magistrale",
+          "laurea_ciclo_unico",
+          "laurea_vecchio_ordinamento"
+        ],
+        "altri": [
+          {
+            "tipo": "Età",
+            "descrizione": "Fino a 35 anni (34 anni e 364 giorni)"
+          },
+          {
+            "tipo": "Tipologia corso",
+            "descrizione": "Master I e II livello in Italia attivati nell'a.a. di riferimento"
+          },
+          {
+            "tipo": "Non cumulo",
+            "descrizione": "Non aver già beneficiato di voucher alta formazione anni precedenti"
+          },
+          {
+            "tipo": "DSU obbligatoria",
+            "descrizione": "Dichiarazione Sostitutiva Unica entro scadenza bando"
+          }
+        ]
+      },
+      "scadenza": {
+        "data": "2025-12-31",
+        "note": "Scadenza bandi generalmente dicembre. Alcuni con aperture primaverili"
+      },
+      "link_ufficiale": "ARDSU e enti regionali DSU",
+      "come_fare_domanda": {
+        "metodo": "Online tramite piattaforme regionali",
+        "documenti": [
+          "ISEE per diritto allo studio",
+          "Laurea conseguita",
+          "Documentazione master scelto",
+          "Documento identità",
+          "DSU aggiornata"
+        ],
+        "modalita_accesso": [
+          "SPID",
+          "CIE",
+          "CNS",
+          "Tessera sanitaria abilitata"
+        ],
+        "note": "Documentazione in formato PDF. Massimo 2 cartelle ZIP da 5MB"
+      },
+      "compatibilita": [
+        "borse-studio-universitarie",
+        "prestiti-onore-studio"
+      ],
+      "note_aggiuntive": "Finanziamento PR FSE+ 2021-2027. Graduatoria per ISEE crescente. Voucher utilizzabile come rimborso spese"
+    },
+    {
+      "id": "no-tax-area-universitaria",
+      "nome": "No Tax Area Universitaria",
+      "categoria": [
+        "istruzione",
+        "universita",
+        "esenzioni"
+      ],
+      "status": "attivo",
+      "descrizione": "Esenzione totale o parziale dalle tasse universitarie basata su ISEE familiare",
+      "importo": {
+        "tipo": "esenzione_percentuale",
+        "fasce": [
+          {
+            "isee_max": 22000,
+            "esenzione": "100%",
+            "descrizione": "Esonero totale tasse universitarie"
+          },
+          {
+            "isee_min": 22000,
+            "isee_max": 24000,
+            "esenzione": "80%",
+            "descrizione": "Forte riduzione tasse"
+          },
+          {
+            "isee_min": 24000,
+            "isee_max": 26000,
+            "esenzione": "50%",
+            "descrizione": "Riduzione media tasse"
+          },
+          {
+            "isee_min": 26000,
+            "isee_max": 30000,
+            "esenzione": "variabile",
+            "descrizione": "Riduzioni decrescenti"
+          }
+        ],
+        "note": "Senza ISEE si applica tassa massima. Esenzioni cumulative con altri benefici"
+      },
+      "isee": {
+        "richiesto": true,
+        "tipo": "ISEEU",
+        "note": "ISEE per diritto allo studio universitario obbligatorio per accedere alle agevolazioni"
+      },
+      "requisiti": {
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Non specificata",
+        "tipologia_corso": [
+          "laurea_triennale",
+          "laurea_magistrale",
+          "laurea_magistrale_ciclo_unico",
+          "corsi_post_laurea"
+        ],
+        "altri": [
+          {
+            "tipo": "Iscrizione regolare",
+            "descrizione": "Immatricolazione e iscrizione anno accademico di riferimento"
+          },
+          {
+            "tipo": "Requisiti merito",
+            "descrizione": "Mantenimento standard di merito per anni successivi al primo"
+          },
+          {
+            "tipo": "Prima laurea",
+            "descrizione": "Generalmente per primo titolo del livello"
+          }
+        ]
+      },
+      "scadenza": {
+        "note": "Domanda contestuale a iscrizione universitaria",
+        "periodo": "Luglio-Settembre per ogni anno accademico"
+      },
+      "link_ufficiale": "Singoli atenei e MUR",
+      "come_fare_domanda": {
+        "metodo": "Automatico con presentazione ISEEU",
+        "documenti": [
+          "ISEEU valido",
+          "Iscrizione universitaria",
+          "DSU completa"
+        ],
+        "note": "Applicazione automatica da parte dell'ateneo. Necessario solo presentare ISEE"
+      },
+      "compatibilita": [
+        "borse-studio-universitarie",
+        "servizi-mensa-alloggio",
+        "bonus-trasporti"
+      ],
+      "note_aggiuntive": "Misura nazionale estesa a tutti gli atenei. Cumulo con borse di studio. Controlli antifrode attivi"
     }
   ]
 }
