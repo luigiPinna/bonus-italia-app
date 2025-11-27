@@ -1,6 +1,6 @@
 'use client';
 
-import { Sparkles, User, Moon, Sun, Heart } from 'lucide-react';
+import { Sparkles, User, Moon, Sun, Heart, Calculator } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
@@ -38,6 +38,16 @@ export function Navbar() {
 
           {/* Toggle dark mode, preferiti e icona utente */}
           <div className="flex items-center gap-2">
+            <Link href="/calcolatore-eligibilita">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="!h-10 !px-3 !rounded-full"
+                aria-label="Calcolatore eligibilità"
+              >
+                <Calculator className="h-5 w-5 flex-shrink-0" />
+              </Button>
+            </Link>
             <Link href="/favorites">
               <Button
                 variant="ghost"
