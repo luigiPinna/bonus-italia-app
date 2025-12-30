@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { GoogleAnalytics } from '@/components/analytics';
+import { CookieConsentBanner } from '@/components/cookie-consent-banner';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -55,6 +56,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           {children}
+          <CookieConsentBanner />
         </ThemeProvider>
       </body>
     </html>
