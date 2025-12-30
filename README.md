@@ -67,6 +67,35 @@ npm run build
 npm run start
 ```
 
+## 📊 Configurazione Analytics (Google Analytics 4)
+
+L'app è configurata per supportare Google Analytics 4 (gratuito). Per abilitare il tracking:
+
+### 1. Crea un account Google Analytics
+1. Vai su [Google Analytics](https://analytics.google.com/)
+2. Crea un nuovo account (se non ne hai uno)
+3. Crea una nuova proprietà per il tuo sito web
+4. Seleziona "Web" come piattaforma
+5. Inserisci il nome del sito e l'URL
+
+### 2. Ottieni il Measurement ID
+1. Nella dashboard di Google Analytics, vai su **Amministrazione** (icona ingranaggio)
+2. Seleziona la tua proprietà
+3. Vai su **Flussi di dati** > **Web**
+4. Copia il **Measurement ID** (formato: `G-XXXXXXXXXX`)
+
+### 3. Configura la variabile d'ambiente
+
+#### Per sviluppo locale
+Crea un file `.env.local` nella root del progetto:
+
+```bash
+# .env.local
+NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
+```
+
+Sostituisci `G-XXXXXXXXXX` con il tuo Measurement ID reale.
+
 ## ⚡ Funzionalità Core MVP
 
 ### 🏠 Homepage
