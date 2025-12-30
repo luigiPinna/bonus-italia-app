@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     description: 'Scopri tutti i bonus e incentivi disponibili in Italia per le famiglie',
     images: ['/og-image.png'],
   },
-  metadataBase: new URL('https://bonusly.vercel.app'), // Aggiorna con il tuo URL reale quando pubblichi
+  metadataBase: new URL('https://luigipinna.github.io/bonus-italia-app/'),
 };
 
 export default function RootLayout({
