@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     siteName: 'Bonusly',
     images: [
       {
-        url: '/og-image.png',
+        url: 'https://luigipinna.github.io/bonus-italia-app/og-image.png',
         width: 1200,
         height: 630,
         alt: 'Bonus Italia - Bonus e Incentivi per le Famiglie',
