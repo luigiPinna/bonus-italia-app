@@ -165,4 +165,8 @@ Per segnalazioni di errori nei dati o suggerimenti:
 
 ---
 
-**Versione MVP** | **Target**: Cittadini italiani | **Ultimo aggiornamento**: Novembre 2025
+**Versione MVP** | **Target**: Cittadini italiani | **Ultimo aggiornamento**: Dicembre 2025
+
+---
+
+Available temporary on:  https://luigipinna.github.io/bonus-italia-app/
