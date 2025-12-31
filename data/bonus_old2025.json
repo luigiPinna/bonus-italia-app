@@ -1,15 +1,15 @@
 {
-  "ultimo_aggiornamento": "2025-12-31",
+  "ultimo_aggiornamento": "2025-11-26",
   "bonus": [
     {
       "id": "bonus-nuove-nascite-2025",
-      "nome": "Bonus Nuove Nascite",
+      "nome": "Bonus Nuove Nascite 2025",
       "categoria": [
         "natalità",
         "famiglia"
       ],
       "status": "attivo",
-      "descrizione": "Contributo una tantum per le famiglie con nuovi nati o adozioni dal 2025",
+      "descrizione": "Contributo una tantum per le famiglie con nuovi nati o adozioni nel 2025",
       "importo": {
         "tipo": "fisso",
         "note": "Importo fisso di 1.000€ per ogni nuovo nato o adozione",
@@ -17,7 +17,7 @@
       },
       "isee": {
         "richiesto": true,
-        "note": "ISEE minorenni non superiore a 40.000€. Nel calcolo ISEE non si tiene conto degli importi dell'Assegno Unico",
+        "note": "ISEE non superiore a 40.000€",
         "max": 40000
       },
       "requisiti": {
@@ -25,39 +25,34 @@
           {
             "tipo": "Nascita/adozione",
             "descrizione": "Nascita o adozione avvenuta dal 1° gennaio 2025"
-          },
-          {
-            "tipo": "Convivenza",
-            "descrizione": "Il genitore richiedente deve essere convivente con il figlio"
           }
         ],
-        "cittadinanza": "Italiana, UE, permesso soggiorno UE lungo periodo o permesso unico lavoro >6 mesi",
-        "residenza": "Italia (dalla nascita/adozione fino alla domanda)",
+        "cittadinanza": "Italiana o UE",
+        "residenza": "Italia",
         "eta_figli": [
           "gravidanza",
           "0-1"
         ]
       },
       "scadenza": {
-        "data": "2026-12-31",
-        "note": "Domanda entro 120 giorni dalla nascita/adozione (esteso da 60 giorni). Confermato anche per il 2026 con stanziamento di 360 milioni"
+        "data": "2025-12-31",
+        "note": "Domande dal 17 aprile 2025. Domanda entro 90 giorni dalla nascita/adozione"
       },
-      "link_ufficiale": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-nuovi-nati.html",
+      "link_ufficiale": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
       "come_fare_domanda": {
         "metodo": "Online tramite sito INPS",
-        "note": "Accesso con SPID, CIE o CNS. Anche tramite Contact Center o Patronato",
+        "note": "Accesso con SPID, CIE o credenziali INPS",
         "documenti": [
-          "ISEE minorenni aggiornato",
-          "Codice fiscale genitori e figlio",
-          "IBAN per accredito"
+          "Certificato di nascita o adozione",
+          "ISEE aggiornato",
+          "Codice fiscale genitori e figlio"
         ],
-        "link": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-nuovi-nati.html"
+        "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398"
       },
       "compatibilita": [
-        "assegno-unico-universale",
-        "bonus-asilo-nido"
+        "assegno-unico-universale"
       ],
-      "note_aggiuntive": "Cumulabile con Assegno Unico Universale e Bonus Asilo Nido. Non concorre alla formazione del reddito IRPEF. Erogazione in ordine cronologico fino a esaurimento fondi"
+      "note_aggiuntive": "Cumulabile con Assegno Unico Universale. Escludere dall'ISEE i soldi dell'Assegno Unico"
     },
     {
       "id": "assegno-unico-universale",
@@ -69,47 +64,43 @@
       "descrizione": "Contributo mensile per il sostegno economico delle famiglie con figli a carico",
       "importo": {
         "tipo": "variabile",
-        "note": "Importo mensile per figlio. Senza ISEE si riceve l'importo minimo. Importi rivalutati +1,4% dal 2026",
+        "note": "Importo mensile per figlio. Senza ISEE si riceve l'importo minimo di 57,50€",
         "fasce_isee": [
           {
             "min": null,
-            "max": 17468.51,
-            "importo": 203.8
+            "max": 17227.33,
+            "importo": 201
           },
           {
-            "min": 17468.51,
+            "min": 17227.33,
             "max": 25000,
             "importo": 175
           },
           {
             "min": 25000,
-            "max": 46582.71,
+            "max": 45939.56,
             "importo": 140
           },
           {
-            "min": 46582.71,
+            "min": 45939.56,
             "max": null,
-            "importo": 58.3
+            "importo": 57.5
           }
         ]
       },
       "isee": {
         "richiesto": false,
-        "note": "ISEE non obbligatorio ma necessario per ottenere l'importo pieno. Senza ISEE si riceve l'importo minimo di 58,30€"
+        "note": "ISEE non obbligatorio ma necessario per ottenere l'importo pieno"
       },
       "requisiti": {
         "altri": [
           {
             "tipo": "Età figli",
             "descrizione": "Figli fino a 21 anni (o senza limiti se disabili)"
-          },
-          {
-            "tipo": "Figli maggiorenni 18-21",
-            "descrizione": "Devono frequentare corso di studi, tirocinio, lavoro con reddito <8.000€, iscritti al CPI o servizio civile"
           }
         ],
         "cittadinanza": "Italiana, UE o permesso di soggiorno",
-        "residenza": "Italia (anche 2 anni non continuativi per extra-UE)",
+        "residenza": "Italia",
         "eta_figli": [
           "0-1",
           "1-3",
@@ -118,25 +109,25 @@
         ]
       },
       "scadenza": {
-        "data": "2026-02-28",
-        "note": "Presentare ISEE 2026 entro fine febbraio per evitare importo minimo. Arretrati recuperabili se ISEE presentato entro 30 giugno"
+        "data": "2025-06-30",
+        "note": "ISEE entro il 30 giugno 2025 per avere arretrati. Erogazione mensile continuativa"
       },
-      "link_ufficiale": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico.html",
+      "link_ufficiale": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
       "come_fare_domanda": {
         "metodo": "Online tramite sito INPS",
-        "note": "Domanda unica per tutti i figli. Chi già percepisce AUU non deve ripresentare domanda, solo aggiornare ISEE",
+        "note": "Accesso con SPID, CIE o credenziali INPS. Domanda unica per tutti i figli",
         "documenti": [
-          "ISEE aggiornato (consigliato)",
+          "ISEE aggiornato (opzionale ma consigliato)",
           "Codice fiscale genitori e figli",
-          "IBAN per accredito"
+          "Documenti di identità"
         ],
-        "link": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.assegno-unico-e-universale-per-i-figli-a-carico.html"
+        "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398"
       },
       "compatibilita": [
         "bonus-nuove-nascite-2025",
         "bonus-asilo-nido"
       ],
-      "note_aggiuntive": "Erogato mensilmente. Dal 2026 l'AUU non viene più conteggiato nel calcolo ISEE. Maggiorazioni per: figli disabili, madri under 21, nuclei numerosi, secondo percettore di reddito"
+      "note_aggiuntive": "Erogato mensilmente, cumulabile con altri bonus. Tempo fino al 30/06/2025 per ISEE e arretrati"
     },
     {
       "id": "bonus-asilo-nido",
@@ -146,10 +137,10 @@
         "famiglia"
       ],
       "status": "attivo",
-      "descrizione": "Contributo per le spese di asilo nido per bambini fino a 3 anni o supporto domiciliare per bambini con gravi patologie",
+      "descrizione": "Contributo per le spese di asilo nido per bambini fino a 3 anni",
       "importo": {
         "tipo": "variabile",
-        "note": "Importo annuo massimo erogato in 11 mensilità. Nel calcolo ISEE non si tiene conto dell'Assegno Unico",
+        "note": "Importo annuo massimo. Per nati dal 1° gennaio 2024: fino a 3.600€. Per nati prima: fino a 3.000€",
         "fasce_isee": [
           {
             "min": null,
@@ -159,7 +150,7 @@
           {
             "min": 25000,
             "max": 40000,
-            "importo": 3000
+            "importo": 2500
           },
           {
             "min": 40000,
@@ -176,15 +167,11 @@
         "altri": [
           {
             "tipo": "Età bambino",
-            "descrizione": "Bambino fino a 36 mesi (3 anni)"
+            "descrizione": "Bambino fino a 3 anni"
           },
           {
             "tipo": "Frequenza",
-            "descrizione": "Frequenza di asilo nido pubblico, privato autorizzato, micronido o altri servizi educativi per l'infanzia"
-          },
-          {
-            "tipo": "Supporto domiciliare",
-            "descrizione": "Alternativa per bambini con gravi patologie croniche certificate che non possono frequentare il nido"
+            "descrizione": "Frequenza di asilo nido pubblico o privato autorizzato"
           }
         ],
         "cittadinanza": "Italiana, UE o permesso di soggiorno",
@@ -195,101 +182,49 @@
         ]
       },
       "scadenza": {
-        "data": "2026-12-31",
+        "data": "2025-12-31",
         "note": "Domanda entro il 31 dicembre dell'anno di riferimento"
       },
-      "link_ufficiale": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-asilo-nido-e-forme-di-supporto-presso-la-propria-abitazione-51105.html",
+      "link_ufficiale": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398",
       "come_fare_domanda": {
         "metodo": "Online tramite sito INPS",
-        "note": "Dal 2026 la domanda vale fino ai 3 anni del bambino (non serve più ripresentarla ogni anno). Necessario allegare ricevute pagamento rette",
+        "note": "Accesso con SPID, CIE o credenziali INPS oppure tramite Patronato",
         "documenti": [
           "ISEE minorenni aggiornato",
-          "Ricevute di pagamento rette",
-          "Codice fiscale genitori e figlio",
-          "Per supporto domiciliare: attestazione pediatra"
+          "Certificato di frequenza asilo nido",
+          "Ricevute di pagamento",
+          "Codice fiscale genitori e figlio"
         ],
-        "link": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-asilo-nido-e-forme-di-supporto-presso-la-propria-abitazione-51105.html"
+        "link": "https://www.inps.it/nuovoportaleinps/default.aspx?itemdir=53398"
       },
       "compatibilita": [
         "assegno-unico-universale"
       ],
-      "note_aggiuntive": "NOVITÀ 2026: domanda valida per 3 anni, ampliata platea strutture ammesse, possibile riesame domande escluse 2024-2025. Non cumulabile con detrazioni fiscali frequenza asili nido"
+      "note_aggiuntive": "Rimborso delle spese sostenute per asilo nido. Erogazione in 11 rate mensili"
     },
     {
-      "id": "bonus-sociale-utenze",
-      "nome": "Bonus Sociale Luce, Gas e Acqua",
+      "id": "bonus-bollette-200",
+      "nome": "Bonus Bollette 200€",
       "categoria": [
         "utenze"
       ],
       "status": "attivo",
-      "descrizione": "Sconto automatico sulle bollette di luce, gas e acqua per famiglie in difficoltà economica",
-      "importo": {
-        "tipo": "variabile",
-        "note": "Sconto variabile in base ai consumi, composizione familiare e zona climatica. Luce: 56-240€/anno. Gas: variabile per zona e uso"
-      },
-      "isee": {
-        "richiesto": true,
-        "note": "ISEE non superiore a 9.530€ (o 20.000€ per famiglie con almeno 4 figli a carico)",
-        "max": 9530
-      },
-      "requisiti": {
-        "altri": [
-          {
-            "tipo": "Utenza",
-            "descrizione": "Titolarità di utenza elettrica/gas/idrica intestata a un componente del nucleo ISEE"
-          },
-          {
-            "tipo": "Famiglia numerosa",
-            "descrizione": "Per famiglie con almeno 4 figli: ISEE fino a 20.000€"
-          },
-          {
-            "tipo": "Disagio fisico",
-            "descrizione": "Bonus elettrico aggiuntivo per chi usa apparecchiature elettromedicali salvavita (indipendente da ISEE)"
-          }
-        ],
-        "cittadinanza": "Non specificato",
-        "residenza": "Italia",
-        "eta_figli": []
-      },
-      "scadenza": {
-        "note": "Rinnovo automatico annuale previa presentazione DSU/ISEE"
-      },
-      "link_ufficiale": "https://www.arera.it/consumatori/bonus-sociale",
-      "come_fare_domanda": {
-        "metodo": "Automatico",
-        "note": "Riconoscimento automatico per chi presenta ISEE nei limiti. Non serve domanda specifica",
-        "documenti": [
-          "DSU per ottenere ISEE aggiornato"
-        ]
-      },
-      "compatibilita": [
-        "bonus-sociale-rifiuti-2026"
-      ],
-      "note_aggiuntive": "Dal 2026: soglie ISEE tornate a 9.530€/20.000€ (finito bonus straordinario 200€). NOVITÀ 2026: in arrivo anche bonus sociale rifiuti (sconto 25% TARI) con stessi requisiti"
-    },
-    {
-      "id": "bonus-55-euro-vulnerabili",
-      "nome": "Bonus Bollette 55€ Famiglie Vulnerabili",
-      "categoria": [
-        "utenze"
-      ],
-      "status": "attivo",
-      "descrizione": "Contributo straordinario di 55€ annui per le bollette elettriche destinato alle famiglie vulnerabili",
+      "descrizione": "Contributo automatico di 200€ in bolletta per le famiglie con ISEE sotto i 25.000€",
       "importo": {
         "tipo": "fisso",
-        "note": "Contributo annuo di 55€ applicato direttamente in bolletta elettrica",
-        "valore": 55
+        "note": "Contributo una tantum di 200€ applicato direttamente in bolletta",
+        "valore": 200
       },
       "isee": {
         "richiesto": true,
-        "note": "ISEE non superiore a 15.000€ (o 20.000€ per famiglie con almeno 4 figli)",
-        "max": 15000
+        "note": "ISEE non superiore a 25.000€",
+        "max": 25000
       },
       "requisiti": {
         "altri": [
           {
             "tipo": "Utenza",
-            "descrizione": "Titolarità di utenza elettrica domestica"
+            "descrizione": "Titolarità di utenza energetica"
           }
         ],
         "cittadinanza": "Non specificato",
@@ -297,13 +232,12 @@
         "eta_figli": []
       },
       "scadenza": {
-        "data": "2026-12-31",
-        "note": "Misura prevista per il 2026"
+        "note": "Erogazione automatica previa presentazione ISEE"
       },
       "link_ufficiale": "",
       "come_fare_domanda": {
         "metodo": "Automatico",
-        "note": "Accredito automatico in bolletta previa presentazione ISEE",
+        "note": "Non serve domanda specifica. Sufficiente avere ISEE valido sotto 25.000€",
         "documenti": [
           "DSU per ottenere ISEE aggiornato"
         ]
@@ -311,7 +245,55 @@
       "compatibilita": [
         "bonus-sociale-utenze"
       ],
-      "note_aggiuntive": "NOVITÀ 2026: contributo aggiuntivo rispetto al bonus sociale esistente, cumulabile con esso"
+      "note_aggiuntive": "Automatico per chi ha ISEE sotto 25.000€. Cumulabile con bonus sociale"
+    },
+    {
+      "id": "bonus-sociale-utenze",
+      "nome": "Bonus Sociale Luce e Gas",
+      "categoria": [
+        "utenze"
+      ],
+      "status": "attivo",
+      "descrizione": "Sconto automatico sulle bollette di luce e gas per famiglie in difficoltà economica",
+      "importo": {
+        "tipo": "variabile",
+        "note": "Sconto variabile in base ai consumi e alla composizione familiare. Può superare i 500€/anno combinato con bonus 200€"
+      },
+      "isee": {
+        "richiesto": true,
+        "note": "ISEE non superiore a 9.530€ (o 20.000€ per famiglie numerose con almeno 4 figli)",
+        "max": 9530
+      },
+      "requisiti": {
+        "altri": [
+          {
+            "tipo": "Utenza",
+            "descrizione": "Titolarità di utenza elettrica/gas"
+          },
+          {
+            "tipo": "Famiglia numerosa",
+            "descrizione": "Per famiglie con almeno 4 figli: ISEE fino a 20.000€"
+          }
+        ],
+        "cittadinanza": "Non specificato",
+        "residenza": "Italia",
+        "eta_figli": []
+      },
+      "scadenza": {
+        "note": "Rinnovo automatico annuale"
+      },
+      "link_ufficiale": "https://www.arera.it/",
+      "come_fare_domanda": {
+        "metodo": "Automatico",
+        "note": "Riconoscimento automatico per chi presenta ISEE nei limiti",
+        "documenti": [
+          "DSU per ottenere ISEE aggiornato"
+        ]
+      },
+      "compatibilita": [
+        "bonus-bollette-200"
+      ],
+      "note_aggiuntive": "Erogazione più rapida per chi ha già bonus sociale attivo"
     },
     {
       "id": "carta-acquisti",
@@ -324,23 +306,19 @@
       "descrizione": "Carta di pagamento elettronica ricaricata dallo Stato per acquisti di prima necessità",
       "importo": {
         "tipo": "fisso",
-        "note": "80€ ogni due mesi (480€/anno) ricarica automatica",
+        "note": "80€ ogni due mesi (40€ al mese) ricarica automatica",
         "valore": 80
       },
       "isee": {
         "richiesto": true,
-        "note": "ISEE e reddito fino a 8.052,75€ (limite più alto 10.737€ per over 70)",
-        "max": 8052.75
+        "note": "ISEE e reddito complessivo fino a 8.117,17€ (limiti diversi per over 70)",
+        "max": 8117.17
       },
       "requisiti": {
         "altri": [
           {
             "tipo": "Età richiedente",
-            "descrizione": "Over 65 oppure famiglie con bambini sotto 3 anni"
-          },
-          {
-            "tipo": "Over 70",
-            "descrizione": "Soglia reddito più alta (10.737€)"
+            "descrizione": "65-70 anni oppure over 70 (limiti reddituali diversi) oppure famiglie con bambini sotto 3 anni"
           },
           {
             "tipo": "Patrimonio",
@@ -355,12 +333,12 @@
         ]
       },
       "scadenza": {
-        "note": "Ricarica automatica bimestrale. Misura strutturale"
+        "note": "Ricarica automatica bimestrale"
       },
-      "link_ufficiale": "https://www.mef.gov.it/focus/carta-acquisti/",
+      "link_ufficiale": "https://www.poste.it/",
       "come_fare_domanda": {
         "metodo": "Presso Poste Italiane",
-        "note": "Domanda presso uffici postali con modulo dedicato",
+        "note": "Domanda presso uffici postali",
         "documenti": [
           "ISEE aggiornato",
           "Documento di identità",
@@ -368,7 +346,7 @@
         ]
       },
       "compatibilita": [],
-      "note_aggiuntive": "Utilizzabile in negozi convenzionati, farmacie e parafarmacie per alimentari, farmaci e bollette. Non cumulabile con Carta Dedicata a Te"
+      "note_aggiuntive": "Utilizzabile in negozi, farmacie e parafarmacie. Sconti aggiuntivi in molti punti vendita"
     },
     {
       "id": "carta-dedicata-a-te",
@@ -378,10 +356,10 @@
         "famiglia"
       ],
       "status": "attivo",
-      "descrizione": "Carta prepagata per l'acquisto di beni alimentari di prima necessità",
+      "descrizione": "Carta per l'acquisto di beni alimentari di prima necessità, carburante o abbonamenti trasporti",
       "importo": {
         "tipo": "fisso",
-        "note": "Contributo di 500€ una tantum per acquisti alimentari",
+        "note": "Contributo di 500€ per acquisti specifici",
         "valore": 500
       },
       "isee": {
@@ -393,11 +371,7 @@
         "altri": [
           {
             "tipo": "Composizione familiare",
-            "descrizione": "Priorità per famiglie con almeno 3 componenti"
-          },
-          {
-            "tipo": "Esclusioni",
-            "descrizione": "Non percettori di ADI, NASpI, DIS-COLL, CIG, altri sostegni al reddito"
+            "descrizione": "Priorità per famiglie con minori"
           }
         ],
         "cittadinanza": "Italiana o UE",
@@ -405,19 +379,18 @@
         "eta_figli": []
       },
       "scadenza": {
-        "data": "2026-02-28",
-        "note": "Utilizzo saldo 2025 entro 28/02/2026. Nuova edizione 2026 confermata (distribuzione prevista autunno 2026)"
+        "note": "In attesa decreto attuativo 2025"
       },
-      "link_ufficiale": "https://www.masaf.gov.it/Carta_Dedicata_a_te_2025-info",
+      "link_ufficiale": "",
       "come_fare_domanda": {
-        "metodo": "Automatico",
-        "note": "Assegnazione automatica da INPS in base a ISEE. I Comuni comunicano ai beneficiari modalità di ritiro presso Poste",
+        "metodo": "Da definire con decreto attuativo",
+        "note": "Modalità di assegnazione da definire",
         "documenti": [
-          "ISEE aggiornato (presentazione DSU)"
+          "ISEE aggiornato"
         ]
       },
       "compatibilita": [],
-      "note_aggiuntive": "Confermata per 2026 e 2027 con 500 milioni di stanziamento. Solo per acquisti alimentari (esclusi alcolici). Sconti fino al 15% presso esercenti convenzionati. Primo utilizzo obbligatorio entro scadenza indicata pena decadenza"
+      "note_aggiuntive": "Riconfermata per il 2025. Possibile aumento beneficiari grazie a nuove regole ISEE"
     },
     {
       "id": "bonus-psicologo",
@@ -429,7 +402,7 @@
       "descrizione": "Contributo economico per sedute di psicoterapia",
       "importo": {
         "tipo": "variabile",
-        "note": "Fino a 50€ per seduta. Importo massimo in base a ISEE",
+        "note": "Fino a 50€ per seduta. Contributo erogato una sola volta per richiedente",
         "fasce_isee": [
           {
             "min": null,
@@ -443,7 +416,7 @@
           },
           {
             "min": 30000,
-            "max": 50000,
+            "max": null,
             "importo": 500
           }
         ]
@@ -456,12 +429,8 @@
       "requisiti": {
         "altri": [
           {
-            "tipo": "Condizione",
-            "descrizione": "Persone in condizione di ansia, stress, depressione, fragilità psicologica"
-          },
-          {
-            "tipo": "Professionista",
-            "descrizione": "Sedute presso psicoterapeuti iscritti all'albo e aderenti all'iniziativa"
+            "tipo": "Necessità terapeutica",
+            "descrizione": "Necessità di supporto psicologico"
           }
         ],
         "cittadinanza": "Italiana o UE",
@@ -469,37 +438,36 @@
         "eta_figli": []
       },
       "scadenza": {
-        "note": "Misura ora strutturale (non richiede proroghe annuali). Finestre domande comunicate annualmente da INPS"
+        "note": "Assegnazione per ordine cronologico fino a esaurimento fondi"
       },
-      "link_ufficiale": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.contributo-per-sostenere-le-spese-relative-a-sessioni-di-psicoterapia-bonus-psicologo.html",
+      "link_ufficiale": "https://www.inps.it/",
       "come_fare_domanda": {
         "metodo": "Online tramite sito INPS",
-        "note": "Domanda online con SPID, CIE o CNS durante finestra temporale. Graduatoria per ISEE crescente",
+        "note": "Domanda online con SPID, CIE o credenziali INPS",
         "documenti": [
           "ISEE aggiornato",
-          "Identità digitale (SPID/CIE/CNS)"
+          "Autocertificazione necessità"
         ]
       },
       "compatibilita": [],
-      "note_aggiuntive": "Budget 2026: 8,5 milioni (ridotto rispetto ai 9,5M del 2025). IMPORTANTE: prima seduta entro 60 giorni dall'accoglimento pena decadenza. Codice univoco utilizzabile entro 270 giorni"
+      "note_aggiuntive": "Assegnazione per valore ISEE e ordine cronologico. Una tantum per richiedente"
     },
     {
       "id": "bonus-anziani-over-80",
-      "nome": "Prestazione Universale Anziani Over 80",
+      "nome": "Bonus Anziani Over 80",
       "categoria": [
         "anziani",
         "salute"
       ],
       "status": "sperimentale",
-      "descrizione": "Assegno di assistenza per anziani non autosufficienti con bisogno assistenziale gravissimo",
+      "descrizione": "Contributo per anziani non autosufficienti per assistenza domiciliare",
       "importo": {
-        "tipo": "fisso",
-        "note": "Indennità di accompagnamento + assegno integrativo di 850€/mese per spese assistenza domiciliare",
-        "valore": 850
+        "tipo": "variabile",
+        "note": "Importo da definire in base alle necessità assistenziali"
       },
       "isee": {
         "richiesto": true,
-        "note": "ISEE sociosanitario non superiore a 6.000€ (possibile aumento a 12.000€ nel 2026)",
+        "note": "ISEE sociosanitario inferiore a 6.000€",
         "max": 6000
       },
       "requisiti": {
@@ -510,15 +478,11 @@
           },
           {
             "tipo": "Condizione sanitaria",
-            "descrizione": "Bisogno assistenziale gravissimo certificato (coma, demenza grave, disabilità motorie totali, ventilazione assistita, ecc.)"
+            "descrizione": "Titolarità indennità di accompagnamento o possesso requisiti per ottenerla"
           },
           {
-            "tipo": "Indennità accompagnamento",
-            "descrizione": "Titolarità o idoneità all'indennità di accompagnamento"
-          },
-          {
-            "tipo": "Destinazione fondi",
-            "descrizione": "Per badante con contratto regolare (min 15h/settimana) o servizi assistenza domiciliare qualificati"
+            "tipo": "Disabilità",
+            "descrizione": "Condizione di disabilità gravissima"
           }
         ],
         "cittadinanza": "Italiana o UE",
@@ -527,21 +491,20 @@
       },
       "scadenza": {
         "data": "2026-12-31",
-        "note": "Misura sperimentale dal 1° gennaio 2025 al 31 dicembre 2026. Domande fino a fine sperimentazione"
+        "note": "Misura sperimentale dal 1° gennaio 2025 al 31 dicembre 2026"
       },
-      "link_ufficiale": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.decreto-anziani-prestazione-universale.html",
+      "link_ufficiale": "",
       "come_fare_domanda": {
-        "metodo": "Online tramite sito INPS",
-        "note": "Accesso al portale 'Decreto Anziani - Prestazione Universale' con SPID, CIE, CNS o tramite Patronato",
+        "metodo": "Da definire",
+        "note": "Modalità di domanda da definire con decreti attuativi",
         "documenti": [
           "ISEE sociosanitario",
-          "Certificazione sanitaria del bisogno assistenziale",
-          "Documentazione indennità accompagnamento",
-          "Rendicontazione spese assistenza (entro 30 giorni)"
+          "Certificazione sanitaria",
+          "Documentazione indennità accompagnamento"
         ]
       },
       "compatibilita": [],
-      "note_aggiuntive": "Assorbe l'indennità di accompagnamento. Rendicontazione trimestrale delle spese obbligatoria. Esente da IRPEF e impignorabile"
+      "note_aggiuntive": "Misura sperimentale biennale per promuovere assistenza domiciliare"
     },
     {
       "id": "carta-cultura-giovani",
@@ -559,38 +522,38 @@
       },
       "isee": {
         "richiesto": true,
-        "note": "ISEE familiare non superiore a 35.000€",
+        "note": "ISEE familiare inferiore a 35.000€",
         "max": 35000
       },
       "requisiti": {
         "altri": [
           {
             "tipo": "Età",
-            "descrizione": "18 anni compiuti nell'anno precedente (nel 2026 richiedono i nati nel 2007)"
+            "descrizione": "18 anni compiuti nell'anno di riferimento"
           }
         ],
-        "cittadinanza": "Italiana, UE o permesso soggiorno valido",
+        "cittadinanza": "Italiana o UE",
         "residenza": "Italia",
         "eta_figli": []
       },
       "scadenza": {
-        "data": "2026-12-31",
-        "note": "Domande dal 31 gennaio al 30 giugno 2026 per i nati nel 2007. Utilizzo entro 31 dicembre 2026"
+        "data": "2025-12-31",
+        "note": "Utilizzo entro la scadenza indicata"
       },
-      "link_ufficiale": "https://cartegiovani.cultura.gov.it/",
+      "link_ufficiale": "https://www.18app.italia.it/",
       "come_fare_domanda": {
         "metodo": "Online tramite piattaforma dedicata",
-        "note": "Registrazione con SPID o CIE sul portale cartegiovani.cultura.gov.it",
+        "note": "Registrazione con SPID o CIE",
         "documenti": [
           "ISEE familiare aggiornato",
           "SPID o CIE"
         ],
-        "link": "https://cartegiovani.cultura.gov.it/"
+        "link": "https://www.18app.italia.it/"
       },
       "compatibilita": [
         "carta-merito"
       ],
-      "note_aggiuntive": "Cumulabile con Carta del Merito (totale 1.000€). Dal 2027 entrambe saranno sostituite dalla nuova Carta Valore. Acquisti: libri, cinema, teatro, concerti, musei, musica, corsi"
+      "note_aggiuntive": "Sostituisce il precedente Bonus 18app. Vincoli di spesa per prodotti culturali"
     },
     {
       "id": "carta-merito",
@@ -608,44 +571,44 @@
       },
       "isee": {
         "richiesto": false,
-        "note": "Non richiede limiti ISEE, basata solo sul merito"
+        "note": "Non richiede limiti ISEE"
       },
       "requisiti": {
         "altri": [
           {
             "tipo": "Merito scolastico",
-            "descrizione": "Diploma di maturità con voto 100/100 o 100 e lode"
+            "descrizione": "Diploma di maturità con voto 100/100"
           },
           {
             "tipo": "Età",
-            "descrizione": "Diploma conseguito entro il 19° anno di età"
+            "descrizione": "Diploma conseguito nell'anno di riferimento"
           }
         ],
-        "cittadinanza": "Italiana, UE o permesso soggiorno valido",
+        "cittadinanza": "Italiana o UE",
         "residenza": "Italia",
         "eta_figli": []
       },
       "scadenza": {
-        "data": "2026-12-31",
-        "note": "Domande dal 31 gennaio al 30 giugno dell'anno successivo al diploma. Utilizzo entro 31 dicembre"
+        "data": "2025-12-31",
+        "note": "Utilizzo entro la scadenza indicata"
       },
-      "link_ufficiale": "https://cartegiovani.cultura.gov.it/",
+      "link_ufficiale": "https://www.18app.italia.it/",
       "come_fare_domanda": {
         "metodo": "Online tramite piattaforma dedicata",
-        "note": "Registrazione con SPID o CIE sul portale cartegiovani.cultura.gov.it",
+        "note": "Registrazione con SPID o CIE",
         "documenti": [
           "Diploma con voto 100/100",
           "SPID o CIE"
         ],
-        "link": "https://cartegiovani.cultura.gov.it/"
+        "link": "https://www.18app.italia.it/"
       },
       "compatibilita": [
         "carta-cultura-giovani"
       ],
-      "note_aggiuntive": "Cumulabile con Carta Cultura Giovani (totale 1.000€). Dal 2027 sarà sostituita dalla nuova Carta Valore. Acquisti: libri, cinema, teatro, concerti, musei, musica, corsi"
+      "note_aggiuntive": "Basata solo sul merito scolastico, indipendentemente dall'ISEE"
     },
     {
-      "id": "bonus-ristrutturazione-2026",
+      "id": "bonus-ristrutturazione-2025",
       "nome": "Bonus Ristrutturazione",
       "categoria": [
         "casa",
@@ -656,16 +619,11 @@
       "descrizione": "Detrazione fiscale per interventi di ristrutturazione, manutenzione straordinaria e restauro di immobili residenziali",
       "importo": {
         "tipo": "variabile",
-        "note": "50% abitazione principale, 36% altre abitazioni. Detrazione ripartita in 10 quote annuali. Tetto spesa 96.000€",
-        "aliquote": {
-          "abitazione_principale": "50%",
-          "altre_abitazioni": "36%",
-          "tetto_spesa": 96000
-        }
+        "note": "Detrazione ripartita in 10 quote annuali di pari importo. Dal 2025 non più cessione del credito o sconto in fattura"
       },
       "isee": {
         "richiesto": false,
-        "note": "Non richiesta ISEE. Limiti detraibilità per redditi >75.000€"
+        "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
       },
       "requisiti": {
         "altri": [
@@ -679,38 +637,35 @@
           },
           {
             "tipo": "Limiti reddituali",
-            "descrizione": "Per redditi >75.000€ massimali ridotti (14.000€ se <100.000€, 8.000€ se >100.000€)"
-          },
-          {
-            "tipo": "Esclusioni",
-            "descrizione": "Escluse caldaie a combustibili fossili"
+            "descrizione": "Per redditi > 75.000€ massimali ridotti (14.000€ se < 100.000€, 8.000€ se > 100.000€)"
           }
         ],
         "cittadinanza": "Italiana, UE o permesso soggiorno",
         "residenza": "Immobile in Italia"
       },
       "scadenza": {
-        "data": "2026-12-31",
-        "note": "Prorogato al 31/12/2026 con aliquote 50%/36%. Dal 2027: 36%/30%"
+        "data": "2027-12-31",
+        "note": "Prorogato fino al 31 dicembre 2027 con percentuali decrescenti"
       },
       "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazioni-per-le-ristrutturazioni-edilizie",
       "come_fare_domanda": {
         "metodo": "Detrazione in dichiarazione dei redditi",
-        "note": "Pagamenti obbligatoriamente con bonifico parlante. No cessione credito/sconto in fattura",
+        "note": "Pagamenti con bonifico parlante obbligatorio. Comunicazione ENEA per alcuni interventi energetici",
         "documenti": [
           "Fatture e ricevute di pagamento",
           "Bonifici parlanti con causale specifica",
           "Titoli edilizi (CILA, SCIA, Permesso di costruire)",
-          "Comunicazione ENEA per interventi energetici"
+          "Asseverazioni tecniche quando richieste"
         ]
       },
       "compatibilita": [
-        "bonus-mobili"
+        "bonus-mobili",
+        "ecobonus-per-stessi-lavori"
       ],
-      "note_aggiuntive": "CONFERMATO per 2026 con stesse aliquote 2025. Dal 2027 scenderà a 36%/30%. Per abitazione principale: residenza entro termine dichiarazione redditi anno prima detrazione"
+      "note_aggiuntive": "Dal 2025 escluse caldaie a combustibili fossili. Maggiorazione per abitazione principale. Non più cessione del credito"
     },
     {
-      "id": "ecobonus-2026",
+      "id": "ecobonus-2025",
       "nome": "Ecobonus",
       "categoria": [
         "casa",
@@ -721,20 +676,11 @@
       "descrizione": "Detrazione fiscale per interventi di riqualificazione energetica e miglioramento dell'efficienza energetica degli edifici",
       "importo": {
         "tipo": "variabile",
-        "note": "50% abitazione principale, 36% altre abitazioni. Detrazione ripartita in 10 quote annuali. Massimali specifici per tipo intervento",
-        "aliquote": {
-          "abitazione_principale": "50%",
-          "altre_abitazioni": "36%"
-        },
-        "massimali": {
-          "coibentazioni_infissi": 60000,
-          "pompe_calore_generatori": 30000,
-          "riqualificazione_globale": 100000
-        }
+        "note": "Detrazione ripartita in 10 quote annuali. Massimali specifici per tipo di intervento"
       },
       "isee": {
         "richiesto": false,
-        "note": "Non richiesta ISEE. Limiti per redditi >75.000€"
+        "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
       },
       "requisiti": {
         "altri": [
@@ -743,44 +689,45 @@
             "descrizione": "Interventi che comportano effettivo risparmio energetico certificato"
           },
           {
+            "tipo": "Requisiti tecnici",
+            "descrizione": "Rispetto parametri di trasmittanza e efficienza previsti dalla normativa"
+          },
+          {
             "tipo": "Comunicazione ENEA",
             "descrizione": "Obbligo invio documentazione entro 90 giorni dalla fine lavori"
           },
           {
             "tipo": "Esclusioni",
-            "descrizione": "Escluse caldaie a condensazione alimentate a combustibili fossili"
-          },
-          {
-            "tipo": "Interventi ammessi",
-            "descrizione": "Pompe di calore, sistemi ibridi, isolamento termico, infissi, pannelli solari"
+            "descrizione": "Dal 2025 escluse caldaie a condensazione alimentate a combustibili fossili"
           }
         ],
         "cittadinanza": "Italiana, UE o permesso soggiorno",
         "residenza": "Immobile in Italia"
       },
       "scadenza": {
-        "data": "2026-12-31",
-        "note": "Prorogato al 31/12/2026 con aliquote 50%/36%. Dal 2027: 36%/30%"
+        "data": "2027-12-31",
+        "note": "Prorogato fino al 31 dicembre 2027 con percentuali decrescenti"
       },
       "link_ufficiale": "https://www.enea.it/it/ecobonus",
       "come_fare_domanda": {
         "metodo": "Detrazione in dichiarazione dei redditi",
-        "note": "Necessaria asseverazione tecnica. Comunicazione ENEA obbligatoria entro 90 giorni",
+        "note": "Necessaria asseverazione tecnica per la maggior parte degli interventi",
         "documenti": [
           "Asseverazione tecnica di conformità",
           "Attestato Prestazione Energetica (APE)",
           "Fatture e bonifici parlanti",
-          "Comunicazione telematica ENEA"
+          "Comunicazione telematica ENEA entro 90 giorni"
         ],
-        "link": "https://www.enea.it/it/ecobonus"
+        "link": "https://www.enea.it/it/ecobonus/le-guide/fiches"
       },
       "compatibilita": [
-        "bonus-ristrutturazione-2026"
+        "bonus-ristrutturazione-per-stessi-lavori",
+        "sismabonus-combinato"
       ],
-      "note_aggiuntive": "CONFERMATO per 2026. Stesse aliquote del bonus ristrutturazione. Dal 2027 scenderà a 36%/30%"
+      "note_aggiuntive": "Dal 2025 aliquota unica per tipo immobile. Escluse caldaie fossili. Ammessi sistemi ibridi e pompe di calore"
     },
     {
-      "id": "sismabonus-2026",
+      "id": "sismabonus-2025",
       "nome": "Sismabonus",
       "categoria": [
         "casa",
@@ -791,38 +738,37 @@
       "descrizione": "Detrazione fiscale per interventi di adeguamento e miglioramento sismico degli edifici",
       "importo": {
         "tipo": "variabile",
-        "note": "50% abitazione principale, 36% altre abitazioni. Detrazione ripartita in 10 quote annuali. Tetto spesa 96.000€",
-        "aliquote": {
-          "abitazione_principale": "50%",
-          "altre_abitazioni": "36%",
-          "tetto_spesa": 96000
-        }
+        "note": "Detrazione ripartita in 10 quote annuali. Non più necessario il salto di classe sismica"
       },
       "isee": {
         "richiesto": false,
-        "note": "Non richiesta ISEE. Limiti per redditi >75.000€"
+        "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
       },
       "requisiti": {
         "altri": [
           {
             "tipo": "Zonazione sismica",
-            "descrizione": "Edifici in zone sismiche 1, 2 e 3. Esclusa zona 4"
+            "descrizione": "Edifici in zone sismiche ad alta pericolosità (zone 1, 2, 3). Esclusa zona 4"
           },
           {
             "tipo": "Tipologia interventi",
             "descrizione": "Adeguamento, miglioramento sismico, interventi locali, demolizione-ricostruzione"
           },
           {
-            "tipo": "Semplificazione 2025-2026",
-            "descrizione": "Non più necessario dimostrare il salto di classe di rischio sismico"
+            "tipo": "Novità 2025",
+            "descrizione": "Non più necessario dimostrare il miglioramento della classe di rischio sismico"
+          },
+          {
+            "tipo": "Titoli edilizi",
+            "descrizione": "SCIA, Permesso costruire, eventuali autorizzazioni paesaggistiche"
           }
         ],
         "cittadinanza": "Italiana, UE o permesso soggiorno",
         "residenza": "Immobili in zone sismiche 1, 2 e 3"
       },
       "scadenza": {
-        "data": "2026-12-31",
-        "note": "Prorogato al 31/12/2026. Dal 2027: 36%/30%"
+        "data": "2027-12-31",
+        "note": "Prorogato fino al 31 dicembre 2027"
       },
       "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/sisma-bonus",
       "come_fare_domanda": {
@@ -832,13 +778,15 @@
           "Asseverazione tecnica conformità NTC 2018",
           "Progetto strutturale",
           "Titoli edilizi",
-          "Fatture e bonifici parlanti"
+          "Fatture e bonifici parlanti",
+          "Attestazione fine lavori"
         ]
       },
       "compatibilita": [
-        "bonus-ristrutturazione-2026"
+        "ecobonus-combinato-parti-comuni",
+        "bonus-ristrutturazione"
       ],
-      "note_aggiuntive": "CONFERMATO per 2026 con semplificazione: non serve più salto classe sismica. Vale anche per edifici produttivi"
+      "note_aggiuntive": "Dal 2025 semplificato: non serve salto classe sismica. Vale anche per edifici produttivi. Include spese per classificazione sismica"
     },
     {
       "id": "sismabonus-acquisti",
@@ -852,11 +800,7 @@
       "descrizione": "Detrazione fiscale per l'acquisto di immobili in zone sismiche demoliti e ricostruiti con miglioramenti antisismici",
       "importo": {
         "tipo": "variabile",
-        "note": "50% abitazione principale, 36% altre abitazioni. Detrazione sul prezzo di acquisto",
-        "aliquote": {
-          "abitazione_principale": "50%",
-          "altre_abitazioni": "36%"
-        }
+        "note": "Detrazione calcolata sul prezzo di acquisto dell'immobile"
       },
       "isee": {
         "richiesto": false,
@@ -875,13 +819,17 @@
           {
             "tipo": "Tempistica vendita",
             "descrizione": "Immobile venduto entro 30 mesi dalla conclusione dei lavori"
+          },
+          {
+            "tipo": "Miglioramento sismico",
+            "descrizione": "Deve risultare una riduzione del rischio sismico"
           }
         ],
         "cittadinanza": "Italiana, UE o permesso soggiorno",
         "residenza": "Non specificato"
       },
       "scadenza": {
-        "data": "2026-12-31",
+        "data": "2027-12-31",
         "note": "Segue la scadenza del Sismabonus classico"
       },
       "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/sisma-bonus",
@@ -891,30 +839,30 @@
         "documenti": [
           "Atto di compravendita",
           "Attestazione conformità interventi antisismici",
+          "Asseverazione miglioramento classe sismica",
           "Documentazione tecnica lavori"
         ]
       },
       "compatibilita": [],
-      "note_aggiuntive": "Applicabile solo a immobili ristrutturati da imprese con vendita entro 30 mesi. Per aliquota maggiorata: adibire a abitazione principale entro dichiarazione redditi anno prima detrazione"
+      "note_aggiuntive": "Applicabile solo a immobili ristrutturati da imprese con vendita entro 30 mesi. Include pertinenze"
     },
     {
       "id": "bonus-barriere-architettoniche",
-      "nome": "Bonus Barriere Architettoniche 75%",
+      "nome": "Bonus Barriere Architettoniche",
       "categoria": [
         "casa",
         "accessibilita",
         "sociale"
       ],
-      "status": "in_scadenza",
-      "descrizione": "Detrazione fiscale del 75% per interventi di eliminazione delle barriere architettoniche",
+      "status": "attivo",
+      "descrizione": "Detrazione fiscale per interventi di eliminazione delle barriere architettoniche",
       "importo": {
         "tipo": "fisso",
-        "note": "75% delle spese sostenute, ripartito in 10 quote annuali. ULTIMO ANNO al 75%",
-        "aliquota": "75%"
+        "note": "75% delle spese sostenute, ripartito in 10 quote annuali dal 2024 (5 quote per 2022-2023)"
       },
       "isee": {
         "richiesto": false,
-        "note": "Non richiesta ISEE. Limiti per redditi >75.000€"
+        "note": "Non richiesta ISEE, ma limiti per redditi superiori a 75.000€"
       },
       "requisiti": {
         "altri": [
@@ -923,11 +871,11 @@
             "descrizione": "Eliminazione barriere architettoniche secondo DM 236/1989"
           },
           {
-            "tipo": "Interventi ammessi",
-            "descrizione": "SOLO scale, rampe, ascensori, servoscala e piattaforme elevatrici"
+            "tipo": "Interventi ammessi dal 2024-2025",
+            "descrizione": "Solo scale, rampe, ascensori, servoscala e piattaforme elevatrici"
           },
           {
-            "tipo": "Interventi esclusi",
+            "tipo": "Interventi esclusi dal 2024",
             "descrizione": "Infissi, pavimenti, servizi igienici, automazione impianti"
           },
           {
@@ -940,25 +888,27 @@
       },
       "scadenza": {
         "data": "2025-12-31",
-        "note": "SCADE IL 31/12/2025. Dal 2026 questi interventi accedono solo al bonus ristrutturazione ordinario (50%/36%)"
+        "note": "Ultimo anno per usufruire della detrazione al 75%. Dal 2026 solo bonus ristrutturazione ordinario"
       },
       "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/agevolazione-per-eliminazione-delle-barriere-architettoniche",
       "come_fare_domanda": {
         "metodo": "Detrazione in dichiarazione dei redditi",
-        "note": "Pagamenti entro 31/12/2025 per aliquota 75%. Dal 2026 non più cessione credito",
+        "note": "Dal 2024 non più cessione del credito (tranne eccezioni per redditi sotto 15.000€ con disabili)",
         "documenti": [
           "Asseverazione tecnica DM 236/1989",
           "Fatture e bonifici parlanti",
-          "Titoli edilizi se necessari"
+          "Titoli edilizi se necessari",
+          "Documentazione tecnica interventi"
         ]
       },
       "compatibilita": [
-        "bonus-ristrutturazione-2026"
+        "superbonus-come-trainato",
+        "bonus-ristrutturazione-alternativo"
       ],
-      "note_aggiuntive": "ATTENZIONE: 2025 ultimo anno al 75%. Chi ha lavori in corso deve completare pagamenti entro 31/12/2025. Dal 2026 solo bonus casa ordinario"
+      "note_aggiuntive": "2025 ultimo anno al 75%. Interventi ristretti dal 2024. Detrazione spetta anche senza presenza disabili"
     },
     {
-      "id": "bonus-mobili-2026",
+      "id": "bonus-mobili-2025",
       "nome": "Bonus Mobili ed Elettrodomestici",
       "categoria": [
         "casa",
@@ -969,9 +919,7 @@
       "descrizione": "Detrazione fiscale per l'acquisto di mobili e grandi elettrodomestici destinati ad immobili in ristrutturazione",
       "importo": {
         "tipo": "fisso",
-        "note": "50% delle spese sostenute fino a 5.000€, ripartito in 10 quote annuali",
-        "aliquota": "50%",
-        "tetto_spesa": 5000
+        "note": "50% delle spese sostenute fino a 5.000€, ripartito in 10 quote annuali"
       },
       "isee": {
         "richiesto": false,
@@ -994,14 +942,18 @@
           {
             "tipo": "Modalità pagamento",
             "descrizione": "Solo bonifico, carte credito/debito. Vietati contanti e assegni"
+          },
+          {
+            "tipo": "Comunicazione ENEA",
+            "descrizione": "Alcuni elettrodomestici richiedono comunicazione ENEA (non obbligatoria per detrazione)"
           }
         ],
         "cittadinanza": "Non specificato",
         "residenza": "Non specificato"
       },
       "scadenza": {
-        "data": "2026-12-31",
-        "note": "Confermato per il 2026"
+        "data": "2025-12-31",
+        "note": "Prorogato per il 2025, confermato anche per il 2026"
       },
       "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/aree-tematiche/casa/agevolazioni/bonus-mobili-ed-elettrodomestici",
       "come_fare_domanda": {
@@ -1015,11 +967,65 @@
         ]
       },
       "compatibilita": [
-        "bonus-ristrutturazione-2026",
-        "ecobonus-2026",
-        "sismabonus-2026"
+        "bonus-ristrutturazione",
+        "ecobonus",
+        "sismabonus"
       ],
-      "note_aggiuntive": "CONFERMATO per 2026. Limite 5.000€ per unità immobiliare. Stessa aliquota 50% per prime e seconde case"
+      "note_aggiuntive": "Limite 5.000€ per unità immobiliare. Non collegato a tipo abitazione (stessa % per prime e seconde case)"
+    },
+    {
+      "id": "superbonus-residuale-2025",
+      "nome": "Superbonus 65%",
+      "categoria": [
+        "casa",
+        "efficienza_energetica",
+        "residuale"
+      ],
+      "status": "residuale",
+      "descrizione": "Detrazione fiscale per interventi già avviati di efficientamento energetico e antisismici",
+      "importo": {
+        "tipo": "fisso",
+        "note": "Solo per interventi già autorizzati entro 15 ottobre 2024"
+      },
+      "isee": {
+        "richiesto": false,
+        "note": "Non richiesta ISEE"
+      },
+      "requisiti": {
+        "altri": [
+          {
+            "tipo": "Interventi già avviati",
+            "descrizione": "CILA presentata entro 15 ottobre 2024 e delibera condominiale approvata"
+          },
+          {
+            "tipo": "Zone terremotate",
+            "descrizione": "Edifici in comuni colpiti da sisma dal 2009, detrazione 110% fino 31/12/2025"
+          },
+          {
+            "tipo": "Tipologia lavori",
+            "descrizione": "Interventi trainanti: cappotto, caldaie, fotovoltaico. Interventi trainati collegati"
+          }
+        ],
+        "cittadinanza": "Italiana, UE o permesso soggiorno",
+        "residenza": "Immobile in Italia"
+      },
+      "scadenza": {
+        "data": "2025-12-31",
+        "note": "Solo per lavori già autorizzati. Zone terremotate fino 31/12/2025"
+      },
+      "link_ufficiale": "https://www.agenziaentrate.gov.it/portale/superbonus-110",
+      "come_fare_domanda": {
+        "metodo": "Detrazione in dichiarazione dei redditi",
+        "note": "Solo per interventi già formalmente avviati",
+        "documenti": [
+          "CILA presentata entro 15/10/2024",
+          "Delibera condominiale approvazione lavori",
+          "Asseverazioni tecniche",
+          "APE ante e post intervento"
+        ]
+      },
+      "compatibilita": [],
+      "note_aggiuntive": "Misura in esaurimento. Attivo solo per zone terremotate al 110% e condomini con pratiche già avviate al 65%"
     },
     {
       "id": "bonus-libri-scolastici-regionali",
@@ -1036,18 +1042,21 @@
         "note": "Importi e modalità variano per regione e comune. Range tipico 80-230€"
       },
       "isee": {
-        "richiesto": true,
-        "note": "Soglie ISEE variabili per regione, generalmente tra 10.000€ e 15.000€"
+        "richiesto": true
       },
       "requisiti": {
         "altri": [
           {
+            "tipo": "Età studente",
+            "descrizione": "Generalmente nati dal 1° gennaio 2001. Per disabili nessun limite"
+          },
+          {
             "tipo": "Iscrizione regolare",
-            "descrizione": "Iscrizione e frequenza scuola secondaria anno scolastico in corso"
+            "descrizione": "Iscrizione e frequenza anno scolastico 2025-2026"
           },
           {
             "tipo": "Beni acquistabili",
-            "descrizione": "Libri di testo, contenuti digitali. Esclusi dizionari e dispositivi (varia per regione)"
+            "descrizione": "Libri di testo, contenuti digitali. Esclusi dizionari e dispositivi tech (varia per regione)"
           }
         ],
         "cittadinanza": "Italiana o UE",
@@ -1059,7 +1068,7 @@
       "link_ufficiale": "Variabile per regione",
       "come_fare_domanda": {
         "metodo": "Online tramite portali regionali/comunali",
-        "note": "Modalità specifica per ogni regione",
+        "note": "Modalità specifica per ogni regione. Alcuni richiedono domanda al Comune",
         "documenti": [
           "ISEE aggiornato",
           "Certificato frequenza scolastica",
@@ -1069,7 +1078,8 @@
         ]
       },
       "compatibilita": [
-        "borse-studio-regionali"
+        "borse-studio-regionali",
+        "contributi-trasporto"
       ],
       "note_aggiuntive": "Gestione regionale/comunale. Modalità: voucher, rimborso o comodato. Controllare bandi specifici territoriali"
     },
@@ -1103,7 +1113,11 @@
           },
           {
             "tipo": "Durata corso",
-            "descrizione": "Minimo 16 ore. Corsi accreditati o riconosciuti"
+            "descrizione": "Minimo 16 ore programmata. Corsi accreditati o riconosciuti"
+          },
+          {
+            "tipo": "Tipologia formazione",
+            "descrizione": "Corsi aggiornamento, master, specializzazioni, certificazioni professionali"
           }
         ],
         "cittadinanza": "Italiana o UE",
@@ -1115,7 +1129,7 @@
       "link_ufficiale": "Portali regionali FSE",
       "come_fare_domanda": {
         "metodo": "Online tramite piattaforme regionali",
-        "note": "Procedure online",
+        "note": "Procedure online. Alcune regioni permettono anche domanda cartacea",
         "documenti": [
           "Documento identità",
           "Codice fiscale",
@@ -1125,9 +1139,10 @@
         ]
       },
       "compatibilita": [
-        "borse-studio-alta-formazione"
+        "borse-studio-alta-formazione",
+        "voucher-aziendali"
       ],
-      "note_aggiuntive": "Finanziati da FSE+ 2021-2027. Premialità per giovani e settori strategici"
+      "note_aggiuntive": "Finanziati da FSE+ 2021-2027. Premialità per giovani e settori strategici. Corsi devono essere accreditati"
     },
     {
       "id": "borse-studio-universitarie-regionali",
@@ -1141,21 +1156,25 @@
       "descrizione": "Contributi economici per il sostegno agli studi universitari basati su reddito e merito",
       "importo": {
         "tipo": "variabile",
-        "note": "Importi aggiornati annualmente per adeguamento ISTAT. Include alloggio e ristorazione"
+        "note": "Importi aumentati per adeguamento ISTAT. Include alloggio e ristorazione"
       },
       "isee": {
         "richiesto": true,
-        "note": "ISEEU per diritto allo studio universitario. Limiti aggiornati annualmente (circa 27.000€)"
+        "note": "ISEEU per diritto allo studio universitario. Limiti adeguati annualmente"
       },
       "requisiti": {
         "altri": [
           {
             "tipo": "Merito primo anno",
-            "descrizione": "Voto diploma, 20 CFU entro scadenze"
+            "descrizione": "Voto diploma, prove standardizzate. 20 CFU entro scadenze"
           },
           {
             "tipo": "Merito anni successivi",
-            "descrizione": "35 CFU per mantenimento"
+            "descrizione": "35 CFU per mantenimento (aumentato da 25). Media esami considerata"
+          },
+          {
+            "tipo": "Limiti carriera",
+            "descrizione": "Primo titolo del livello. Non aver già beneficiato borsa stesso livello"
           },
           {
             "tipo": "Categorie speciali",
@@ -1165,9 +1184,6 @@
         "cittadinanza": "Italiana, UE o permesso soggiorno",
         "residenza": "Variabile per regione"
       },
-      "scadenza": {
-        "note": "Bandi regionali pubblicati tra giugno e agosto"
-      },
       "link_ufficiale": "Enti regionali DSU e singoli Atenei",
       "come_fare_domanda": {
         "metodo": "Online tramite portali universitari/enti DSU",
@@ -1175,13 +1191,17 @@
         "documenti": [
           "ISEEU aggiornato",
           "Documento identità",
-          "Certificato iscrizione"
+          "Certificato iscrizione",
+          "Documentazione merito (diplomi, certificati)",
+          "Autocertificazioni varie"
         ]
       },
       "compatibilita": [
-        "no-tax-area-universitaria"
+        "esonero-tasse-universitarie",
+        "servizi-mensa-alloggio",
+        "voucher-alta-formazione"
       ],
-      "note_aggiuntive": "Include anche posto alloggio e mensa gratuita. Controlli antifrode attivi"
+      "note_aggiuntive": "Include anche posto alloggio e mensa gratuita. Erogazione in 1-2 rate. Controlli antifrode attivi"
     },
     {
       "id": "bonus-trasporti-studenti",
@@ -1205,11 +1225,19 @@
         "altri": [
           {
             "tipo": "Iscrizione scolastica",
-            "descrizione": "Iscrizione e frequenza regolare anno scolastico/accademico"
+            "descrizione": "Iscrizione e frequenza regolare anno scolastico/accademico 2025-2026"
           },
           {
             "tipo": "Tipologia mezzi",
             "descrizione": "Bus urbani/extraurbani, metro, tram, treni regionali"
+          },
+          {
+            "tipo": "Territorio validità",
+            "descrizione": "Generalmente limitato alla regione/provincia di residenza"
+          },
+          {
+            "tipo": "Durata validità",
+            "descrizione": "Anno scolastico o calendario. Alcuni limitati a periodi estivi"
           }
         ],
         "cittadinanza": "Italiana o UE",
@@ -1221,17 +1249,20 @@
       "link_ufficiale": "Portali regionali trasporti e mobilità",
       "come_fare_domanda": {
         "metodo": "Variabile: online, app, piattaforme dedicate",
-        "note": "Modalità diverse per regione",
+        "note": "Modalità molto diverse per regione. Alcune automatiche, altre su domanda",
         "documenti": [
           "ISEE aggiornato (se richiesto)",
           "Certificato frequenza scolastica",
-          "Documento identità"
+          "Documento identità",
+          "Tessera/abbonamento esistente"
         ]
       },
       "compatibilita": [
-        "borse-studio"
+        "borse-studio",
+        "voucher-scuola",
+        "altri-bonus-regionali"
       ],
-      "note_aggiuntive": "Gestione locale. Verifica portali territoriali per dettagli specifici"
+      "note_aggiuntive": "Gestione locale. Cumulabile con altri benefici. Alcune iniziative stagionali (estate). Verifica portali territoriali"
     },
     {
       "id": "voucher-alta-formazione",
@@ -1244,49 +1275,56 @@
       "status": "attivo",
       "descrizione": "Contributi per la frequenza di master universitari e corsi di alta formazione post-laurea",
       "importo": {
-        "tipo": "variabile",
+        "tipo": "fisso",
         "note": "Rimborso totale o parziale spese iscrizione"
       },
       "isee": {
         "richiesto": true,
-        "note": "ISEE per diritto allo studio universitario"
+        "note": "ISEE valido per diritto allo studio universitario"
       },
       "requisiti": {
         "altri": [
           {
             "tipo": "Età",
-            "descrizione": "Fino a 35 anni"
+            "descrizione": "Fino a 35 anni (34 anni e 364 giorni)"
           },
           {
             "tipo": "Tipologia corso",
-            "descrizione": "Master I e II livello in Italia"
+            "descrizione": "Master I e II livello in Italia attivati nell'a.a. di riferimento"
           },
           {
             "tipo": "Non cumulo",
             "descrizione": "Non aver già beneficiato di voucher alta formazione anni precedenti"
+          },
+          {
+            "tipo": "DSU obbligatoria",
+            "descrizione": "Dichiarazione Sostitutiva Unica entro scadenza bando"
           }
         ],
         "cittadinanza": "Italiana o UE",
-        "residenza": "Regione erogante"
+        "residenza": "Regione erogante (es. Toscana)"
       },
       "scadenza": {
+        "data": "2025-12-31",
         "note": "Scadenza bandi generalmente dicembre. Alcuni con aperture primaverili"
       },
       "link_ufficiale": "ARDSU e enti regionali DSU",
       "come_fare_domanda": {
         "metodo": "Online tramite piattaforme regionali",
-        "note": "Graduatoria per ISEE crescente",
+        "note": "Documentazione in formato PDF. Massimo 2 cartelle ZIP da 5MB",
         "documenti": [
           "ISEE per diritto allo studio",
           "Laurea conseguita",
           "Documentazione master scelto",
-          "Documento identità"
+          "Documento identità",
+          "DSU aggiornata"
         ]
       },
       "compatibilita": [
-        "borse-studio-universitarie"
+        "borse-studio-universitarie",
+        "prestiti-onore-studio"
       ],
-      "note_aggiuntive": "Finanziamento PR FSE+ 2021-2027"
+      "note_aggiuntive": "Finanziamento PR FSE+ 2021-2027. Graduatoria per ISEE crescente. Voucher utilizzabile come rimborso spese"
     },
     {
       "id": "no-tax-area-universitaria",
@@ -1300,11 +1338,11 @@
       "descrizione": "Esenzione totale o parziale dalle tasse universitarie basata su ISEE familiare",
       "importo": {
         "tipo": "variabile",
-        "note": "Esenzione totale sotto soglia minima, parziale per fasce intermedie. Senza ISEE si applica tassa massima"
+        "note": "Senza ISEE si applica tassa massima. Esenzioni cumulative con altri benefici"
       },
       "isee": {
         "richiesto": true,
-        "note": "ISEEU per diritto allo studio universitario obbligatorio. Soglia esenzione totale circa 27.000€ (varia per ateneo)"
+        "note": "ISEE per diritto allo studio universitario obbligatorio per accedere alle agevolazioni"
       },
       "requisiti": {
         "altri": [
@@ -1315,6 +1353,10 @@
           {
             "tipo": "Requisiti merito",
             "descrizione": "Mantenimento standard di merito per anni successivi al primo"
+          },
+          {
+            "tipo": "Prima laurea",
+            "descrizione": "Generalmente per primo titolo del livello"
           }
         ],
         "cittadinanza": "Italiana, UE o permesso soggiorno",
@@ -1329,13 +1371,16 @@
         "note": "Applicazione automatica da parte dell'ateneo. Necessario solo presentare ISEE",
         "documenti": [
           "ISEEU valido",
-          "Iscrizione universitaria"
+          "Iscrizione universitaria",
+          "DSU completa"
         ]
       },
       "compatibilita": [
-        "borse-studio-universitarie"
+        "borse-studio-universitarie",
+        "servizi-mensa-alloggio",
+        "bonus-trasporti"
       ],
-      "note_aggiuntive": "Misura nazionale estesa a tutti gli atenei. Cumulo con borse di studio possibile"
+      "note_aggiuntive": "Misura nazionale estesa a tutti gli atenei. Cumulo con borse di studio. Controlli antifrode attivi"
     }
   ]
 }
