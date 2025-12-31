@@ -98,6 +98,11 @@ export const filterByEtaFigli = (bonus: Bonus[], etaFigli: string[]): Bonus[] =>
   });
 };
 
+export const filterByStatus = (bonus: Bonus[], status: string[]): Bonus[] => {
+  if (status.length === 0) return bonus;
+  return bonus.filter((b) => status.includes(b.status));
+};
+
 export const applyAllFilters = (bonus: Bonus[], filtri: Filtri): Bonus[] => {
   let filtered = bonus;
 
@@ -106,6 +111,7 @@ export const applyAllFilters = (bonus: Bonus[], filtri: Filtri): Bonus[] => {
   filtered = filterByCategorie(filtered, filtri.categorie);
   filtered = filterByTipologie(filtered, filtri.tipologie);
   filtered = filterByEtaFigli(filtered, filtri.eta_figli);
+  filtered = filterByStatus(filtered, filtri.status);
 
   return filtered;
 };

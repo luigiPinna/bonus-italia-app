@@ -24,6 +24,7 @@ export default function HomePage() {
     categorie: [],
     tipologie: [],
     eta_figli: [],
+    status: [],
   });
   const [selectedBonus, setSelectedBonus] = useState<Bonus | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -71,6 +72,7 @@ export default function HomePage() {
     filtri.categorie.length > 0 ||
     filtri.tipologie.length > 0 ||
     filtri.eta_figli.length > 0 ||
+    filtri.status.length > 0 ||
     filtri.search.length > 0;
 
   return (
@@ -106,7 +108,7 @@ export default function HomePage() {
                   Filtri
                   {hasActiveFilters && (
                     <span className="ml-2 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs">
-                      {[filtri.isee, filtri.categorie, filtri.tipologie, filtri.eta_figli].flat().length + (filtri.search ? 1 : 0)}
+                      {[filtri.isee, filtri.categorie, filtri.tipologie, filtri.eta_figli, filtri.status].flat().length + (filtri.search ? 1 : 0)}
                     </span>
                   )}
                 </Button>
@@ -140,6 +142,7 @@ export default function HomePage() {
                     categorie: [],
                     tipologie: [],
                     eta_figli: [],
+                    status: [],
                   })}
                   className="text-xs"
                 >

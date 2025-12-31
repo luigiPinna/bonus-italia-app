@@ -1,4 +1,4 @@
-export type BonusStatus = 'attivo' | 'scaduto' | 'in_arrivo';
+export type BonusStatus = 'attivo' | 'scaduto' | 'in_arrivo' | 'sperimentale' | 'in_scadenza';
 
 export type Categoria = 'natalità' | 'famiglia' | 'educazione' | 'casa' | 'lavoro' | 'utenze' | 'sostegno_alimentare' | 'salute' | 'anziani' | 'cultura';
 
@@ -65,5 +65,6 @@ export interface Filtri {
   categorie: string[];
   tipologie: string[];
   eta_figli: string[];
+  status: string[];
 }
 

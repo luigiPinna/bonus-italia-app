@@ -36,6 +36,14 @@ const ETA_FIGLI = [
   { label: 'Disabili', value: 'disabili' },
 ];
 
+const STATI = [
+  { label: 'Attivi', value: 'attivo' },
+  { label: 'In arrivo', value: 'in_arrivo' },
+  { label: 'Scaduti', value: 'scaduto' },
+  { label: 'In scadenza', value: 'in_scadenza' },
+  { label: 'Sperimentali', value: 'sperimentale' },
+];
+
 export function FilterSidebar({ filtri, onFilterChange, isOpen, onToggle }: FilterSidebarProps) {
   const toggleFilter = (type: keyof Filtri, value: string) => {
     const current = filtri[type] as string[];
@@ -51,6 +59,7 @@ export function FilterSidebar({ filtri, onFilterChange, isOpen, onToggle }: Filt
       categorie: [],
       tipologie: [],
       eta_figli: [],
+      status: [],
     });
   };
 
@@ -58,7 +67,8 @@ export function FilterSidebar({ filtri, onFilterChange, isOpen, onToggle }: Filt
     filtri.isee.length > 0 ||
     filtri.categorie.length > 0 ||
     filtri.tipologie.length > 0 ||
-    filtri.eta_figli.length > 0;
+    filtri.eta_figli.length > 0 ||
+    filtri.status.length > 0;
 
   return (
     <>
@@ -164,6 +174,26 @@ export function FilterSidebar({ filtri, onFilterChange, isOpen, onToggle }: Filt
                     className="h-4 w-4 rounded border-border text-primary focus:ring-2 focus:ring-ring"
                   />
                   <span>{eta.label}</span>
+                </label>
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h3 className="mb-3 text-sm font-semibold">Stato</h3>
+            <div className="space-y-2">
+              {STATI.map((stato) => (
+                <label
+                  key={stato.value}
+                  className="flex cursor-pointer items-center gap-2 text-sm"
+                >
+                  <input
+                    type="checkbox"
+                    checked={filtri.status.includes(stato.value)}
+                    onChange={() => toggleFilter('status', stato.value)}
+                    className="h-4 w-4 rounded border-border text-primary focus:ring-2 focus:ring-ring"
+                  />
+                  <span>{stato.label}</span>
                 </label>
               ))}
             </div>
