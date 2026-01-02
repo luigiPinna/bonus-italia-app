@@ -67,6 +67,35 @@ npm run build
 npm run start
 ```
 
+## Deploy Setup
+
+### Stack
+- **Frontend:** Next.js + TypeScript (static export)
+- **Container:** Docker (multi-stage build)
+- **Registry:** GitHub Container Registry (GHCR)
+- **Server:** TrueNAS SCALE
+- **Automation:** Watchtower + GitHub Actions
+
+### Automated Deployment
+1. Push to `main` branch
+2. GitHub Actions builds and pushes to `ghcr.io/luigipinna/bonusly:latest`
+3. Watchtower auto-deploys new image (checks every 5 minutes)
+
+### Manual Commands
+```bash
+# Deploy manually
+cd /mnt/tank/docker/websites
+sudo docker compose pull
+sudo docker compose up -d
+
+# View logs
+sudo docker logs bonusly
+sudo docker logs watchtower
+```
+
+### Live Site
+🌐 https://bonusly.org
+
 ## 📊 Configurazione Analytics (Google Analytics 4)
 
 L'app è configurata per supportare Google Analytics 4 (gratuito). Per abilitare il tracking:

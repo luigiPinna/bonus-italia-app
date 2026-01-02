@@ -16,7 +16,7 @@ import { Navbar } from '@/components/navbar';
 import { Filter, TrendingUp, Award, Clock } from 'lucide-react';
 
 export default function HomePage() {
-  console.log('release version: 1.0.1');
+  console.log('release version: 1.1.0');
   const allBonus = getAllBonus();
   const [filtri, setFiltri] = useState<Filtri>({
     search: '',
