@@ -8,22 +8,22 @@ import { CookieConsentBanner } from '@/components/cookie-consent-banner';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Bonus Italia - Bonus e Incentivi per le Famiglie',
-  description: 'Scopri tutti i bonus e incentivi disponibili in Italia per le famiglie',
+  title: 'Bonus Italia - Scopri Bonus e Incentivi in Italia',
+  description: 'Scopri tutti i bonus e incentivi disponibili in Italia',
   icons: {
     icon: '/icon.svg',
   },
   openGraph: {
-    title: 'Bonus Italia - Bonus e Incentivi per le Famiglie',
-    description: 'Scopri tutti i bonus e incentivi disponibili in Italia per le famiglie. Filtra per ISEE, categorie e trova i bonus giusti per te.',
-    url: 'https://luigipinna.github.io/bonus-italia-app/', // temporary url
+    title: 'Bonus Italia - Scopri Bonus e Incentivi in Italia',
+    description: 'Scopri tutti i bonus e incentivi disponibili in Italia. Filtra per ISEE, categorie e trova i bonus giusti per te.',
+    url: 'https://bonusly.org/',
     siteName: 'Bonusly',
     images: [
       {
-        url: 'https://luigipinna.github.io/bonus-italia-app/og-image.png',
+        url: 'https://bonusly.org/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Bonus Italia - Bonus e Incentivi per le Famiglie',
+        alt: 'Bonus Italia - Scopri Bonus e Incentivi in Italia',
       },
     ],
     locale: 'it_IT',
@@ -31,11 +31,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Bonus Italia - Bonus e Incentivi per le Famiglie',
-    description: 'Scopri tutti i bonus e incentivi disponibili in Italia per le famiglie',
-    images: ['https://luigipinna.github.io/bonus-italia-app/og-image.png'],
+    title: 'Bonus Italia - Scopri Bonus e Incentivi in Italia',
+    description: 'Scopri tutti i bonus e incentivi disponibili in Italia',
+    images: ['https://bonusly.org/og-image.png'],
   },
-  metadataBase: new URL('https://luigipinna.github.io/bonus-italia-app/'),
+  metadataBase: new URL('https://bonusly.org/'),
 };
 
 export default function RootLayout({
