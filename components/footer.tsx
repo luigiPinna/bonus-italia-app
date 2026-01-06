@@ -124,7 +124,7 @@ export function Footer() {
             © {currentYear} Bonusly. Tutti i diritti riservati.
           </p>
           <p className="text-xs text-muted-foreground text-center sm:text-right">
-            Made with ❤️ in Italia
+            Made TBD
           </p>
         </div>
       </div>
