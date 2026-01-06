@@ -4,6 +4,7 @@ import './globals.css';
 import { ThemeProvider } from '@/components/theme-provider';
 import { GoogleAnalytics } from '@/components/analytics';
 import { CookieConsentBanner } from '@/components/cookie-consent-banner';
+import { Footer } from '@/components/footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -55,7 +56,12 @@ export default function RootLayout({
           enableSystem={false}
           disableTransitionOnChange
         >
-          {children}
+          <div className="flex min-h-screen flex-col">
+            <main className="flex-1">
+              {children}
+            </main>
+            <Footer />
+          </div>
           <CookieConsentBanner />
         </ThemeProvider>
       </body>

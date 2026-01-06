@@ -76,7 +76,7 @@ export default function HomePage() {
     filtri.search.length > 0;
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="bg-background">
       <Navbar />
 
       <div className="container mx-auto px-4 py-6">

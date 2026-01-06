@@ -78,7 +78,7 @@ export default function FavoritesPage() {
 
   if (!isHydrated) {
     return (
-      <div className="min-h-screen bg-background">
+      <div className="bg-background">
         <Navbar />
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-center min-h-[60vh]">
@@ -90,7 +90,7 @@ export default function FavoritesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="bg-background">
       <Navbar />
 
       <div className="container mx-auto px-4 py-6">
