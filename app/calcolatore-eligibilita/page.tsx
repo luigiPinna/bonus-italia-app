@@ -9,6 +9,7 @@ import { BonusModal } from '@/components/bonus/bonus-modal';
 import { Navbar } from '@/components/navbar';
 import { Button } from '@/components/ui/button';
 import { Calculator, Plus, X, CheckCircle2, AlertCircle } from 'lucide-react';
+import { CalcolatoreStructuredData } from '@/components/calcolatore-structured-data';
 
 const REGIONI = [
   'Abruzzo', 'Basilicata', 'Calabria', 'Campania', 'Emilia-Romagna',
@@ -85,6 +86,7 @@ export default function CalcolatoreEligibilitaPage() {
 
   return (
     <div className="bg-background">
+      <CalcolatoreStructuredData />
       <Navbar />
 
       <div className="container mx-auto px-4 py-8">

@@ -1,0 +1,14 @@
+# robots.txt per Bonusly
+# https://bonusly.org/robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /favorites/
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://bonusly.org/sitemap.xml
+
+# Crawl-delay (opzionale, per evitare sovraccarico)
+Crawl-delay: 1
+
