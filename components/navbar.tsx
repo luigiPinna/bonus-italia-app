@@ -33,13 +33,14 @@ export function Navbar() {
             </div>
             <div className="flex flex-col">
               <span className="text-lg font-bold text-foreground">Bonusly</span>
-              <span className="text-xs text-muted-foreground">La guida smart ai bonus in Italia</span>
+              <span className="text-xs text-muted-foreground hidden md:block">La guida smart ai bonus in Italia</span>
             </div>
           </Link>
 
           {/* Toggle dark mode, preferiti e icona utente https://buymeacoffee.com/luigipilave*/}
           <div className="flex items-center gap-2">
-            <BuyMeACoffeeButton/> 
+            <BuyMeACoffeeButton className="hidden md:flex" />
+            <BuyMeACoffeeButton iconOnly className="md:hidden" /> 
             <Link href="/calcolatore-eligibilita">
               <Button
                 variant="ghost"
