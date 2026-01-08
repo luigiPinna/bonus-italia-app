@@ -2,6 +2,7 @@
 
 import { Sparkles, User, Moon, Sun, Heart, Calculator } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { BuyMeACoffeeButton } from '@/components/buymeacoffee-button';
 import { useTheme } from 'next-themes';
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
@@ -36,8 +37,9 @@ export function Navbar() {
             </div>
           </Link>
 
-          {/* Toggle dark mode, preferiti e icona utente */}
+          {/* Toggle dark mode, preferiti e icona utente https://buymeacoffee.com/luigipilave*/}
           <div className="flex items-center gap-2">
+            <BuyMeACoffeeButton/> 
             <Link href="/calcolatore-eligibilita">
               <Button
                 variant="ghost"

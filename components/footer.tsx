@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { Sparkles, Heart, Calculator, Home, Shield, FileText, Cookie, Mail } from 'lucide-react';
+import { BuyMeACoffeeButton } from '@/components/buymeacoffee-button';
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -25,6 +26,9 @@ export function Footer() {
               Scopri tutti i bonus e incentivi disponibili in Italia. 
               Trova i bonus giusti per te con filtri avanzati e calcolatore di eligibilità.
             </p>
+            <div className="pt-4">
+              <BuyMeACoffeeButton/>
+            </div>
           </div>
 
           {/* Navigation Links */}
