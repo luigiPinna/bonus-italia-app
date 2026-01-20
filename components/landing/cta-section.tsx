@@ -38,7 +38,7 @@ export function CtaSection() {
             <Link href="/esplora">
               <Button
                 size="lg"
-                className="rounded-full bg-white text-primary hover:bg-white/90 px-8 py-6 text-lg font-semibold shadow-xl transition-all hover:shadow-2xl hover:scale-105"
+                className="rounded-full bg-white text-gray-800 hover:bg-white/90 px-8 py-6 text-lg font-semibold shadow-xl transition-all hover:shadow-2xl hover:scale-105"
               >
                 <span>Esplora tutti i bonus</span>
                 <ArrowRight className="ml-2 h-5 w-5" />
