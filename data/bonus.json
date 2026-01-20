@@ -57,7 +57,9 @@
         "assegno-unico-universale",
         "bonus-asilo-nido"
       ],
-      "note_aggiuntive": "Cumulabile con Assegno Unico Universale e Bonus Asilo Nido. Non concorre alla formazione del reddito IRPEF. Erogazione in ordine cronologico fino a esaurimento fondi"
+      "note_aggiuntive": "Cumulabile con Assegno Unico Universale e Bonus Asilo Nido. Non concorre alla formazione del reddito IRPEF. Erogazione in ordine cronologico fino a esaurimento fondi",
+      "popolarita": 9,
+      "data_aggiunta": "2025-01-01"
     },
     {
       "id": "assegno-unico-universale",
@@ -136,7 +138,9 @@
         "bonus-nuove-nascite-2025",
         "bonus-asilo-nido"
       ],
-      "note_aggiuntive": "Erogato mensilmente. Dal 2026 l'AUU non viene più conteggiato nel calcolo ISEE. Maggiorazioni per: figli disabili, madri under 21, nuclei numerosi, secondo percettore di reddito"
+      "note_aggiuntive": "Erogato mensilmente. Dal 2026 l'AUU non viene più conteggiato nel calcolo ISEE. Maggiorazioni per: figli disabili, madri under 21, nuclei numerosi, secondo percettore di reddito",
+      "popolarita": 10,
+      "data_aggiunta": "2024-01-01"
     },
     {
       "id": "bonus-asilo-nido",
@@ -213,7 +217,9 @@
       "compatibilita": [
         "assegno-unico-universale"
       ],
-      "note_aggiuntive": "NOVITÀ 2026: domanda valida per 3 anni, ampliata platea strutture ammesse, possibile riesame domande escluse 2024-2025. Non cumulabile con detrazioni fiscali frequenza asili nido"
+      "note_aggiuntive": "NOVITÀ 2026: domanda valida per 3 anni, ampliata platea strutture ammesse, possibile riesame domande escluse 2024-2025. Non cumulabile con detrazioni fiscali frequenza asili nido",
+      "popolarita": 9,
+      "data_aggiunta": "2024-03-01"
     },
     {
       "id": "bonus-sociale-utenze",
@@ -265,7 +271,9 @@
       "compatibilita": [
         "bonus-sociale-rifiuti-2026"
       ],
-      "note_aggiuntive": "Dal 2026: soglie ISEE tornate a 9.530€/20.000€ (finito bonus straordinario 200€). NOVITÀ 2026: in arrivo anche bonus sociale rifiuti (sconto 25% TARI) con stessi requisiti"
+      "note_aggiuntive": "Dal 2026: soglie ISEE tornate a 9.530€/20.000€ (finito bonus straordinario 200€). NOVITÀ 2026: in arrivo anche bonus sociale rifiuti (sconto 25% TARI) con stessi requisiti",
+      "popolarita": 8,
+      "data_aggiunta": "2024-02-15"
     },
     {
       "id": "bonus-55-euro-vulnerabili",
@@ -311,7 +319,9 @@
       "compatibilita": [
         "bonus-sociale-utenze"
       ],
-      "note_aggiuntive": "NOVITÀ 2026: contributo aggiuntivo rispetto al bonus sociale esistente, cumulabile con esso"
+      "note_aggiuntive": "NOVITÀ 2026: contributo aggiuntivo rispetto al bonus sociale esistente, cumulabile con esso",
+      "popolarita": 6,
+      "data_aggiunta": "2025-12-15"
     },
     {
       "id": "carta-acquisti",
@@ -368,7 +378,9 @@
         ]
       },
       "compatibilita": [],
-      "note_aggiuntive": "Utilizzabile in negozi convenzionati, farmacie e parafarmacie per alimentari, farmaci e bollette. Non cumulabile con Carta Dedicata a Te"
+      "note_aggiuntive": "Utilizzabile in negozi convenzionati, farmacie e parafarmacie per alimentari, farmaci e bollette. Non cumulabile con Carta Dedicata a Te",
+      "popolarita": 6,
+      "data_aggiunta": "2024-05-01"
     },
     {
       "id": "carta-dedicata-a-te",
@@ -417,7 +429,9 @@
         ]
       },
       "compatibilita": [],
-      "note_aggiuntive": "Confermata per 2026 e 2027 con 500 milioni di stanziamento. Solo per acquisti alimentari (esclusi alcolici). Sconti fino al 15% presso esercenti convenzionati. Primo utilizzo obbligatorio entro scadenza indicata pena decadenza"
+      "note_aggiuntive": "Confermata per 2026 e 2027 con 500 milioni di stanziamento. Solo per acquisti alimentari (esclusi alcolici). Sconti fino al 15% presso esercenti convenzionati. Primo utilizzo obbligatorio entro scadenza indicata pena decadenza",
+      "popolarita": 8,
+      "data_aggiunta": "2024-07-15"
     },
     {
       "id": "bonus-psicologo",
@@ -481,7 +495,9 @@
         ]
       },
       "compatibilita": [],
-      "note_aggiuntive": "Budget 2026: 8,5 milioni (ridotto rispetto ai 9,5M del 2025). IMPORTANTE: prima seduta entro 60 giorni dall'accoglimento pena decadenza. Codice univoco utilizzabile entro 270 giorni"
+      "note_aggiuntive": "Budget 2026: 8,5 milioni (ridotto rispetto ai 9,5M del 2025). IMPORTANTE: prima seduta entro 60 giorni dall'accoglimento pena decadenza. Codice univoco utilizzabile entro 270 giorni",
+      "popolarita": 7,
+      "data_aggiunta": "2024-04-01"
     },
     {
       "id": "bonus-anziani-over-80",
@@ -541,7 +557,9 @@
         ]
       },
       "compatibilita": [],
-      "note_aggiuntive": "Assorbe l'indennità di accompagnamento. Rendicontazione trimestrale delle spese obbligatoria. Esente da IRPEF e impignorabile"
+      "note_aggiuntive": "Assorbe l'indennità di accompagnamento. Rendicontazione trimestrale delle spese obbligatoria. Esente da IRPEF e impignorabile",
+      "popolarita": 5,
+      "data_aggiunta": "2025-01-15"
     },
     {
       "id": "carta-cultura-giovani",
@@ -590,7 +608,9 @@
       "compatibilita": [
         "carta-merito"
       ],
-      "note_aggiuntive": "Cumulabile con Carta del Merito (totale 1.000€). Dal 2027 entrambe saranno sostituite dalla nuova Carta Valore. Acquisti: libri, cinema, teatro, concerti, musei, musica, corsi"
+      "note_aggiuntive": "Cumulabile con Carta del Merito (totale 1.000€). Dal 2027 entrambe saranno sostituite dalla nuova Carta Valore. Acquisti: libri, cinema, teatro, concerti, musei, musica, corsi",
+      "popolarita": 7,
+      "data_aggiunta": "2024-06-01"
     },
     {
       "id": "carta-merito",
@@ -642,7 +662,9 @@
       "compatibilita": [
         "carta-cultura-giovani"
       ],
-      "note_aggiuntive": "Cumulabile con Carta Cultura Giovani (totale 1.000€). Dal 2027 sarà sostituita dalla nuova Carta Valore. Acquisti: libri, cinema, teatro, concerti, musei, musica, corsi"
+      "note_aggiuntive": "Cumulabile con Carta Cultura Giovani (totale 1.000€). Dal 2027 sarà sostituita dalla nuova Carta Valore. Acquisti: libri, cinema, teatro, concerti, musei, musica, corsi",
+      "popolarita": 6,
+      "data_aggiunta": "2024-06-01"
     },
     {
       "id": "bonus-ristrutturazione-2026",
@@ -707,7 +729,9 @@
       "compatibilita": [
         "bonus-mobili"
       ],
-      "note_aggiuntive": "CONFERMATO per 2026 con stesse aliquote 2025. Dal 2027 scenderà a 36%/30%. Per abitazione principale: residenza entro termine dichiarazione redditi anno prima detrazione"
+      "note_aggiuntive": "CONFERMATO per 2026 con stesse aliquote 2025. Dal 2027 scenderà a 36%/30%. Per abitazione principale: residenza entro termine dichiarazione redditi anno prima detrazione",
+      "popolarita": 6,
+      "data_aggiunta": "2024-01-15"
     },
     {
       "id": "ecobonus-2026",
@@ -777,7 +801,9 @@
       "compatibilita": [
         "bonus-ristrutturazione-2026"
       ],
-      "note_aggiuntive": "CONFERMATO per 2026. Stesse aliquote del bonus ristrutturazione. Dal 2027 scenderà a 36%/30%"
+      "note_aggiuntive": "CONFERMATO per 2026. Stesse aliquote del bonus ristrutturazione. Dal 2027 scenderà a 36%/30%",
+      "popolarita": 5,
+      "data_aggiunta": "2024-01-15"
     },
     {
       "id": "sismabonus-2026",
@@ -838,7 +864,9 @@
       "compatibilita": [
         "bonus-ristrutturazione-2026"
       ],
-      "note_aggiuntive": "CONFERMATO per 2026 con semplificazione: non serve più salto classe sismica. Vale anche per edifici produttivi"
+      "note_aggiuntive": "CONFERMATO per 2026 con semplificazione: non serve più salto classe sismica. Vale anche per edifici produttivi",
+      "popolarita": 4,
+      "data_aggiunta": "2024-01-15"
     },
     {
       "id": "sismabonus-acquisti",
@@ -895,7 +923,9 @@
         ]
       },
       "compatibilita": [],
-      "note_aggiuntive": "Applicabile solo a immobili ristrutturati da imprese con vendita entro 30 mesi. Per aliquota maggiorata: adibire a abitazione principale entro dichiarazione redditi anno prima detrazione"
+      "note_aggiuntive": "Applicabile solo a immobili ristrutturati da imprese con vendita entro 30 mesi. Per aliquota maggiorata: adibire a abitazione principale entro dichiarazione redditi anno prima detrazione",
+      "popolarita": 3,
+      "data_aggiunta": "2024-01-15"
     },
     {
       "id": "bonus-barriere-architettoniche",
@@ -955,7 +985,9 @@
       "compatibilita": [
         "bonus-ristrutturazione-2026"
       ],
-      "note_aggiuntive": "ATTENZIONE: 2025 ultimo anno al 75%. Chi ha lavori in corso deve completare pagamenti entro 31/12/2025. Dal 2026 solo bonus casa ordinario"
+      "note_aggiuntive": "ATTENZIONE: 2025 ultimo anno al 75%. Chi ha lavori in corso deve completare pagamenti entro 31/12/2025. Dal 2026 solo bonus casa ordinario",
+      "popolarita": 5,
+      "data_aggiunta": "2024-08-01"
     },
     {
       "id": "bonus-mobili-2026",
@@ -1019,7 +1051,9 @@
         "ecobonus-2026",
         "sismabonus-2026"
       ],
-      "note_aggiuntive": "CONFERMATO per 2026. Limite 5.000€ per unità immobiliare. Stessa aliquota 50% per prime e seconde case"
+      "note_aggiuntive": "CONFERMATO per 2026. Limite 5.000€ per unità immobiliare. Stessa aliquota 50% per prime e seconde case",
+      "popolarita": 6,
+      "data_aggiunta": "2024-01-15"
     },
     {
       "id": "bonus-libri-scolastici-regionali",
@@ -1071,7 +1105,9 @@
       "compatibilita": [
         "borse-studio-regionali"
       ],
-      "note_aggiuntive": "Gestione regionale/comunale. Modalità: voucher, rimborso o comodato. Controllare bandi specifici territoriali"
+      "note_aggiuntive": "Gestione regionale/comunale. Modalità: voucher, rimborso o comodato. Controllare bandi specifici territoriali",
+      "popolarita": 5,
+      "data_aggiunta": "2024-09-01"
     },
     {
       "id": "voucher-formativi-regionali",
@@ -1127,7 +1163,9 @@
       "compatibilita": [
         "borse-studio-alta-formazione"
       ],
-      "note_aggiuntive": "Finanziati da FSE+ 2021-2027. Premialità per giovani e settori strategici"
+      "note_aggiuntive": "Finanziati da FSE+ 2021-2027. Premialità per giovani e settori strategici",
+      "popolarita": 4,
+      "data_aggiunta": "2024-09-15"
     },
     {
       "id": "borse-studio-universitarie-regionali",
@@ -1181,7 +1219,9 @@
       "compatibilita": [
         "no-tax-area-universitaria"
       ],
-      "note_aggiuntive": "Include anche posto alloggio e mensa gratuita. Controlli antifrode attivi"
+      "note_aggiuntive": "Include anche posto alloggio e mensa gratuita. Controlli antifrode attivi",
+      "popolarita": 6,
+      "data_aggiunta": "2024-08-15"
     },
     {
       "id": "bonus-trasporti-studenti",
@@ -1231,7 +1271,9 @@
       "compatibilita": [
         "borse-studio"
       ],
-      "note_aggiuntive": "Gestione locale. Verifica portali territoriali per dettagli specifici"
+      "note_aggiuntive": "Gestione locale. Verifica portali territoriali per dettagli specifici",
+      "popolarita": 5,
+      "data_aggiunta": "2024-09-01"
     },
     {
       "id": "voucher-alta-formazione",
@@ -1286,7 +1328,9 @@
       "compatibilita": [
         "borse-studio-universitarie"
       ],
-      "note_aggiuntive": "Finanziamento PR FSE+ 2021-2027"
+      "note_aggiuntive": "Finanziamento PR FSE+ 2021-2027",
+      "popolarita": 4,
+      "data_aggiunta": "2024-10-01"
     },
     {
       "id": "no-tax-area-universitaria",
@@ -1335,7 +1379,9 @@
       "compatibilita": [
         "borse-studio-universitarie"
       ],
-      "note_aggiuntive": "Misura nazionale estesa a tutti gli atenei. Cumulo con borse di studio possibile"
+      "note_aggiuntive": "Misura nazionale estesa a tutti gli atenei. Cumulo con borse di studio possibile",
+      "popolarita": 6,
+      "data_aggiunta": "2024-08-01"
     }
   ]
 }

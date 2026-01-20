@@ -52,6 +52,8 @@ export interface Bonus {
   };
   compatibilita?: string[];
   note_aggiuntive?: string;
+  popolarita?: number;
+  data_aggiunta?: string;
 }
 
 export interface BonusData {
