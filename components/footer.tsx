@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { Sparkles, Heart, Calculator, Home, Shield, FileText, Cookie, Mail } from 'lucide-react';
+import { Sparkles, Heart, Calculator, Home, Shield, FileText, Cookie, Mail, Compass } from 'lucide-react';
 import { BuyMeACoffeeButton } from '@/components/buymeacoffee-button';
 
 export function Footer() {
@@ -36,8 +36,8 @@ export function Footer() {
             <h3 className="text-sm font-semibold text-foreground">Navigazione</h3>
             <ul className="space-y-3">
               <li>
-                <Link 
-                  href="/" 
+                <Link
+                  href="/"
                   className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Home className="h-4 w-4" />
@@ -45,8 +45,17 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link 
-                  href="/favorites" 
+                <Link
+                  href="/esplora"
+                  className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Compass className="h-4 w-4" />
+                  Esplora tutti i bonus
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="/favorites"
                   className="flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition-colors"
                 >
                   <Heart className="h-4 w-4" />

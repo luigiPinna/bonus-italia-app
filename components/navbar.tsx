@@ -1,6 +1,6 @@
 'use client';
 
-import { Sparkles, User, Moon, Sun, Heart, Calculator } from 'lucide-react';
+import { Sparkles, User, Moon, Sun, Heart, Calculator, Compass } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { BuyMeACoffeeButton } from '@/components/buymeacoffee-button';
 import { useTheme } from 'next-themes';
@@ -40,7 +40,18 @@ export function Navbar() {
           {/* Toggle dark mode, preferiti e icona utente https://buymeacoffee.com/luigipilave*/}
           <div className="flex items-center gap-2">
             <BuyMeACoffeeButton className="hidden md:flex" />
-            <BuyMeACoffeeButton iconOnly className="md:hidden" /> 
+            <BuyMeACoffeeButton iconOnly className="md:hidden" />
+            <Link href="/esplora">
+              <Button
+                variant="ghost"
+                size="sm"
+                className="!h-10 !px-3 !rounded-full"
+                aria-label="Esplora tutti i bonus"
+              >
+                <Compass className="h-5 w-5 flex-shrink-0" />
+                <span className="ml-2 hidden sm:inline">Esplora</span>
+              </Button>
+            </Link>
             <Link href="/calcolatore-eligibilita">
               <Button
                 variant="ghost"
